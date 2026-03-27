@@ -8,6 +8,7 @@
   <meta property="og:title" content="Efficient Design — Watches & Cars for Engineers">
   <meta property="og:description" content="Movements, not retail prices. Suspension geometry, not dealer markups. Engineering obsession at two scales.">
   <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://efficientdesign.net/og-image.jpg">
   <script>
     (function(){var t=localStorage.getItem('theme');
     if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
@@ -36,6 +37,7 @@
 
     <div class="card" data-category="editorial">
       <a href="stories/why-watches-and-cars.html">
+        <img class="card-img" src="stories/images/hero-why-watches-and-cars.jpg?v=4704bcb5" alt="Watch movement and engine bay">
         <div class="card-body">
           <div class="card-kicker">Manifesto</div>
           <div class="card-title">The Same Obsession, Two Scales</div>
@@ -51,34 +53,58 @@
     &copy; 2026 Efficient Design. Movements, not markups.
   </div>
 
-  <script>
-    // Theme toggle
-    const toggle = document.createElement('button');
-    toggle.className = 'theme-toggle';
-    toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
-    toggle.onclick = () => {
-      document.documentElement.classList.toggle('dark');
-      const isDark = document.documentElement.classList.contains('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      toggle.textContent = isDark ? '☀️ Light' : '🌙 Dark';
-    };
-    document.body.appendChild(toggle);
 
-    // Category filter
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        document.querySelectorAll('.card').forEach(card => {
-          if (filter === 'all' || card.dataset.category === filter) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
+  <script>
+    // Theme toggle - system/light/dark
+    (function() {
+      const toggle = document.createElement('button');
+      toggle.className = 'theme-toggle';
+      
+      function getEffective() {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'dark') return 'dark';
+        if (stored === 'light') return 'light';
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      
+      function getStored() {
+        return localStorage.getItem('theme') || 'system';
+      }
+      
+      function apply() {
+        const effective = getEffective();
+        const stored = getStored();
+        document.documentElement.classList.toggle('dark', effective === 'dark');
+        if (stored === 'system') {
+          toggle.textContent = '⚙️ System';
+        } else if (stored === 'dark') {
+          toggle.textContent = '☀️ Light';
+        } else {
+          toggle.textContent = '🌙 Dark';
+        }
+      }
+      
+      toggle.onclick = function() {
+        const stored = getStored();
+        if (stored === 'system') {
+          localStorage.setItem('theme', 'dark');
+        } else if (stored === 'dark') {
+          localStorage.setItem('theme', 'light');
+        } else {
+          localStorage.removeItem('theme');
+        }
+        apply();
+      };
+      
+      // Listen for system preference changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+        if (!localStorage.getItem('theme')) apply();
       });
-    });
+      
+      document.body.appendChild(toggle);
+      apply();
+    })();
+
   </script>
 </body>
 </html>

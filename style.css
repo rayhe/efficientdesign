@@ -350,3 +350,81 @@ header .back:hover { color: var(--accent); }
   .article-grid { grid-template-columns: 1fr; }
   .site-header h1 { font-size: 1.4rem; }
 }
+
+/* --- ENHANCED LIGHT MODE --- */
+:root {
+  --card-shadow: 0 1px 4px rgba(0,0,0,.06);
+  --hero-overlay: linear-gradient(180deg, transparent 60%, rgba(0,0,0,.03) 100%);
+}
+
+html.dark {
+  --card-shadow: 0 1px 4px rgba(0,0,0,.3);
+  --hero-overlay: linear-gradient(180deg, transparent 60%, rgba(0,0,0,.15) 100%);
+}
+
+/* Card hover refinement */
+.card {
+  box-shadow: var(--card-shadow);
+}
+
+/* Hero image subtle treatment */
+.story-hero {
+  position: relative;
+}
+
+/* Nice separator between header and content */
+.site-header::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 1rem;
+  border-radius: 2px;
+}
+
+/* Category color coding on cards */
+.card[data-category="watches"] .card-kicker { color: var(--cat-watches); }
+.card[data-category="cars"] .card-kicker { color: var(--cat-cars); }
+.card[data-category="materials"] .card-kicker { color: var(--cat-materials); }
+.card[data-category="editorial"] .card-kicker { color: var(--cat-editorial); }
+
+/* Smooth transitions for theme changes */
+body, .card, .site-header, .nav-bar, .site-footer, .theme-toggle {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Reading progress bar for articles */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* Image loading placeholder */
+.card-img {
+  background: linear-gradient(135deg, var(--card-bg) 0%, var(--border) 100%);
+}
+
+/* Better link styling in articles */
+.story a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(196, 154, 108, 0.3);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s;
+}
+.story a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* Favicon-like accent dot */
+.site-header h1::before {
+  content: '⚙';
+  margin-right: 0.4rem;
+  font-size: 0.85em;
+}
