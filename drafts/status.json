@@ -26,5 +26,7 @@
   "article_number": 12,
   "category": "watches",
   "writer": "Marcus Thorne",
-  "last_category": "watches"
+  "last_category": "watches",
+  "last_skipped": "2026-03-27T03:30:00Z",
+  "skip_reason": "1/day limit: already published breitling-navitimer-titanium-f1 today"
 }
