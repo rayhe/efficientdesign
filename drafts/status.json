@@ -1,8 +1,30 @@
 {
-  "phase": "DRAFT",
+  "phase": "COMPLETE",
   "topic": "Breitling Navitimer B01 Aston Martin F1 - First Titanium Navitimer",
   "slug": "breitling-navitimer-titanium-f1",
   "started_at": "2026-03-27T01:31:00Z",
-  "last_updated": "2026-03-27T01:31:00Z",
-  "published_today": false
+  "completed_at": "2026-03-27T01:39:00Z",
+  "last_updated": "2026-03-27T01:39:00Z",
+  "published_today": true,
+  "published_date": "2026-03-27",
+  "article_url": "https://efficientdesign.net/stories/breitling-navitimer-titanium-f1.html",
+  "critique_scores": {
+    "general_quality": 8.7,
+    "voice_tone": 8.6,
+    "factual_accuracy": 8.8,
+    "research_rigor": 8.5,
+    "ethics": 9.2,
+    "writing_quality": 8.6,
+    "average": 8.73
+  },
+  "quality_gates": {
+    "em_dashes": 2,
+    "the_starters_pct": 0.0,
+    "ai_slop_found": false,
+    "hero_jpeg_validated": true
+  },
+  "article_number": 12,
+  "category": "watches",
+  "writer": "Marcus Thorne",
+  "last_category": "watches"
 }
