@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Efficient Design — Watches &amp; Cars for Engineers</title>
+  <meta name="description" content="Watches and cars for people who care more about how things work than how much they cost. Movements, not retail prices. Suspension geometry, not dealer markups.">
+  <meta property="og:title" content="Efficient Design — Watches & Cars for Engineers">
+  <meta property="og:description" content="Movements, not retail prices. Suspension geometry, not dealer markups. Engineering obsession at two scales.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-header">
+    <h1>Efficient <span>Design</span></h1>
+    <div class="site-tagline">Watches &amp; cars for people who care about engineering, not price tags.</div>
+  </div>
+
+  <div class="nav-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="watches">⌚ Watches</button>
+    <button class="filter-btn" data-filter="cars">🏎️ Cars</button>
+    <button class="filter-btn" data-filter="materials">🔬 Materials</button>
+    <button class="filter-btn" data-filter="editorial">✏️ Editorial</button>
+  </div>
+
+  <div class="article-grid" id="grid">
+
+    <div class="card" data-category="editorial">
+      <a href="stories/why-watches-and-cars.html">
+        <div class="card-body">
+          <div class="card-kicker">Manifesto</div>
+          <div class="card-title">The Same Obsession, Two Scales</div>
+          <div class="card-meta">The Editors &middot; Mar 27, 2026</div>
+          <div class="card-excerpt">Watches and cars attract the same people for the same reason. Both are machines built at the intersection of engineering precision and aesthetic purpose. This is what this site covers and why.</div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="site-footer">
+    &copy; 2026 Efficient Design. Movements, not markups.
+  </div>
+
+  <script>
+    // Theme toggle
+    const toggle = document.createElement('button');
+    toggle.className = 'theme-toggle';
+    toggle.textContent = document.documentElement.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+    toggle.onclick = () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggle.textContent = isDark ? '☀️ Light' : '🌙 Dark';
+    };
+    document.body.appendChild(toggle);
+
+    // Category filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
