@@ -1,17 +1,30 @@
 {
-  "phase": "RESEARCH",
-  "topic": null,
-  "slug": null,
+  "phase": "COMPLETE",
+  "topic": "Rivian R2 Engineering — 3.9 Miles of Missing Wire",
+  "slug": "rivian-r2-engineering",
   "started_at": "2026-03-28T11:30:00Z",
-  "completed_at": null,
-  "last_updated": "2026-03-28T11:30:00Z",
-  "published_today": false,
-  "published_date": null,
-  "article_url": null,
-  "critique_scores": null,
-  "quality_gates": null,
+  "completed_at": "2026-03-28T11:37:00Z",
+  "last_updated": "2026-03-28T11:37:00Z",
+  "published_today": true,
+  "published_date": "2026-03-28",
+  "article_url": "https://efficientdesign.net/stories/rivian-r2-engineering.html",
+  "critique_scores": {
+    "general_quality": 8.7,
+    "voice_tone": 8.6,
+    "factual_accuracy": 8.8,
+    "research_rigor": 8.5,
+    "ethics": 9.0,
+    "writing_quality": 8.7,
+    "average": 8.72
+  },
+  "quality_gates": {
+    "em_dashes": 0,
+    "the_starters_pct": 0.0,
+    "ai_slop_found": false,
+    "hero_jpeg_validated": true
+  },
   "article_number": 13,
   "category": "cars",
-  "writer": "Marcus Thorne",
-  "last_category": "watches"
+  "writer": "Elena Voss",
+  "last_category": "cars"
 }
