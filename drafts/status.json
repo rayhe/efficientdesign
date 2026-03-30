@@ -1,24 +1,27 @@
 {
-  "phase": "IDLE",
-  "topic": "McLaren W1 ART Carbon Fiber",
-  "slug": "mclaren-w1-art-carbon",
-  "started_at": "2026-03-29T03:30:00Z",
-  "completed_at": "2026-03-29T03:37:00Z",
-  "last_updated": "2026-03-29T03:37:00Z",
-  "published_today": true,
-  "published_date": "2026-03-29",
-  "article_url": "https://efficientdesign.net/stories/mclaren-w1-art-carbon.html",
-  "critique_scores": null,
-  "quality_gates": {
-    "em_dashes": 0,
-    "the_sentence_pct": 0,
-    "slop_phrases": 0,
-    "jpeg_validated": true,
-    "cache_bust": "c8410568"
+  "phase": "SHIP",
+  "topic": "Grand Seiko Spring Drive Ultra Fine Accuracy",
+  "slug": "grand-seiko-spring-drive-ufa",
+  "started_at": "2026-03-30T23:30:00Z",
+  "completed_at": null,
+  "last_updated": "2026-03-30T23:35:00Z",
+  "published_today": false,
+  "published_date": "2026-03-30",
+  "article_url": null,
+  "critique_scores": {
+    "technical_accuracy": 9.0,
+    "narrative_engagement": 8.7,
+    "engineering_depth": 8.6,
+    "style_craft": 8.8,
+    "originality": 8.5,
+    "fact_check": 9.0,
+    "average": 8.77
   },
-  "article_number": 15,
-  "category": "cars",
+  "quality_gates": null,
+  "article_number": 16,
+  "category": "watches",
   "writer": "Marcus Thorne",
-  "last_category": "cars",
-  "next_category": "watches"
+  "last_category": "watches",
+  "next_category": "cars",
+  "skip_reason": null
 }
