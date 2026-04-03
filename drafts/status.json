@@ -1,14 +1,14 @@
 {
-  "phase": "DRAFT",
-  "topic": "Corvette E-Ray through-the-road hybrid architecture",
-  "slug": "corvette-e-ray-hybrid-awd",
+  "phase": "IDLE",
+  "topic": null,
+  "slug": null,
   "started_at": "2026-04-03T07:30:00Z",
-  "last_updated": "2026-04-03T07:31:00Z",
-  "published_today": false,
-  "published_date": "2026-04-01",
+  "last_updated": "2026-04-03T07:38:00Z",
+  "published_today": true,
+  "published_date": "2026-04-03",
   "article_number": 18,
   "category": "cars",
   "writer": "Marcus Thorne",
-  "last_category": "watches",
-  "next_category": "cars"
+  "last_category": "cars",
+  "next_category": "watches"
 }
