@@ -1,14 +1,14 @@
 {
   "phase": "IDLE",
-  "topic": "Anti-magnetic watchmaking: Faraday cages vs non-ferromagnetic materials vs silicon",
-  "slug": "anti-magnetic-watchmaking",
-  "started_at": "2026-04-04T15:30:00Z",
-  "last_updated": "2026-04-04T15:40:00Z",
+  "topic": null,
+  "slug": null,
+  "started_at": null,
+  "last_updated": "2026-04-05T07:42:00Z",
   "published_today": true,
-  "published_date": "2026-04-04",
-  "article_number": 19,
-  "category": "watches",
+  "published_date": "2026-04-05",
+  "article_number": 20,
+  "category": "cars",
   "writer": "Marcus Thorne",
-  "last_category": "watches",
-  "next_category": "cars"
+  "last_category": "cars",
+  "next_category": "watches"
 }
