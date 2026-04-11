@@ -1,14 +1,14 @@
 {
-  "phase": "SHIP",
-  "topic": "Watches & Wonders 2026 Engineering Preview",
-  "slug": "watches-and-wonders-2026-engineering",
-  "started_at": "2026-04-11T01:30:00Z",
-  "last_updated": "2026-04-11T01:36:00Z",
-  "published_today": false,
-  "published_date": "2026-04-10",
+  "phase": "IDLE",
+  "topic": null,
+  "slug": null,
+  "started_at": null,
+  "last_updated": "2026-04-11T01:38:00Z",
+  "published_today": true,
+  "published_date": "2026-04-11",
   "article_number": 25,
   "category": "watches",
   "writer": "Marcus Thorne",
-  "last_category": "cars",
-  "next_category": "watches"
+  "last_category": "watches",
+  "next_category": "cars"
 }
