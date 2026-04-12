@@ -1,14 +1,14 @@
 {
-  "phase": "DRAFTING",
-  "topic": "Rear-Axle Steering",
-  "slug": "rear-axle-steering",
-  "started_at": "2026-04-12T01:30:00Z",
-  "last_updated": "2026-04-12T01:33:00Z",
-  "published_today": false,
-  "published_date": "2026-04-11",
-  "article_number": 25,
+  "phase": "IDLE",
+  "topic": null,
+  "slug": null,
+  "started_at": null,
+  "last_updated": "2026-04-12T01:40:00Z",
+  "published_today": true,
+  "published_date": "2026-04-12",
+  "article_number": 26,
   "category": "cars",
   "writer": "Marcus Thorne",
-  "last_category": "watches",
-  "next_category": "cars"
+  "last_category": "cars",
+  "next_category": "watches"
 }
