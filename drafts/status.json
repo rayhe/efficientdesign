@@ -1,14 +1,14 @@
 {
-  "phase": "IDLE",
-  "topic": null,
-  "slug": null,
-  "started_at": null,
-  "last_updated": "2026-04-12T01:40:00Z",
-  "published_today": true,
+  "phase": "RESEARCH",
+  "topic": "Co-Axial Escapement Engineering",
+  "slug": "co-axial-escapement-engineering",
+  "started_at": "2026-04-13T19:25:00Z",
+  "last_updated": "2026-04-13T19:25:00Z",
+  "published_today": false,
   "published_date": "2026-04-12",
-  "article_number": 26,
-  "category": "cars",
+  "article_number": 27,
+  "category": "watches",
   "writer": "Marcus Thorne",
   "last_category": "cars",
-  "next_category": "watches"
+  "next_category": "cars"
 }
