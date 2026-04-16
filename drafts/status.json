@@ -1,14 +1,14 @@
 {
-  "phase": "IDLE",
-  "topic": null,
-  "slug": null,
-  "started_at": null,
-  "last_updated": "2026-04-16T01:38:00Z",
-  "published_today": true,
+  "phase": "RESEARCH",
+  "topic": "Rexhep Rexhepi RRCHF Flyback Chronograph - integrated movement engineering",
+  "slug": "rexhep-rexhepi-rrchf-flyback",
+  "started_at": "2026-04-16T21:31:00Z",
+  "last_updated": "2026-04-16T21:31:00Z",
+  "published_today": false,
   "published_date": "2026-04-16",
-  "article_number": 30,
-  "category": "cars",
+  "article_number": 31,
+  "category": "watches",
   "writer": "Marcus Thorne",
   "last_category": "cars",
-  "next_category": "watches"
+  "next_category": "cars"
 }
