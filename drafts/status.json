@@ -1,14 +1,14 @@
 {
-  "phase": "SHIP",
-  "topic": "Porsche 992 GT3 RS active aerodynamics engineering",
-  "slug": "porsche-gt3-rs-active-aero",
-  "started_at": "2026-04-17T01:31:00Z",
-  "last_updated": "2026-04-17T01:37:00Z",
-  "published_today": false,
-  "published_date": "2026-04-16",
-  "article_number": 31,
+  "phase": "IDLE",
+  "topic": null,
+  "slug": null,
+  "started_at": null,
+  "last_updated": "2026-04-17T01:40:00Z",
+  "published_today": true,
+  "published_date": "2026-04-17",
+  "article_number": 32,
   "category": "cars",
   "writer": "Marcus Thorne",
-  "last_category": "watches",
-  "next_category": "cars"
+  "last_category": "cars",
+  "next_category": "watches"
 }
