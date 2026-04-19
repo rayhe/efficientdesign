@@ -1,15 +1,15 @@
 {
+  "article_number": 34,
+  "category": "cars",
+  "last_category": "cars",
+  "last_skip_reason": null,
+  "last_updated": "2026-04-19T15:35:00Z",
+  "next_category": "watches",
   "phase": "IDLE",
-  "topic": null,
-  "slug": null,
-  "started_at": null,
-  "last_updated": "2026-04-18T07:35:00Z",
+  "published_date": "2026-04-19",
   "published_today": true,
-  "published_date": "2026-04-18",
-  "article_number": 33,
-  "category": "watches",
-  "writer": "Marcus Thorne",
-  "last_category": "watches",
-  "next_category": "cars",
-  "last_skip_reason": null
+  "slug": "mustang-gtd-pushrod-suspension",
+  "started_at": "2026-04-19T07:31:00Z",
+  "topic": "Ford Mustang GTD inboard pushrod suspension engineering",
+  "writer": "Marcus Thorne"
 }
