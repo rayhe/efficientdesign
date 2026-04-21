@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No Differential Required &mdash; Efficient Design</title>
+  <meta name="description" content="Rivian's Gen 2 Quad Motor puts an independent electric motor at each wheel, eliminating mechanical differentials entirely. Four motors, four inverters, and a software control loop running at 1,000 Hz replace gearing that took a century to perfect.">
+  <meta property="og:title" content="No Differential Required: How Four Independent Motors Replaced a Century of Gearing">
+  <meta property="og:description" content="Inside Rivian's quad-motor architecture: individual wheel torque control, software torque vectoring, and the Kick Turn feature that proved four motors can do what no differential ever could.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://efficientdesign.net/stories/images/hero-rivian-quad-motor-torque-vectoring.jpg?v=b65ec39a">
+  <meta property="og:url" content="https://efficientdesign.net/stories/rivian-quad-motor-torque-vectoring.html">
+  <link rel="canonical" href="https://efficientdesign.net/stories/rivian-quad-motor-torque-vectoring.html">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "No Differential Required: How Four Independent Motors Replaced a Century of Gearing",
+  "description": "Rivian's Gen 2 Quad Motor puts an independent electric motor at each wheel, eliminating mechanical differentials entirely. Four motors, four inverters, and a software control loop running at 1,000 Hz replace gearing that took a century to perfect.",
+  "author": {
+    "@type": "Person",
+    "name": "Marcus Thorne"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Efficient Design",
+    "url": "https://efficientdesign.net"
+  },
+  "datePublished": "2026-04-21",
+  "dateModified": "2026-04-21",
+  "url": "https://efficientdesign.net/stories/rivian-quad-motor-torque-vectoring.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://efficientdesign.net/stories/rivian-quad-motor-torque-vectoring.html"
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": "en-US",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://efficientdesign.net/stories/images/hero-rivian-quad-motor-torque-vectoring.jpg?v=b65ec39a"
+  },
+  "articleSection": "Cars"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does Rivian's quad-motor torque vectoring work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rivian's quad-motor system places an independent electric motor at each wheel, each controlled by its own inverter. A central software controller running at 1,000 Hz adjusts the torque delivered to each wheel individually, applying positive torque to accelerate or negative torque via regenerative braking to slow a given wheel. This replaces mechanical open differentials, limited-slip differentials, and torque-vectoring differentials with pure software, enabling capabilities like the Kick Turn pivot maneuver that no mechanical drivetrain can replicate."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../" class="back">&larr; Efficient Design</a>
+    </header>
+
+    <article class="story">
+      <div class="story-kicker">Cars</div>
+      <h1>No Differential Required: How Four Independent Motors Replaced a Century of Gearing</h1>
+      <div class="byline">Marcus Thorne</div>
+      <div class="dateline">April 21, 2026</div>
+
+      <img class="story-hero" src="images/hero-rivian-quad-motor-torque-vectoring.jpg?v=b65ec39a" alt="Close-up of a compact electric drive motor unit with visible copper stator windings and machined aluminum housing under warm workshop lighting">
+
+      <div class="pull-stat">4 motors</div>
+      <div class="pull-label">One per wheel, each with its own inverter and single-speed reduction gearbox. Combined output: 908 horsepower and 1,198 lb-ft of torque. A central controller adjusts individual wheel torque 1,000 times per second, replacing the open differential, limited-slip differential, locking differential, and torque-vectoring differential with software. No gears link the left side to the right.</div>
+
+      <p>Every car with an internal combustion engine faces the same geometric problem. When the vehicle turns, the outside wheels travel a longer arc than the inside wheels. If both driven wheels on an axle are locked together on a single shaft, either the inside wheel spins wastefully or the outside wheel drags. In 1827, a French watchmaker named Onésiphore Pecqueur patented a solution: an arrangement of bevel gears that allowed two output shafts to rotate at different speeds while sharing a single input. He called it the differential. Nearly two centuries later, some version of Pecqueur's device sits in every car, truck, and SUV with a combustion drivetrain.</p>
+
+      <p>Rivian's Gen 2 Quad Motor R1T and R1S have no differential at all. Not an open one, not a limited-slip one, not a torque-vectoring one. Instead, four independent permanent-magnet electric motors drive four wheels through four separate single-speed planetary gearsets. Each motor has its own silicon carbide inverter, its own thermal management circuit, and its own torque command from a central vehicle dynamics controller. Left and right wheels are not mechanically connected. Front and rear axles share no driveshaft, no transfer case, no coupling.</p>
+
+      <p>Removing the differential sounds like a simplification. In practice, it shifts enormous complexity from hardware to software, and it unlocks capabilities that no mechanical drivetrain can match.</p>
+
+      <h2>What a Differential Actually Solves</h2>
+
+      <p>An open differential splits torque equally between two wheels while allowing them to rotate at different speeds. It solves the turning problem elegantly, but it creates a traction problem. If one wheel lands on ice, it spins freely while receiving almost all the engine's torque. Open differentials go where traction is weakest, which is exactly backward for performance driving or off-road use.</p>
+
+      <p>Limited-slip differentials add friction plates, viscous couplings, or helical gears to resist speed differences between the two output shafts. When one wheel tries to spin much faster than the other, the clutch packs or gear geometry redirect torque toward the slower wheel. This works well within a narrow window. Push beyond it, and the system either locks up entirely or gives up and behaves like an open diff.</p>
+
+      <p>Torque-vectoring differentials, found in cars like the BMW M3 and Audi RS5, use electronically controlled clutch packs to send different amounts of torque to each wheel on an axle. They can push more torque to the outside wheel during cornering, helping rotate the car and reducing understeer. But they add 30 to 50 pounds per axle, require dedicated oil coolers, and their response time is measured in tens of milliseconds at best. Every mechanical linkage in the system introduces backlash, wear, and heat.</p>
+
+      <h2>Four Motors, Zero Linkages</h2>
+
+      <p>Rivian's quad-motor architecture bypasses all of these compromises by giving each wheel its own motor. Each front motor in the Gen 2 R1T produces 227 horsepower and 300 lb-ft of torque. Each rear motor produces 227 horsepower and the same 300 lb-ft. Combined system output is 908 horsepower and 1,198 lb-ft, though those figures represent instantaneous peaks that the battery can sustain only briefly.</p>
+
+      <p>Each motor connects to its wheel through a compact planetary gearset with a fixed reduction ratio of approximately 10:1. No multi-speed transmission is needed because electric motors produce peak torque from zero rpm. A permanent-magnet motor's torque response is nearly instantaneous, limited primarily by inverter switching speed and the inductance of the stator windings. Rivian's silicon carbide inverters switch at frequencies high enough that the motor can change its torque output within a single millisecond.</p>
+
+      <p>Because the four motors share no mechanical connection, they can each spin at completely different speeds and in different directions simultaneously. Send positive torque to the left wheels and negative torque (regenerative braking) to the right, and the vehicle pivots in place. Send more torque to the outside rear wheel and less to the inside front, and the car rotates into a corner without the steering wheel moving an extra degree. None of this requires clutch packs, gear meshes, or hydraulic actuators. It requires math.</p>
+
+      <h2>Software Replaces Iron</h2>
+
+      <p>Rivian's vehicle dynamics controller runs a torque-allocation algorithm at 1,000 Hz. One thousand times per second, the system reads wheel speed sensors, steering angle, yaw rate, lateral acceleration, longitudinal acceleration, and driver inputs from the accelerator and brake pedals. From those inputs, it calculates the optimal torque for each wheel and sends individual commands to the four inverters.</p>
+
+      <p>In a straight-line launch, the controller watches for wheel slip on each corner independently. If the front left tire breaks traction on a painted road marking while the other three grip clean asphalt, the controller reduces torque to that single wheel within two milliseconds. A mechanical limited-slip differential might take 20 to 50 milliseconds to redirect torque through its clutch packs, and it can only redistribute within the pair of wheels it connects. It cannot send torque from a front wheel to a rear wheel on the opposite side.</p>
+
+      <p>In cornering, the controller applies a yaw-moment strategy borrowed from motorsport. It sends slightly more torque to the outside rear wheel and slightly less to the inside front, creating a rotational force that helps point the nose toward the apex. If the rear begins to slide, the controller shifts torque forward almost instantly, stabilizing the car without cutting engine power or applying the brakes. Conventional stability control systems rely on individual wheel braking, which bleeds kinetic energy into heat. Torque vectoring through motors moves energy between wheels without wasting it.</p>
+
+      <p>For off-road driving, the control strategy changes fundamentally. In Rock Crawl mode, the controller allows much larger speed differences between wheels and tolerates higher slip angles before intervening. It can lock a wheel electronically by commanding its motor to hold a specific speed, mimicking the behavior of a locked differential without any hardware change. Switching from open-diff behavior to locked-diff behavior takes one software command. No driver has to pull a lever or engage a vacuum-actuated hub lock.</p>
+
+      <h2>Kick Turn: Individual Control at Its Extreme</h2>
+
+      <p>Rivian originally demonstrated a feature called Tank Turn in 2019, spinning the vehicle in place like a tracked military vehicle by running one side forward and the other backward. Safety concerns and trail damage potential shelved it. In July 2025, Rivian unveiled Kick Turn, a more refined version designed as a practical off-road tool rather than a parking-lot party trick.</p>
+
+      <p>Kick Turn spins the vehicle by commanding the left-side motors and right-side motors in opposite directions simultaneously. Activation requires the driver to hold down buttons on both steering wheel spokes, keeping both hands on the wheel. Accelerator pedal pressure controls rotation speed. If either button is released, the system cancels instantly. Maximum rotation time is capped at 20 seconds. Steering input beyond 150 degrees also cancels the maneuver.</p>
+
+      <p>Surface detection adds another layer of control. Rivian's software reads the relationship between motor torque and wheel speed to estimate surface grip. On asphalt, even wet asphalt, Kick Turn refuses to activate because the forces would stress tire sidewalls and suspension bushings beyond acceptable limits. On loose dirt, gravel, or mud, the system engages freely because the tires can slip across the surface without generating destructive lateral loads.</p>
+
+      <p>On a tight mountain switchback, a driver can initiate Kick Turn while rolling at speeds up to 15 mph, pivot the vehicle 90 or 120 degrees around a tree or rock, then continue driving. What would otherwise require a five-point turn on a single-lane trail takes three seconds. This is not possible with any two-motor or single-motor EV, and it is physically impossible with any combustion drivetrain regardless of how sophisticated its differentials are. Opposite-direction wheel rotation within a single axle requires independent drive units. Nothing less will do.</p>
+
+      <h2>Weight, Efficiency, and Tradeoffs</h2>
+
+      <p>Four motors are heavier than two. Each of Rivian's front drive units weighs approximately 275 pounds including mounts and high-voltage cabling. Each rear unit weighs about 320 pounds. Combined drivetrain mass is roughly 1,190 pounds, compared to approximately 440 pounds for a typical dual-motor setup using two Enduro drive units. Rivian's own Dual Motor R1T saves over 700 pounds by using just two motors with a conventional differential on each axle.</p>
+
+      <p>Efficiency suffers too. Four inverters consume more standby power than two. Four sets of bearings generate more friction losses at cruise speed. On the highway at 70 mph, where torque vectoring provides no meaningful benefit, the Quad Motor R1T uses more energy per mile than the Dual Motor variant. EPA-estimated range for the Quad Motor with the Large Pack battery sits around 310 miles, compared to approximately 350 miles for the Dual Motor with the same battery.</p>
+
+      <p>Rivian partially offsets these losses with selective decoupling. At steady-state cruise, the controller can reduce current to lightly loaded motors, allowing them to coast with minimal drag. It cannot fully disconnect a motor from its wheel, as there is no clutch mechanism, but it can command near-zero torque and let the planetary gearset freewheel. In this state, the main losses are bearing drag and windage inside the motor housing.</p>
+
+      <p>Cost is the third penalty. Four motors, four inverters, four gearsets, and four independent cooling circuits cost more to manufacture and assemble than two integrated drive units. Rivian prices the Quad Motor R1T at $88,800, a $14,000 premium over the Dual Motor Large Pack at $74,800. For that premium, the buyer gets 908 horsepower instead of 533, a 0-60 time under 2.5 seconds instead of 3.5, and the entire suite of individual wheel control capabilities including Kick Turn.</p>
+
+      <h2>From Bosch to In-House</h2>
+
+      <p>First-generation Rivian R1 vehicles used four Bosch-supplied drive units. Each Bosch unit contained a single permanent-magnet motor, a single-speed gearset, and integrated power electronics. When Rivian redesigned the R1 platform for Gen 2, it kept the quad-motor architecture for the top-tier variant but developed its own Enduro drive unit for the Dual Motor models.</p>
+
+      <p>Enduro, designed and manufactured entirely in-house at Rivian's Normal, Illinois plant, integrates one motor with its inverter and gearbox in a package weighing roughly 220 pounds. Rivian expanded its factory by 620,000 square feet specifically to produce Enduro, reducing dependence on external suppliers. Mason Verbridge, Rivian's principal drive unit engineer, has stated that bringing motor production in-house let the team optimize the motor's electromagnetic design, cooling jacket geometry, and gear ratios simultaneously rather than accepting the compromises inherent in an off-the-shelf unit.</p>
+
+      <p>For now, Enduro serves only the Dual Motor variants and the EDV delivery van. Quad Motor vehicles still use the Bosch-supplied units. Whether a future quad-motor version built on four Enduro-derived units could close the efficiency gap with the dual-motor setup remains an open question. Smaller, lighter individual motors with tighter thermal management could reduce the weight and loss penalties that currently define the quad-motor tradeoff.</p>
+
+      <h2>What Mechanical Differentials Cannot Learn</h2>
+
+      <p>A mechanical torque-vectoring differential is a fixed piece of hardware. Its clutch-pack capacity, gear ratios, and maximum speed differential are set during manufacturing. Software can vary how aggressively the clutch packs engage, but the hardware imposes absolute limits on torque transfer rate, maximum torque bias, and thermal capacity. If a vehicle needs more torque-vectoring authority than its differential can provide, the only fix is a new differential.</p>
+
+      <p>Rivian's quad-motor system updates its torque-allocation logic through over-the-air software. When Kick Turn ships in September 2026, it will arrive on vehicles already in customers' garages without a single hardware change. If Rivian's engineers discover a better yaw-control strategy through track testing or simulation, they can deploy it to every Quad Motor vehicle in the fleet overnight. Hardware stays the same. Behavior evolves.</p>
+
+      <p>Mercedes-Benz reached a similar conclusion with the G580 EQ, which uses four individual motors and offers its own G-Turn spinning feature. GMC has promised a "Hurricane Turn" for future electric trucks. In racing, Formula E cars already use torque vectoring through twin motors on the rear axle. As electric drivetrains move from novelty to norm, the mechanical differential may follow the crank-start handle into history: an elegant solution to a problem that a new architecture solved differently.</p>
+
+      <p>For now, the Rivian Quad Motor stands as the clearest production demonstration of what becomes possible when each wheel answers to its own motor. Not faster in a straight line than a dual-motor with the same total power. Not more efficient on the highway. But more capable on a muddy switchback, more precise through a fast corner, and more adaptable through a software update than any arrangement of bevel gears and clutch packs bolted underneath the floor. Pecqueur's 1827 invention still works. It just no longer works alone.</p>
+
+      <div class="ref-section">
+        <h2>Sources</h2>
+        <ol>
+          <li>MotorTrend, Scott Evans, "Explained: 'Kick Turn,' Rivian's Much-Improved Evolution of 'Tank Turn,'" July 8, 2025, covering Kick Turn activation procedure, safety interlocks including 20-second time limit and 150-degree steering cancellation, surface grip detection preventing asphalt use, 15 mph rolling activation limit, and trail-damage reduction compared to original Tank Turn.</li>
+          <li>Green Car Reports, "Rivian R1S, R1T: Quad-Motor vs. Dual-Motor EVs compared," 2023, detailing Enduro drive unit weight (approximately 220 lbs), Quad Motor rear unit weight (320 lbs), front unit weight (275 lbs), Bosch-supplied quad-motor units, 620,000-square-foot factory expansion for Enduro production, and Mason Verbridge's comments on in-house electromagnetic and cooling optimization.</li>
+          <li>Edmunds, "The 2026 Rivian R1T and R1S Quad-Motor Are Quicker and More Powerful Than Ever," 2025, covering Gen 2 Quad Motor specifications: 908 hp combined output, 1,198 lb-ft system torque, sub-2.5-second 0-60 time, and pricing at $88,800 for Quad Motor R1T versus $74,800 for Dual Motor Large Pack.</li>
+          <li>SlashGear, "What Is A Tank Turn And How Does It Work On A Rivian?", July 2025, explaining Tank Turn origins from 2019 demonstration, renaming to Kick Turn, requirement for four independently controlled motors, and distinction from Mercedes-Benz G-Turn and GMC Hurricane Turn.</li>
+          <li>TechCrunch, Kirsten Korosec, "The tech behind Rivian's 2026 Quad Motor truck and SUV — and that kick turn," July 8, 2025, covering Gen 2 Quad Motor architecture, individual wheel torque control, and Kick Turn as a practical off-road tool enabled by four independent drive units.</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
