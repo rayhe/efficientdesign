@@ -1,14 +1,14 @@
 {
-  "article_number": 36,
-  "category": "cars",
-  "last_category": "cars",
-  "last_updated": "2026-04-21T01:45:00Z",
-  "next_category": "watches",
+  "article_number": 37,
+  "category": "watches",
+  "last_category": "watches",
+  "last_updated": "2026-04-21T19:45:00Z",
+  "next_category": "cars",
   "phase": "IDLE",
   "published_date": "2026-04-21",
   "published_today": true,
-  "slug": "rivian-quad-motor-torque-vectoring",
-  "started_at": "2026-04-21T01:30:00Z",
-  "topic": "Rivian quad-motor torque vectoring - how four independent motors replace differentials",
+  "slug": "citizen-eco-drive-photon-structural-color",
+  "started_at": "2026-04-21T19:30:00Z",
+  "topic": "Citizen Eco-Drive PHOTON structural color dial and 50 years of light-powered engineering",
   "writer": "Marcus Thorne"
 }
