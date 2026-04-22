@@ -1,14 +1,14 @@
 {
-  "article_number": 37,
-  "category": "watches",
+  "article_number": 38,
+  "category": "cars",
   "last_category": "watches",
-  "last_updated": "2026-04-21T19:45:00Z",
-  "next_category": "cars",
-  "phase": "IDLE",
+  "last_updated": "2026-04-22T01:40:00Z",
+  "next_category": "watches",
+  "phase": "SHIP",
   "published_date": "2026-04-21",
-  "published_today": true,
-  "slug": "citizen-eco-drive-photon-structural-color",
-  "started_at": "2026-04-21T19:30:00Z",
-  "topic": "Citizen Eco-Drive PHOTON structural color dial and 50 years of light-powered engineering",
+  "published_today": false,
+  "slug": "porsche-911-turbo-s-eturbo-hybrid",
+  "started_at": "2026-04-22T01:31:00Z",
+  "topic": "Porsche 911 Turbo S T-Hybrid eTurbo: how electric motors on the turbo shaft eliminate lag and redefine forced induction",
   "writer": "Marcus Thorne"
 }
