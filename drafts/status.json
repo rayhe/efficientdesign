@@ -1,14 +1,14 @@
 {
-  "article_number": 47,
-  "category": "watches",
+  "article_number": 48,
+  "category": "cars",
   "last_category": "watches",
-  "last_updated": "2026-05-01T01:45:00Z",
-  "next_category": "cars",
-  "phase": "IDLE",
-  "published_date": "2026-05-01",
-  "published_today": true,
-  "slug": "gshock-mrg-b2100d-kigumi-dial",
-  "started_at": "2026-05-01T01:30:00Z",
-  "topic": "Twenty-Seven Pieces, One Lattice: How Kigumi Joinery Logic Built the MRG-B2100D Dial",
-  "writer": "Elena Voss"
+  "last_updated": "2026-05-02T01:45:00Z",
+  "next_category": "watches",
+  "phase": "CRITIQUE",
+  "published_date": null,
+  "published_today": false,
+  "slug": "corvette-zr1-lt7-engine",
+  "started_at": "2026-05-02T01:30:00Z",
+  "topic": "Two Gallons a Minute: Engineering the First Turbocharged Corvette V8",
+  "writer": "Marcus Thorne"
 }
