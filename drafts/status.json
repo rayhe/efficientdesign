@@ -1,14 +1,14 @@
 {
-  "article_number": 49,
-  "category": "watches",
+  "article_number": 50,
+  "category": "cars",
   "last_category": "watches",
-  "last_updated": "2026-05-03T01:38:00Z",
-  "next_category": "cars",
-  "phase": "IDLE",
-  "published_date": "2026-05-03",
-  "published_today": true,
-  "slug": "iwc-ingenieur-ceramic",
-  "started_at": "2026-05-03T01:30:00Z",
-  "topic": "IWC Ingenieur Automatic 42 Black Ceramic — Engineering a Full-Ceramic Genta",
-  "writer": "Elena Voss"
+  "last_updated": "2026-05-04T01:42:00Z",
+  "next_category": "watches",
+  "phase": "SHIP",
+  "published_date": null,
+  "published_today": false,
+  "slug": "porsche-cayenne-electric-cooling",
+  "started_at": "2026-05-04T01:30:00Z",
+  "topic": "One Hundred Refrigerators: How Porsche Engineered 400-Kilowatt Charging Into the Cayenne Electric",
+  "writer": "Marcus Thorne"
 }
