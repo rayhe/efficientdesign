@@ -1,14 +1,14 @@
 {
   "article_number": 52,
   "category": "cars",
-  "last_category": "watches",
-  "last_updated": "2026-05-06T01:30:00Z",
+  "last_category": "cars",
+  "last_updated": "2026-05-06T01:40:00Z",
   "next_category": "watches",
-  "phase": "RESEARCH",
-  "published_date": "2026-05-05",
-  "published_today": false,
-  "slug": "",
+  "phase": "IDLE",
+  "published_date": "2026-05-06",
+  "published_today": true,
+  "slug": "corvette-c8-tremec-tr9080-dct",
   "started_at": "2026-05-06T01:30:00Z",
-  "topic": "",
-  "writer": ""
+  "topic": "Two Clutches, Zero Excuses: Inside the Tremec TR-9080 That Taught the Corvette to Shift",
+  "writer": "Marcus Thorne"
 }
