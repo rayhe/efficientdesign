@@ -1,14 +1,14 @@
 {
-  "article_number": 51,
-  "category": "watches",
+  "article_number": 52,
+  "category": "cars",
   "last_category": "watches",
-  "last_updated": "2026-05-05T01:45:00Z",
-  "next_category": "cars",
-  "phase": "IDLE",
+  "last_updated": "2026-05-06T01:30:00Z",
+  "next_category": "watches",
+  "phase": "RESEARCH",
   "published_date": "2026-05-05",
-  "published_today": true,
-  "slug": "hublot-magic-gold-metallurgy",
-  "started_at": "2026-05-05T01:30:00Z",
-  "topic": "Armor-Grade Gold: How Hublot and EPFL Sintered Boron Carbide Into Scratch-Proof 18-Karat",
-  "writer": "Elena Voss"
+  "published_today": false,
+  "slug": "",
+  "started_at": "2026-05-06T01:30:00Z",
+  "topic": "",
+  "writer": ""
 }
