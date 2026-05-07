@@ -1,14 +1,14 @@
 {
-  "article_number": 52,
-  "category": "cars",
+  "article_number": 53,
+  "category": "watches",
   "last_category": "cars",
-  "last_updated": "2026-05-06T01:40:00Z",
-  "next_category": "watches",
-  "phase": "IDLE",
-  "published_date": "2026-05-06",
-  "published_today": true,
-  "slug": "corvette-c8-tremec-tr9080-dct",
-  "started_at": "2026-05-06T01:30:00Z",
-  "topic": "Two Clutches, Zero Excuses: Inside the Tremec TR-9080 That Taught the Corvette to Shift",
-  "writer": "Marcus Thorne"
+  "last_updated": "2026-05-07T01:32:00Z",
+  "next_category": "cars",
+  "phase": "SHIP",
+  "published_date": null,
+  "published_today": false,
+  "slug": "speedmaster-moonwatch-caliber-3861",
+  "started_at": "2026-05-07T01:30:00Z",
+  "topic": "Sixty Years to Earn a Hacking Second: Inside the Omega Caliber 3861",
+  "writer": "Elena Voss"
 }
