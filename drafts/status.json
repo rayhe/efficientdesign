@@ -1,14 +1,13 @@
 {
+  "phase": "IDLE",
+  "slug": "hublot-unico-flyback-chronograph",
+  "topic": "354 Components, Zero Stutter: Inside the Hublot Unico Flyback",
   "article_number": 57,
   "category": "watches",
-  "last_category": "cars",
-  "last_updated": "2026-05-11T03:32:36Z",
+  "last_category": "watches",
   "next_category": "cars",
-  "phase": "SHIP",
-  "published_date": "2026-05-10",
-  "published_today": false,
-  "slug": "hublot-unico-flyback-chronograph",
-  "started_at": "2026-05-11T01:30:00Z",
-  "topic": "354 Components, Zero Stutter: Inside the Hublot Unico Flyback",
-  "writer": "Elena Voss"
+  "writer": "Elena Voss",
+  "published_date": "2026-05-11",
+  "published_today": true,
+  "last_updated": "2026-05-11T03:33:27Z"
 }
