@@ -1,13 +1,13 @@
 {
-  "phase": "IDLE",
-  "slug": "hublot-unico-flyback-chronograph",
-  "topic": "354 Components, Zero Stutter: Inside the Hublot Unico Flyback",
-  "article_number": 57,
-  "category": "watches",
+  "phase": "DRAFT",
+  "slug": "carbon-fiber-wheel-engineering",
+  "topic": "Seventeen Pounds per Corner: Engineering One-Piece Carbon Fiber Wheels",
+  "article_number": 58,
+  "category": "cars",
   "last_category": "watches",
-  "next_category": "cars",
-  "writer": "Elena Voss",
-  "published_date": "2026-05-11",
-  "published_today": true,
-  "last_updated": "2026-05-11T03:33:27Z"
+  "next_category": "watches",
+  "writer": "Marcus Thorne",
+  "published_date": null,
+  "published_today": false,
+  "last_updated": "2026-05-12T01:31:00Z"
 }
