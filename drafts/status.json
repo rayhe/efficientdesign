@@ -1,13 +1,14 @@
 {
+  "article_number": 54,
+  "category": "cars",
+  "last_category": "watches",
+  "last_updated": "2026-05-13T03:30:00Z",
+  "next_category": "watches",
   "phase": "SHIP",
-  "slug": "minute-repeater-acoustic-engineering",
-  "topic": "187 Components, Two Notes: Engineering the Minute Repeater's Voice",
-  "article_number": 59,
-  "category": "watches",
-  "last_category": "cars",
-  "next_category": "cars",
-  "writer": "Elena Voss",
-  "published_date": "2026-05-12",
-  "published_today": false,
-  "last_updated": "2026-05-13T01:45:00Z"
+  "published_date": "2026-05-13",
+  "published_today": true,
+  "slug": "taycan-turbo-gt-manthey-kit",
+  "started_at": "2026-05-13T03:30:00Z",
+  "topic": "Five Thousand Pounds at 6:55: How the Manthey Kit Rewired the Taycan Turbo GT",
+  "writer": "Marcus Thorne"
 }
