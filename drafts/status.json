@@ -1,13 +1,13 @@
 {
-  "phase": "IDLE",
-  "slug": "carbon-fiber-wheel-engineering",
-  "topic": "Seventeen Pounds per Corner: Engineering One-Piece Carbon Fiber Wheels",
-  "article_number": 58,
-  "category": "cars",
+  "phase": "SHIP",
+  "slug": "minute-repeater-acoustic-engineering",
+  "topic": "187 Components, Two Notes: Engineering the Minute Repeater's Voice",
+  "article_number": 59,
+  "category": "watches",
   "last_category": "cars",
-  "next_category": "watches",
-  "writer": "Marcus Thorne",
+  "next_category": "cars",
+  "writer": "Elena Voss",
   "published_date": "2026-05-12",
-  "published_today": true,
-  "last_updated": "2026-05-12T06:12:00Z"
+  "published_today": false,
+  "last_updated": "2026-05-13T01:45:00Z"
 }
