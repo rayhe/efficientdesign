@@ -1,14 +1,13 @@
 {
-  "article_number": 54,
+  "phase": "IDLE",
+  "slug": "gigacasting-single-piece-aluminum",
+  "topic": "171 Parts, One Shot: Inside the Gigacasting Press That Swallowed an Entire Underbody",
+  "article_number": 60,
   "category": "cars",
-  "last_category": "watches",
-  "last_updated": "2026-05-13T03:30:00Z",
+  "last_category": "cars",
   "next_category": "watches",
-  "phase": "SHIP",
-  "published_date": "2026-05-13",
+  "writer": "Marcus Thorne",
+  "published_date": "2026-05-14",
   "published_today": true,
-  "slug": "taycan-turbo-gt-manthey-kit",
-  "started_at": "2026-05-13T03:30:00Z",
-  "topic": "Five Thousand Pounds at 6:55: How the Manthey Kit Rewired the Taycan Turbo GT",
-  "writer": "Marcus Thorne"
+  "last_updated": "2026-05-14T05:37:00Z"
 }
