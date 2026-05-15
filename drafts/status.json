@@ -1,13 +1,14 @@
 {
-  "phase": "IDLE",
-  "slug": "gigacasting-single-piece-aluminum",
-  "topic": "171 Parts, One Shot: Inside the Gigacasting Press That Swallowed an Entire Underbody",
-  "article_number": 60,
-  "category": "cars",
+  "phase": "SHIP",
+  "slug": "rattrapante-split-seconds-chronograph",
+  "topic": "Two Hands, One Axis: Engineering the Rattrapante Split-Seconds Chronograph",
+  "article_number": 61,
+  "category": "watches",
   "last_category": "cars",
-  "next_category": "watches",
+  "next_category": "cars",
   "writer": "Marcus Thorne",
-  "published_date": "2026-05-14",
-  "published_today": true,
-  "last_updated": "2026-05-14T05:40:00Z"
+  "published_date": null,
+  "published_today": false,
+  "last_updated": "2026-05-15T09:40:00Z",
+  "last_run_note": "Shipping article to site."
 }
