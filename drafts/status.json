@@ -1,14 +1,14 @@
 {
-  "phase": "IDLE",
-  "slug": "rattrapante-split-seconds-chronograph",
-  "topic": "Two Hands, One Axis: Engineering the Rattrapante Split-Seconds Chronograph",
-  "article_number": 61,
-  "category": "watches",
+  "phase": "RESEARCH",
+  "slug": "self-healing-composites-frp",
+  "topic": "1,000 Fractures, One Fix: Self-Healing Composites That Outlast the Cars They Build",
+  "article_number": 62,
+  "category": "cars",
   "last_category": "watches",
-  "next_category": "cars",
+  "next_category": "watches",
   "writer": "Marcus Thorne",
-  "published_date": "2026-05-15",
-  "published_today": true,
-  "last_updated": "2026-05-15T09:44:00Z",
-  "last_run_note": "Article #61 published successfully."
+  "published_date": null,
+  "published_today": false,
+  "last_updated": "2026-05-16T05:32:00Z",
+  "last_run_note": "Starting article #62: self-healing FRP composites"
 }
