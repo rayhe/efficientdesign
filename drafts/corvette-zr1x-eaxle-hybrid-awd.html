@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>239 Pounds Forward &mdash; Efficient Design</title>
+  <meta name="description" content="GM bolted a 186 HP electric motor to the front axle of a 1,064 HP mid-engine supercar. Adding 239 pounds ahead of the driver shifted weight distribution from 43/57 to 41/59, forced MagneRide recalibration, changed the car's cornering character, and created a vehicle that reaches 60 mph in 1.68 seconds. Inside the engineering of the Corvette ZR1X eAxle.">
+  <meta property="og:title" content="239 Pounds Forward: Engineering the ZR1X's Hybrid Front Axle">
+  <meta property="og:description" content="A 186 HP eAxle motor on the front of a mid-engine 1,064 HP V8 supercar. How GM upgraded the E-Ray's hybrid system to handle 1,250 combined horsepower, and what 239 extra pounds do to a car balanced around its rear wheels.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://efficientdesign.net/stories/images/hero-corvette-zr1x-eaxle-hybrid-awd.jpg">
+  <meta property="og:url" content="https://efficientdesign.net/stories/corvette-zr1x-eaxle-hybrid-awd.html">
+  <link rel="canonical" href="https://efficientdesign.net/stories/corvette-zr1x-eaxle-hybrid-awd.html">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "239 Pounds Forward: Engineering the ZR1X's Hybrid Front Axle",
+  "description": "GM bolted a 186 HP electric motor to the front axle of a 1,064 HP mid-engine supercar. Adding 239 pounds ahead of the driver shifted weight distribution, forced MagneRide recalibration, and created a vehicle that reaches 60 mph in 1.68 seconds. Inside the engineering of the Corvette ZR1X eAxle.",
+  "author": {
+    "@type": "Person",
+    "name": "Marcus Thorne"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Efficient Design",
+    "url": "https://efficientdesign.net"
+  },
+  "datePublished": "2026-05-17",
+  "dateModified": "2026-05-17",
+  "url": "https://efficientdesign.net/stories/corvette-zr1x-eaxle-hybrid-awd.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://efficientdesign.net/stories/corvette-zr1x-eaxle-hybrid-awd.html"
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": "en-US",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://efficientdesign.net/stories/images/hero-corvette-zr1x-eaxle-hybrid-awd.jpg"
+  },
+  "articleSection": "Cars"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does the Corvette ZR1X eAxle differ from the E-Ray's electric motor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The ZR1X eAxle shares the E-Ray's fundamental architecture, a permanent-magnet AC motor driving the front wheels through a single-speed reduction gear, but GM increased peak torque from the E-Ray's output to 145 ft-lbs and rewrote the control software to manage interactions with the LT7's 1,064 HP rather than the LT2's 495 HP. The motor still produces 186 HP, but its torque mapping, regenerative braking calibration, and integration with the rear powertrain required substantial reprogramming to handle the nearly doubled total system output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does adding 239 pounds to the front make the ZR1X more tail-happy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Adding 239 pounds to the front axle shifted weight distribution from the ZR1's 43/57 front/rear split to 41/59. In a mid-engine car, moving two percentage points of static weight rearward increases the rear tires' vertical load at rest. During hard cornering, the heavier rear end transfers more load to the outside tire, and the front tires carry less static load, generating less initial lateral force. Combined with the increased polar moment of inertia from the heavier nose, the result is a car that is measurably more oversteer-prone at the limit than the lighter, more balanced ZR1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is PTM Pro mode on the 2026 Corvette?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PTM Pro (Performance Traction Management Pro) is a drive mode introduced on the 2026 Corvette that disables both traction control and electronic stability control entirely. Unlike standard PTM modes that intervene with brake or throttle corrections when sensors detect slip, PTM Pro removes all electronic safety nets and gives the driver full, unmediated control over the powertrain. On the ZR1X, this means 1,250 HP with no software limiting wheel spin or correcting yaw, intended exclusively for experienced track drivers."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="../index.html" class="nav-logo">Efficient Design</a>
+      <div class="nav-links">
+        <a href="../about.html">About</a>
+        <button id="themeToggle" aria-label="Toggle theme">&#9789;</button>
+      </div>
+    </nav>
+
+    <article class="story">
+      <div class="story-kicker">Cars &times; Hybrid Engineering</div>
+      <h1>239 Pounds Forward: Engineering the ZR1X's Hybrid Front Axle</h1>
+
+      <div class="story-meta">
+        <span>By Marcus Thorne</span>
+        <time datetime="2026-05-17">May 17, 2026</time>
+      </div>
+
+      <figure class="hero">
+        <img src="../stories/images/hero-corvette-zr1x-eaxle-hybrid-awd.jpg" alt="Close-up photograph of a Corvette ZR1X front wheel and brake assembly showing carbon-ceramic rotor and caliper behind a lightweight forged wheel under warm directional lighting">
+      </figure>
+
+      <div class="pull-stat">
+        <span class="pull-number">41/59</span>
+        <span class="pull-label">Front-to-rear weight distribution of the ZR1X after bolting 239 pounds of electric motor, reduction gear, and battery to the front axle of a mid-engine supercar built around its rear wheels</span>
+      </div>
+
+      <p>Mid-engine cars exist because of weight distribution. Move the heaviest component, the engine, behind the driver and ahead of the rear axle, and you concentrate mass near the car's center of gravity. Polar moment of inertia drops. Turn-in response sharpens. Braking stability improves. Every engineering decision that followed GM's 2020 switch to the C8's mid-engine layout reinforced this principle: short overhangs, a transaxle bolted directly to the engine, structural aluminum framing tuned to keep mass inboard. So when the engineering team proposed bolting a 186 HP electric motor, a single-speed reduction gear, a 1.9 kWh lithium-ion battery pack, and the associated cooling hardware to the front axle, the first question was obvious. Why would you deliberately undo the thing that makes this car work?</p>
+
+      <p>Because 1,064 HP through two rear tires is not enough traction. Not at launch, not exiting slow corners, not in the rain. And because the physics of adding a front motor create opportunities that go beyond simple four-wheel traction, even if they bring compromises the ZR1 never had to manage.</p>
+
+      <h2>From E-Ray to ZR1X: Same Architecture, Different Problem</h2>
+
+      <p>GM introduced the Corvette eAxle in the 2024 E-Ray. That car pairs a naturally aspirated 6.2-liter LT2 V8 producing 495 HP with a front-mounted permanent-magnet AC motor producing 160 HP and approximately 125 ft-lbs of torque. Combined output: 655 HP. We covered the E-Ray's through-the-road hybrid architecture in a previous article, and the fundamental layout carries over to the ZR1X unchanged. No driveshaft connects front to rear. No transfer case splits power mechanically. Two independent powertrains drive their respective axles, and the road surface is the only coupling between them.</p>
+
+      <p>What changed is everything behind that architecture. In the E-Ray, the front motor supplements a moderate V8. Peak combined torque arrives smoothly, the rear tires are rarely overwhelmed, and the software's primary job is managing battery state-of-charge and deciding when to deploy electric assist for maximum effect. In the ZR1X, the rear powertrain is the twin-turbocharged 5.5-liter LT7 flat-plane V8 producing 1,064 HP and 828 lb-ft of torque. Peak boost arrives with characteristic turbo aggression, rear tire loading at launch approaches the limits of 345-section Michelin Pilot Sport Cup 2R rubber, and the front motor's job shifts from supplementing to surviving. It has to add meaningful traction assistance without being overwhelmed by the dynamic forces that 1,064 rear-wheel HP creates.</p>
+
+      <p>GM responded by increasing the eAxle's peak torque to 145 ft-lbs, retaining the 186 HP rating, and completely rewriting the control software. Motor power remains identical because the permanent-magnet motor's thermal and magnetic limits define its peak output. Torque increased because the ZR1X's operating scenarios demand more low-speed pulling force during launches and corner exits, and the motor's duty cycle allows brief torque spikes that the E-Ray's more conservative calibration never needed.</p>
+
+      <h2>What 239 Pounds Does to a Mid-Engine Car</h2>
+
+      <p>Numbers first. A 2026 Corvette ZR1 (rear-wheel drive, no eAxle) weighs approximately 3,889 pounds with a 43/57 front-to-rear weight distribution. Add the eAxle package and the ZR1X reaches 4,128 pounds, a gain of 239 pounds concentrated at the front axle. Weight distribution shifts to 41/59.</p>
+
+      <p>Two percentage points sounds trivial until you run the dynamics. In a mid-engine car, static weight distribution determines the baseline tire loading that the suspension and aerodynamics then modify under acceleration, braking, and cornering. Moving from 43/57 to 41/59 means the front tires carry less static load and the rear tires carry more. Under longitudinal acceleration (launching), this helps: more rear weight means more rear traction, and the front motor provides additional forward force through the front contact patches. Combined, the ZR1X puts power through four contact patches instead of two, and MotorTrend's testing confirmed the result. On a prepped surface with Cup 2R tires, the ZR1X reached 60 mph in 1.68 seconds and completed the quarter mile in 8.675 seconds at 159.5 mph. On an unprepped surface: 2.1 seconds to 60, 9.2 seconds through the quarter.</p>
+
+      <p>Under lateral loading, the story shifts. A mid-engine car's cornering balance depends on the relative grip available at each axle, which is a function of tire vertical load, tire compound, suspension geometry, and the lateral weight transfer at each end. Shifting two points of static weight rearward means the rear tires carry more vertical load at rest and generate more peak lateral grip, but lateral weight transfer at the rear also increases because the heavier end transfers more load to the outside tire during cornering. Meanwhile, the front tires carry less static load and generate less initial lateral force. Result: the car's natural balance shifts toward oversteer. Not violently, not dangerously, but measurably. MotorTrend's figure-eight test recorded 21.9 seconds at 1.08 g average for the ZR1X versus 21.6 seconds at higher sustained g-force for the lighter ZR1.</p>
+
+      <p>Front turn-in response also changes. Adding 239 pounds ahead of the front axle centerline increases the front axle's contribution to the car's total polar moment of inertia. A heavier nose resists yaw initiation, which drivers perceive as a fractionally duller initial steering bite. In back-to-back comparisons, testers noted the ZR1X requires slightly more commitment at corner entry to rotate the nose, a trait absent in the rear-drive ZR1 with its lighter front end.</p>
+
+      <h2>MagneRide: Reprogramming for a New Center of Gravity</h2>
+
+      <p>GM's MagneRide (Magnetic Selective Ride Control) system uses magnetorheological fluid dampers that change their resistance in milliseconds based on electrical current applied to internal coils. Increase the current, magnetic particles in the fluid align into chain-like structures that resist piston movement, and the damper stiffens. Reduce current and the fluid flows freely. Response time is approximately five milliseconds, fast enough to react to individual road imperfections.</p>
+
+      <p>On the ZR1, MagneRide was calibrated for a 43/57 weight distribution and a specific set of spring rates, anti-roll bar stiffnesses, and tire characteristics. Bolt 239 pounds to the front and every calibration table changes. Front damper compression rates need adjustment because the heavier front end compresses more under braking and over bumps. Rear rebound rates need adjustment because the lighter-loaded front returns to ride height at a different rate, affecting pitch control. Roll damping at both ends needs recalibration because the car's roll inertia and roll axis geometry have shifted with the new mass distribution.</p>
+
+      <p>GM's engineers also had to account for the eAxle's dynamic contribution to pitch behavior. During hard acceleration, when the rear squats and the front lifts, the front motor is simultaneously pushing the car forward through the front wheels. Conventional anti-squat geometry assumes no drive force at the front axle of a rear-drive car, but the ZR1X applies drive torque at both ends during launch. Front anti-lift characteristics change because the front driveshafts (from the eAxle's reduction gear to the front hubs) create a reaction torque that partially counteracts the front end's tendency to rise under acceleration. MagneRide calibrations had to account for this additional force path, adjusting front damper extension rates during high-torque launches to manage a pitch behavior that no previous Corvette generated.</p>
+
+      <h2>Torque Distribution: Software as the Driveline</h2>
+
+      <p>With no mechanical connection between front and rear powertrains, all torque distribution in the ZR1X happens through software. Every 10 milliseconds, the powertrain control module reads wheel speed sensors at all four corners, steering angle, yaw rate, lateral acceleration, longitudinal acceleration, throttle position, brake pressure, and battery state-of-charge. From these inputs, it calculates the optimal torque split between the LT7 and the front eAxle motor.</p>
+
+      <p>At launch, the algorithm sends maximum available torque to both axles simultaneously. Front tires loaded with approximately 41 percent of the car's weight provide traction proportional to that load, and rear tires loaded with 59 percent provide proportionally more. As speed builds, front motor contribution diminishes because aerodynamic downforce increasingly loads the rear and because the eAxle motor's torque curve naturally falls off at higher RPM. Above approximately 160 mph, the front motor's contribution becomes negligible and the car is effectively rear-wheel drive, relying on the LT7's 1,064 HP alone for its 233 mph top speed.</p>
+
+      <p>During cornering, the software performs a more nuanced calculation. If the yaw rate sensor detects the rear rotating faster than the steering angle and speed would predict (oversteer), the front motor can apply positive torque to pull the nose forward and resist the yaw moment. This effectively lengthens the car's virtual wheelbase: a longer wheelbase resists yaw rotation because the front and rear tires are farther apart and create a larger stabilizing moment arm. By adding a forward force at the front contact patches, the eAxle simulates this effect without physically extending the car. Engineers describe it as pulling the car out of corners rather than pushing from behind, and it provides a stability margin that rear-drive-only ZR1s lack.</p>
+
+      <p>Conversely, if the car is understeering (front pushing wide), the front motor can reduce torque or apply mild regenerative braking to shift load forward and increase front tire grip. This bidirectional capability gives the software more tools than a conventional mechanical AWD system, which can only distribute positive drive torque through differentials and clutch packs.</p>
+
+      <h2>Three Driving Modes, Three Calibration Philosophies</h2>
+
+      <p>Chevrolet programmed the ZR1X with three hybrid-specific driving modes: Endurance, Qualifying, and Push-to-Pass. Each represents a different philosophy for managing the battery's limited 1.9 kWh capacity and the front motor's thermal budget.</p>
+
+      <p>Endurance mode prioritizes battery longevity and thermal management over peak performance. Regenerative braking is aggressive, front motor deployment is conservative, and the software hoards battery charge for moments of genuine need: wet corners, traction breaks, emergency stability corrections. For track days where a driver needs consistent behavior over 20 or 30 laps, Endurance keeps the front motor available throughout the session rather than depleting the battery in three hard laps.</p>
+
+      <p>Qualifying mode inverts those priorities. Maximum front motor torque is available at every corner exit and every straight. Regenerative braking is calibrated to replenish charge as quickly as possible during deceleration zones so the battery arrives at each acceleration point near full. This mode extracts the fastest single-lap or short-stint performance but generates more heat and cycles the battery harder, limiting sustainable session length.</p>
+
+      <p>Push-to-Pass borrows a concept from Formula E and hybrid endurance racing. In normal driving, the front motor operates at reduced output, conserving charge. A steering-wheel-mounted button temporarily unlocks full eAxle power for a brief burst, adding the full 186 HP and 145 ft-lbs to whatever the LT7 is already delivering. After the burst window expires (a few seconds, duration dependent on battery state), the system returns to conservation mode and begins regenerating. For straight-line overtakes or single high-commitment corners, Push-to-Pass delivers peak hybrid power exactly when the driver chooses, without requiring the sustained battery drain of Qualifying mode.</p>
+
+      <h2>PTM Pro: No Net, No Intervention</h2>
+
+      <p>All 2026 Corvettes gained a new Performance Traction Management level called PTM Pro. On the ZR1X, this mode disables traction control, stability control, and all electronic torque-limiting interventions simultaneously. Previous PTM modes retained some level of yaw correction or torque reduction at high slip angles, catching the car before a full spin. PTM Pro removes those interventions entirely.</p>
+
+      <p>For a 1,250 HP hybrid with independently driven axles, PTM Pro is an engineering statement as much as a feature. It means GM's engineers trusted the car's mechanical balance, tire grip, and aerodynamic package enough to let experienced drivers operate without electronic supervision. It also means the car can rotate freely at the rear, which professional drivers use for trail-braking rotation and controlled oversteer through complex corners. In MotorTrend's testing, PTM Pro was necessary to achieve the car's fastest figure-eight times, because the driver needed freedom to let the tail slide on entry and catch it with throttle and front motor torque on exit.</p>
+
+      <h2>Carbon-Ceramic Brakes: Stopping 4,128 Pounds</h2>
+
+      <p>Adding 239 pounds and 186 HP demands braking capacity beyond what iron rotors can sustainably provide at track speeds. GM specified the J59 brake package on the ZR1X: carbon-ceramic rotors supplied by Alcon, measuring 16.5 inches at the front and 15.7 inches at the rear, with six-piston front calipers and four-piston rears.</p>
+
+      <p>Carbon-ceramic rotors are manufactured by infiltrating a carbon fiber preform with silicon carbide at temperatures exceeding 1,400 degrees Celsius. The resulting material has roughly one-third the density of cast iron (approximately 2.5 g/cm3 versus 7.2 g/cm3), which reduces unsprung mass at each corner by several pounds. More importantly for the ZR1X, carbon-ceramic rotors maintain consistent friction coefficients at sustained high temperatures where iron rotors begin to fade. At track-speed repeated stops, a 4,128-pound car generating over 1,200 pounds of downforce creates enormous thermal loads in the brake system, and the carbon-ceramic material can absorb and dissipate that energy without the progressive loss of stopping power that defines iron rotor fade.</p>
+
+      <p>MotorTrend measured 60-to-0 braking at 98 feet for the ZR1X, one foot shorter than the rear-drive ZR1's 99 feet despite the additional 239 pounds. Partial credit goes to the eAxle's regenerative braking, which supplements friction braking by converting kinetic energy to electrical energy through the front motor. During hard deceleration, the front motor operates as a generator, applying resistive torque to the front wheels while simultaneously recharging the battery. This additional retarding force at the front axle reduces the thermal load on the front friction brakes and provides braking force that scales with speed rather than pedal pressure.</p>
+
+      <h2>Aerodynamic Interaction: 1,200 Pounds of Downforce Meets New Weight</h2>
+
+      <p>With the ZTK/Carbo Aero package, the ZR1X generates approximately 1,200 pounds of downforce at maximum speed. Downforce acts as additional vertical load on the tires, increasing grip proportionally, but its distribution between front and rear axles depends on the aerodynamic balance. On a car with 41/59 static weight distribution, aerodynamic balance becomes critical. Too much rear downforce and the car understeers progressively at high speed. Too much front downforce and the rear becomes light relative to the front, encouraging high-speed oversteer.</p>
+
+      <p>GM had to retune the aero balance to complement the ZR1X's altered static weight distribution. At low speeds, where aerodynamic forces are negligible, the 41/59 split dominates and the car's natural balance is slightly rear-biased. As speed increases and downforce builds, the aero balance increasingly overrides static weight distribution in determining tire loading. If the aero package adds proportionally more load to the front than the rear, it can partially correct the rearward static bias and bring the car closer to neutral at high speeds.</p>
+
+      <p>Chevrolet has not published exact front-to-rear downforce split figures for the ZR1X, but the presence of a large front splitter, dive planes, and underbody venturi channels suggests the aero engineers targeted a balance that compensates for the rearward static distribution, particularly in the 100-to-180 mph range where cornering speeds generate the highest combined lateral and aerodynamic loads.</p>
+
+      <h2>What Gets Traded Away</h2>
+
+      <p>Engineering is tradeoffs, and the ZR1X makes several that the rear-drive ZR1 avoids. Peak cornering grip on the figure-eight test was lower despite more available power. Initial turn-in response is marginally duller because of the heavier nose. Steering feedback through the first few degrees of input carries slightly less information about front tire loading because the eAxle's mass and the occasional application of front drive torque introduce variables that the steering system cannot fully filter out.</p>
+
+      <p>Weight itself is the most obvious cost. At 4,128 pounds, the ZR1X is 239 pounds heavier than the ZR1, and every pound requires energy to accelerate laterally (cornering), longitudinally (braking and accelerating), and vertically (over bumps and curbs). Unsprung mass at the front also increased, since the eAxle's output shafts and associated hardware ride with the suspension rather than the chassis, and higher unsprung mass reduces the suspension's ability to maintain tire contact over surface irregularities.</p>
+
+      <p>Battery packaging adds another constraint. Positioning a 1.9 kWh lithium-ion pack and its cooling system in a car already dense with structural members, fuel lines, and HVAC ducting required routing compromises that affect serviceability and add plumbing complexity. And unlike a plug-in hybrid, the ZR1X's battery is never externally charged. Its entire energy budget comes from regenerative braking and controlled generator operation of the front motor, meaning sustained front-motor deployment depends entirely on how much energy the driving style and circuit layout allow the system to recapture.</p>
+
+      <h2>E-Ray, ZR1X, and the Architecture That Scales</h2>
+
+      <p>Viewed in isolation, the ZR1X is a 1,250 HP hypercar that reaches 60 mph in 1.68 seconds, runs the quarter mile in 8.68 seconds, stops from 60 in 98 feet, and generates 1,200 pounds of downforce. Viewed as an engineering exercise, it is a proof of concept for a modular hybrid architecture that scales across an entire lineup. The same eAxle that adds all-wheel-drive traction to a 495 HP grand tourer also adds launch grip to a 1,064 HP track weapon, with the primary differences being software calibration and a modest torque increase at the motor level.</p>
+
+      <p>GM did not design a bespoke hybrid system for each Corvette variant. Instead, they designed an eAxle architecture flexible enough to serve as a common front-end module, then wrote software calibrations specific to each application. For the E-Ray, conservative torque mapping and gentle regeneration. For the ZR1X, aggressive torque delivery, rapid regeneration, and race-derived driving modes. Mechanical hardware is nearly identical. Software transforms the character.</p>
+
+      <p>Chevrolet has already confirmed this approach extends to the 2027 Grand Sport X, which pairs the eAxle with a naturally aspirated 5.5-liter V8 for a different performance profile than either the E-Ray or ZR1X. Same motor, same battery, same reduction gear, different software, different vehicle.</p>
+
+      <p>At $209,700 base price, the ZR1X undercuts every European hypercar with comparable acceleration by a factor of three or more. Whether the engineering tradeoffs, the duller turn-in, the tail-happy cornering balance, the heavier curb weight, are acceptable depends on what the driver prioritizes. For straight-line performance, the math is simple: four driven wheels with 1,250 HP beat two driven wheels with 1,064 HP every time. For circuit work, the answer depends on the circuit, the driver, and whether the battery's limited energy window aligns with the lap count. What is not debatable is that a 186 HP front motor and 239 pounds changed the car's fundamental character, and that every change required engineering decisions that rippled through the dampers, the software, the brakes, the aero package, and the way the car communicates with its driver through the steering column.</p>
+
+      <p>Two hundred thirty-nine pounds, bolted to the wrong end of a mid-engine car. Made to work by recalibrating everything the extra weight touched, which turned out to be everything.</p>
+
+      <div class="ref-section">
+        <h2>Sources</h2>
+        <ol>
+          <li>General Motors, &ldquo;Introducing the 2026 Corvette ZR1X: A True American Hypercar,&rdquo; news.gm.com. Official announcement: 1,250 combined HP, 186 HP front eAxle motor, 145 ft-lbs front torque, sub-2-second 0-60 claim, 233 mph top speed, three driving modes.</li>
+          <li>MotorTrend, &ldquo;2026 Chevrolet Corvette ZR1X First Test: Quicker Than a Ferrari, Cheaper Than You Think,&rdquo; motortrend.com. Tested: 2.1 s 0-60 (unprepped), 9.2 s quarter mile, 21.9 s figure-eight at 1.08 g, 98 ft 60-0, 4,128 lbs curb weight, 41/59 weight distribution.</li>
+          <li>MotorTrend, &ldquo;Breaking Down the Corvette ZR1X&rsquo;s Test Numbers,&rdquo; motortrend.com. Prepped surface: 1.68 s 0-60, 8.675 s quarter mile at 159.5 mph. Comparison to Lucid Air Sapphire, Porsche Taycan Turbo GT, Lamborghini Temerario.</li>
+          <li>CorvetteForum, &ldquo;C8 Corvette ZR1X eAxle Represents a No-Compromise Upgrade on E-Ray,&rdquo; corvetteforum.com. eAxle torque increase to 145 ft-lbs, software rewrite for front/rear torque balancing.</li>
+          <li>Hagerty Media, &ldquo;X Marks the Zora: 1250-HP, AWD ZR1X Redefines Apex Corvette,&rdquo; hagerty.com. Historical context, Zora Arkus-Duntov legacy, ZTK package aerodynamic enhancements.</li>
+          <li>GM Authority, &ldquo;2026 Corvette Introduces New PTM Pro Drive Mode,&rdquo; gmauthority.com. PTM Pro disables traction control and stability control across all 2026 Corvette variants.</li>
+          <li>AutoEvolution, &ldquo;Chevrolet Unveils 2026 Corvette ZR1X: 1,250 HP, All-Wheel Drive,&rdquo; autoevolution.com. Three driving modes (Endurance, Qualifying, Push-to-Pass), front motor active to 160 mph, standard and ZTK chassis configurations.</li>
+          <li>Chevrolet, &ldquo;Corvette E-Ray: Electrified Performance,&rdquo; chevrolet.com. Baseline E-Ray specifications: 655 HP combined, 1.9 kWh battery, regenerative braking and Stealth mode operation.</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
