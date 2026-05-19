@@ -1,5 +1,5 @@
 {
-  "phase": "SHIP",
+  "phase": "IDLE",
   "slug": "michelin-cup-2r-compound-engineering",
   "topic": "Michelin Pilot Sport Cup 2 R tire compound engineering: bi-compound and tri-compound technology, skim coatings, Le Mans racing compounds, OEM co-development, and why four postcards of rubber are the ultimate bottleneck of every hypercar",
   "article_number": 66,
@@ -14,6 +14,6 @@
   "em_dash_count": 1,
   "the_sentence_pct": 0.0,
   "hero_image_ready": true,
-  "last_updated": "2026-05-19T11:36:00Z",
-  "last_run_note": "Article #66 shipping — critique 9.00/10, all hard gates passed"
+  "last_updated": "2026-05-19T11:38:00Z",
+  "last_run_note": "Article #66 complete — deployed to efficientdesign.net. Next category: watches"
 }
