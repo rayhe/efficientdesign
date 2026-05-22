@@ -1,19 +1,19 @@
 {
-  "phase": "SHIP_READY",
+  "phase": "COMPLETE",
   "slug": "bugatti-tourbillon-v16-horological-engineering",
-  "topic": "Bugatti Tourbillon: where a Cosworth 8.3L V16 revving to 9,000 RPM shares a chassis with a 650-component Swiss mechanical instrument cluster built by Concepto to watchmaking tolerances. Breguet's 1801 tourbillon invention, FAULHABER stepper motors, Divergent 3D-printed suspension, 1,800 hp hybrid system, and the engineering philosophy of mechanical permanence over digital obsolescence.",
+  "topic": "Bugatti Tourbillon: where a Cosworth 8.3L V16 revving to 9,000 RPM shares a chassis with a 650-component Swiss mechanical instrument cluster built by Concepto to watchmaking tolerances.",
   "article_number": 70,
   "category": "crossover",
-  "last_category": "cars",
+  "last_category": "crossover",
   "next_category": "watches",
   "writer": "Marcus Thorne",
-  "published_date": "2026-05-21",
-  "published_today": false,
+  "published_date": "2026-05-22",
+  "published_today": true,
   "critique_score": 9.07,
   "critique_passed": true,
   "em_dash_count": 0,
   "the_sentence_pct": 1.5,
   "hero_image_ready": true,
   "last_updated": "2026-05-22T13:30:00Z",
-  "last_run_note": "Rebase conflict resolved. Breguet Experimentale merged as bonus article. Article #70 (Bugatti Tourbillon V16) SHIP_READY for May 22."
+  "last_run_note": "Article #70 (Bugatti Tourbillon V16) published May 22. Breguet Experimentale also merged. Quality gates: 0 em dashes, 0% The-starters, 0 slop. Critique score 9.07/10."
 }
