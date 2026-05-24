@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>No Camshaft Required &mdash; Efficient Design</title>
+  <meta name="description" content="Koenigsegg's Freevalve system replaces camshafts with electro-hydraulic-pneumatic actuators, giving each valve independent control over timing, lift, and duration. Inside the TFG inline-3 that makes 600 horsepower from 2.0 liters and 70 kilograms.">
+  <meta property="og:title" content="No Camshaft Required: How Koenigsegg's Freevalve Actuators Replaced a Century of Rotating Lobes">
+  <meta property="og:description" content="Electro-hydraulic-pneumatic actuators, a 2.0-liter inline-3 making 600 hp at 70 kg, switchable combustion cycles, and the F1 pneumatic valve springs that started it all. Inside Freevalve.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://efficientdesign.net/stories/images/hero-koenigsegg-freevalve-camless-engine.jpg">
+  <meta property="og:url" content="https://efficientdesign.net/stories/koenigsegg-freevalve-camless-engine.html">
+  <link rel="canonical" href="https://efficientdesign.net/stories/koenigsegg-freevalve-camless-engine.html">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "No Camshaft Required: How Koenigsegg's Freevalve Actuators Replaced a Century of Rotating Lobes",
+  "description": "Koenigsegg's Freevalve system replaces camshafts with electro-hydraulic-pneumatic actuators, giving each valve independent control over timing, lift, and duration. Inside the TFG inline-3 that makes 600 horsepower from 2.0 liters and 70 kilograms.",
+  "author": {
+    "@type": "Person",
+    "name": "Marcus Thorne"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Efficient Design",
+    "url": "https://efficientdesign.net"
+  },
+  "datePublished": "2026-05-24",
+  "dateModified": "2026-05-24",
+  "url": "https://efficientdesign.net/stories/koenigsegg-freevalve-camless-engine.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://efficientdesign.net/stories/koenigsegg-freevalve-camless-engine.html"
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": "en-US",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://efficientdesign.net/stories/images/hero-koenigsegg-freevalve-camless-engine.jpg"
+  },
+  "articleSection": "Cars"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does Koenigsegg's Freevalve system work without camshafts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each valve sits beneath an electro-hydraulic-pneumatic actuator (EHPA) that combines a solenoid, hydraulic fluid, and compressed air in a single housing roughly the size of an ignition coil. A solenoid triggers a hydraulic pilot valve, which redirects pressurized air and oil to push the engine valve open or snap it shut. Position sensors on each actuator feed data back to the ECU hundreds of times per second. Because no cam lobe dictates the valve profile, the ECU can independently set the timing, lift height, and open duration for every valve on every combustion cycle."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../" class="back">&larr; Efficient Design</a>
+    </header>
+
+    <article class="story">
+      <div class="story-kicker">Cars &times; Powertrain Engineering</div>
+      <h1>No Camshaft Required: How Koenigsegg's Freevalve Actuators Replaced a Century of Rotating Lobes</h1>
+      <div class="byline">Marcus Thorne</div>
+      <div class="dateline">May 24, 2026</div>
+
+      <img class="story-hero" src="images/hero-koenigsegg-freevalve-camless-engine.jpg" alt="Macro photograph of electro-hydraulic-pneumatic valve actuators mounted on a camless engine cylinder head, warm directional lighting revealing solenoid housings and pneumatic lines">
+
+      <div class="pull-stat">600 hp / 70 kg</div>
+      <div class="pull-label">Power and dry weight of Koenigsegg's TFG inline-3. A specific output of 300 horsepower per liter from a package lighter than the average adult, enabled by camless valve actuation that eliminates the camshaft, timing chain, throttle body, and wastegate.</div>
+
+      <p>A camshaft is a solved problem. One rotating shaft, lobes ground to a precise profile, a timing chain or belt to synchronize it with the crankshaft. Every four-stroke internal combustion engine built for the last century has relied on this basic architecture. It works. It is cheap to manufacture, well understood, and proven across billions of production hours.</p>
+
+      <p>It is also a compromise. A cam lobe is a fixed shape. Once cast and ground, it dictates a single valve opening profile for every operating condition the engine will ever encounter. Variable valve timing systems like Honda's VTEC or BMW's VANOS adjust the phasing of the camshaft relative to the crankshaft, shifting when valves open but not fundamentally changing how far or how long. Variable valve lift systems go further, switching between two or three discrete cam profiles. None of them approach what happens when you remove the camshaft entirely.</p>
+
+      <p>Koenigsegg's Freevalve does exactly that. The system replaces camshafts with electro-hydraulic-pneumatic actuators (EHPAs) mounted above each valve. No cam lobes, no timing chain, no belt tensioner. Each valve opens and closes on command from the engine control unit, independently of every other valve in the cylinder head. Timing, lift, and duration become software parameters adjustable on every combustion cycle.</p>
+
+      <p>When this technology found its way into the Tiny Friendly Giant (TFG) inline-3, the result was 600 horsepower from 2.0 liters and a dry weight of 70 kilograms. For context, Toyota's GR Yaris engine produces 268 horsepower from 1.6 liters and weighs roughly twice as much.</p>
+
+      <h2>Inside the Actuator</h2>
+
+      <p>Each EHPA unit combines three force systems in a housing roughly the size of an ignition coil pack. At the top sits a solenoid. Energizing this solenoid triggers a hydraulic pilot valve, which redirects pressurized oil and compressed air to drive the engine valve downward into the combustion chamber. Release the solenoid, and a pneumatic spring snaps the valve shut.</p>
+
+      <p>Position sensors embedded in each actuator report valve location to the ECU hundreds of times per second. Closed-loop control means the system knows exactly where every valve is at every moment, correcting for thermal expansion, wear, and pressure fluctuations in real time. A conventional camshaft operates open-loop: the lobe pushes the valve, and the valve spring pulls it back, with no feedback mechanism confirming the valve actually reached its intended position.</p>
+
+      <p>Freevalve's pneumatic closing system traces its lineage to Formula 1. In 1986, Renault introduced pneumatic valve springs on its EF-series turbocharged 1.5-liter V6, replacing the metal coil springs that limited how fast valves could close at high RPM. Compressed nitrogen bellows could retract valves faster than any wire spring, eliminating the valve float that destroyed engines above certain speeds. Renault's system powered the Lotus 98T driven by Ayrton Senna to two Grand Prix victories that season, with the engine reportedly producing peak power around 1,200 horsepower. By the early 1990s, every competitive F1 team had adopted pneumatic valve springs. They remain mandatory in the series today.</p>
+
+      <p>Freevalve takes the pneumatic concept further. Rather than using compressed gas merely as a return spring while a mechanical cam still controls opening, the EHPA uses pneumatic and hydraulic forces for both opening and closing. Compressed air provides the rapid response. Hydraulic fluid provides the force multiplication and damping needed to seat the valve precisely without bounce. Electrical solenoids provide the trigger signal. It is three systems collaborating in a volume small enough to bolt directly to a cylinder head.</p>
+
+      <h2>What Eliminating the Cam Actually Changes</h2>
+
+      <p>Removing the camshaft produces a cascade of structural and functional consequences beyond variable valve timing.</p>
+
+      <p>First, there is no throttle body. In a conventional engine, a butterfly valve in the intake tract restricts airflow to control engine output. With Freevalve, each intake valve serves as its own throttle. Want less air in one cylinder? Hold the intake valve open for fewer degrees of crank rotation, or reduce its lift height. Want to shut down a cylinder entirely? Keep all its valves closed. Cylinder deactivation becomes a software command rather than a mechanical system with its own hardware, oil circuits, and failure modes.</p>
+
+      <p>Second, exhaust gas recirculation (EGR) becomes unnecessary as a separate plumbing system. Conventional EGR routes exhaust gas back into the intake manifold through external piping and a control valve, reducing combustion temperatures and NOx formation. Freevalve achieves the same result by simply leaving the exhaust valve open briefly during the intake stroke, trapping a controlled volume of residual exhaust gas in the cylinder. Internal EGR, executed in software.</p>
+
+      <p>Third, the engine gets physically smaller. Camshafts sit in the cylinder head, supported by bearing caps and driven by chains or belts routed from the crankshaft. Eliminating them shortens the cylinder head height by roughly 50 millimeters and the engine length by approximately 70 millimeters, according to Freevalve's published specifications. Oil galleries that supplied the camshaft bearings and variable valve timing actuators vanish from the head casting. Fewer oil passages mean simpler gaskets and reduced oil capacity requirements.</p>
+
+      <p>Fourth, wastegates and variable turbine geometry become optional. In a turbocharged engine, boost pressure is conventionally controlled at the turbocharger itself, either by bleeding exhaust gas around the turbine (wastegate) or by adjusting the turbine inlet vanes (VTG). With Freevalve, the exhaust valve duration and timing control how much energy reaches the turbine. Boost management moves upstream to the valves.</p>
+
+      <h2>Tiny Friendly Giant: 300 Horsepower Per Liter</h2>
+
+      <p>Koenigsegg's TFG engine puts the theory into practice. It displaces 1,988 cubic centimeters across three cylinders with a bore of 95 millimeters and a stroke of 93.5 millimeters. Both the cylinder block and head are cast in magnesium alloy, contributing to the 70-kilogram dry weight. For a frame of reference, a modern cast-iron four-cylinder block alone weighs more than the entire TFG assembly.</p>
+
+      <p>Twelve valve actuators control the four valves per cylinder: two intake, two exhaust. Two turbochargers provide forced induction, each connected to one exhaust valve per cylinder. At low engine speeds, Freevalve keeps one set of exhaust valves closed, directing all exhaust gas to a single turbocharger for faster spool-up. As RPM and load increase, the second set of exhaust valves opens, bringing the second turbocharger online. Sequential turbo operation, controlled entirely through valve actuation rather than external plumbing and bypass valves.</p>
+
+      <p>Peak output reaches 600 horsepower at 7,500 RPM and 443 pound-feet of torque at just 2,000 RPM. Boost pressure runs close to 29 psi. Compression ratio sits at 9.5:1, modest for a modern engine but dictated by the extreme boost levels and the need to accommodate multiple fuel types. Redline is 8,500 RPM.</p>
+
+      <p>Fuel flexibility is a notable specification. Because Freevalve can adjust valve timing and effective compression ratio on the fly, the TFG runs on gasoline, E85, E100, and methanol without hardware changes. On second-generation ethanol, Christian von Koenigsegg has stated that the engine's carbon footprint approaches or equals that of an electric vehicle running on renewable electricity. That claim depends heavily on ethanol production methods, but the mechanical capability to burn multiple fuel chemistries from a single engine configuration is real.</p>
+
+      <h2>Combustion Cycle Switching</h2>
+
+      <p>Perhaps the most unusual capability of the Freevalve system is the ability to switch between combustion cycles while the engine is running. A conventional engine runs the Otto cycle: intake, compression, power, exhaust, each occupying one stroke of the piston. Four strokes per power event.</p>
+
+      <p>With independent valve control, the TFG can also run Miller and Atkinson cycles by holding the intake valve open during the early part of the compression stroke, effectively reducing the compression ratio while maintaining the expansion ratio. Miller cycle operation improves thermal efficiency at partial loads. Atkinson cycle operation extends the expansion stroke relative to the compression stroke, extracting more energy from each combustion event at the cost of peak volumetric efficiency.</p>
+
+      <p>Switching happens in real time. At highway cruise, the ECU might run a Miller cycle on two cylinders while deactivating the third entirely. Under hard acceleration, all three cylinders switch to a full Otto cycle with maximum valve lift. No mechanical hardware changes. No mode switches on the dashboard. Software reads the load demand and adjusts the valve events accordingly.</p>
+
+      <p>Christian von Koenigsegg has also described running the TFG in a two-stroke cycle, firing each cylinder on every crankshaft revolution instead of every other revolution. In two-stroke mode, a three-cylinder engine fires as frequently as a six-cylinder running a conventional four-stroke cycle. Von Koenigsegg noted in a 2024 Goodwood interview that two-stroke operation makes the TFG "sound and feel like a straight-six" and eliminates the balance vibrations inherent in an odd-cylinder configuration.</p>
+
+      <p>Two-stroke operation comes with trade-offs. Because each valve operates twice as frequently at a given RPM, the practical redline drops to approximately 4,500 RPM. At that speed, the valvetrain is cycling at the equivalent of 9,000 RPM in four-stroke mode. Volumetric efficiency drops to roughly 80% because some exhaust gas must remain in the cylinder to avoid pushing unburned fuel out the exhaust. Von Koenigsegg estimated the effective displacement in two-stroke mode as equivalent to a 3.6-liter engine rather than a theoretical 4.0 liters, but with improved combustion efficiency and built-in internal EGR.</p>
+
+      <h2>Gemera, the V8 Pivot, and Shelf Life</h2>
+
+      <p>Koenigsegg designed the TFG specifically for the Gemera, a four-seat hybrid hypercar revealed in March 2020 at the Geneva Motor Show. Paired with three electric motors producing 800 combined horsepower, the Gemera's TFG powertrain targeted 1,700 total horsepower and 0-62 mph in 1.9 seconds.</p>
+
+      <p>In July 2024, Koenigsegg announced that the Gemera would become V8-only. Customer orders had overwhelmingly favored the twin-turbocharged 5.0-liter V8 option, which combined with the electric motors produced 2,300 horsepower. At roughly $1.7 million per car, Gemera buyers wanted the biggest number on the specification sheet. Few were willing to pay hypercar prices for a three-cylinder, regardless of its engineering sophistication.</p>
+
+      <p>Von Koenigsegg has been clear that the TFG and Freevalve are not dead. Prototypes continue running in the Koenigsegg test facility in &Auml;ngelholm, Sweden. In a July 2025 interview with CarBuzz, he outlined several paths forward. For truck engines, Freevalve could save approximately 5% fuel consumption during highway cruising, eliminate a gear from the transmission, and reduce cylinder head weight by over 65 pounds. For range extenders in hybrid vehicles, the compact dimensions and multi-fuel capability position the TFG well. For VTOL aircraft and marine applications, the power-to-weight ratio of 8.6 horsepower per kilogram is competitive with purpose-built aviation engines.</p>
+
+      <p>Von Koenigsegg also acknowledged the cost reality. On a three-cylinder engine, twelve actuators are manageable. On a V8 with 32 valves, the actuator count and associated complexity become significant. For Koenigsegg's own V8, the traditional valvetrain delivers sufficient power and meets emissions requirements without the added expense.</p>
+
+      <h2>Qoros and the Mass-Market Attempt</h2>
+
+      <p>Before the Gemera, Freevalve had one other public appearance in an automobile. In 2016, Chinese automaker Qoros debuted the Qamfree concept at the Beijing Auto Show. It used a 1.6-liter turbocharged four-cylinder equipped with Freevalve actuators, producing 230 horsepower and 236 pound-feet of torque from a base engine that made 156 horsepower in stock form. A 47% increase in power, a 14% improvement in fuel efficiency, and a 44-pound weight reduction from eliminating the camshaft assembly.</p>
+
+      <p>Qoros never brought the Qamfree to production. The reasons were likely a combination of manufacturing cost, supplier complexity, and the deteriorating financial health of Qoros itself. But the Qoros test validated that Freevalve was not limited to exotic applications. A mass-market four-cylinder engine could be retrofitted with the actuator system and show substantial gains across every measurable parameter.</p>
+
+      <h2>115 Patents and Counting</h2>
+
+      <p>Freevalve AB, owned by the Koenigsegg Group since 2012, has accumulated over 115 granted patents globally. New filings continued through 2024, including patents related to actuator damping, two-stroke cycle control, and vibration balancing for uneven-cylinder-count engines. A 2022 SAE International technical paper documented a Freevalve-equipped engine achieving 20% lower fuel consumption and 60% fewer cold-start emissions compared to a variable-camshaft baseline. A 2023 SAE paper examined the lifecycle greenhouse gas impact of a Freevalve hybrid running on e-fuel, claiming 55% lower global warming potential than an equivalent battery-electric vehicle over approximately 96,000 miles.</p>
+
+      <p>Development has not stopped. Production has simply not started. After 24 years of refinement, Freevalve remains a technology without a production home. No automaker has committed to volume manufacturing of a camless engine. The actuators are more complex and expensive than a cam lobe and a spring. Software calibration for independent valve control across all operating conditions is vastly more involved than tuning a fixed cam profile. Failure modes are different: a broken cam spring is a mechanical event with understood consequences, while a stuck actuator requires electronic diagnostics and potentially cylinder-specific fail-safe strategies.</p>
+
+      <p>And yet the engineering case remains strong. Every variable valve timing system on sale today is a partial, mechanical approximation of what Freevalve does completely in software. Honda's VTEC switches between two cam profiles. BMW's Valvetronic varies lift height continuously but still uses a camshaft. Toyota's Atkinson-cycle hybrids achieve their efficiency by accepting a fixed trade-off between compression and expansion ratios. Freevalve makes all of these strategies available simultaneously, on demand, per cylinder, per cycle. It is the logical endpoint of a design trajectory that has been incrementally approaching camless operation for four decades.</p>
+
+      <p>Whether it reaches a production line depends on whether any manufacturer decides the benefits justify the cost, the risk, and the break from a century of proven rotating-lobe engineering. Koenigsegg built the proof. Someone still has to build the factory.</p>
+
+      <div class="ref-section">
+        <h2>Sources</h2>
+        <ol>
+          <li>Wikipedia, "Koenigsegg TFG," citing Jalopnik, Autoweek, and Koenigsegg official materials.</li>
+          <li>CarBuzz, "What Happened To Koenigsegg's Freevalve Technology?," Ryan De Villiers and Roger Biermann, August 2024.</li>
+          <li>CarBuzz, "Christian von Koenigsegg Opens Up On The Future Of The TFG 3-Cylinder Engine," from Goodwood Festival of Speed 2024.</li>
+          <li>CarBuzz, "Koenigsegg Freevalve Update: Christian Says Freevalve Is Here To Stay, But So Is The V8," M&aacute;t&eacute; Petr&aacute;ny, July 2025.</li>
+          <li>Wikipedia, "Pneumatic valve springs," citing Renault EF-Type F1 engine and Lotus 98T history.</li>
+          <li>SAE International, "Freevalve: Control and Optimization of Fully Variable Valvetrain-Enabled Combustion Strategies," Paper 2022-01-1066.</li>
+          <li>Motor Authority, "How Koenigsegg's 3-cylinder engine makes 600 horsepower."</li>
+          <li>Carscoops, "Koenigsegg Pulls 3-Cylinder Engine Option From Gemera," July 2024.</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
