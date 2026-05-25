@@ -14,6 +14,6 @@
   "em_dash_count": 0,
   "the_sentence_pct": 10.9,
   "hero_image_ready": true,
-  "last_updated": "2026-05-25T09:35:00Z",
-  "last_run_note": "Run at 02:30 PDT May 25: Article #73 (Zenith G.F.J. Calibre 135 Tantalum) published. Score 8.9/10. Quality gates passed (0 em dashes, 10.9% The-starters, 0 slop phrases). Deployed to Cloudflare. 75 articles live."
+  "last_updated": "2026-05-25T11:36:00Z",
+  "last_run_note": "Run at 04:30 PDT May 25: Skipped \u2014 article #73 (Zenith G.F.J. Calibre 135 Tantalum) already published today by earlier cron. Next category: cars."
 }
