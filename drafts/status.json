@@ -1,5 +1,5 @@
 {
-  "phase": "SHIP",
+  "phase": "DEPLOYED",
   "slug": "zenith-gfj-calibre-135-tantalum",
   "topic": "Zenith G.F.J. Calibre 135 Tantalum: how a 1949 observatory chronometer that won 235 prizes now lives inside element 73, a metal so dense and resistant to machining that the case itself becomes an engineering challenge rivaling the movement.",
   "article_number": 73,
@@ -7,13 +7,13 @@
   "last_category": "watches",
   "next_category": "cars",
   "writer": "Marcus Thorne",
-  "published_date": null,
-  "published_today": false,
+  "published_date": "2026-05-25",
+  "published_today": true,
   "critique_score": 8.9,
   "critique_passed": true,
   "em_dash_count": 0,
   "the_sentence_pct": 10.9,
   "hero_image_ready": true,
-  "last_updated": "2026-05-25T09:32:00Z",
-  "last_run_note": "Resolved rebase conflict. Zenith Tantalum is Article #73 (Article #72 was Koenigsegg Freevalve, published May 24). Quality gates: 0 em dashes, 10.9% The-starters, 0 slop phrases. Deploying."
+  "last_updated": "2026-05-25T09:35:00Z",
+  "last_run_note": "Run at 02:30 PDT May 25: Article #73 (Zenith G.F.J. Calibre 135 Tantalum) published. Score 8.9/10. Quality gates passed (0 em dashes, 10.9% The-starters, 0 slop phrases). Deployed to Cloudflare. 75 articles live."
 }
