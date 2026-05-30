@@ -1,7 +1,7 @@
 {
   "phase": "IDLE",
   "slug": "magnesium-alloy-ev-motor-housing",
-  "topic": "InfiMotion TL300: first mass-produced EV drive unit with magnesium-aluminum alloy housing. 109.5 kg for 340 kW dual motors. Galvanic corrosion mitigation, 360-degree bidirectional oil cooling as structural enabler, W-pin hairpin topology, SiC/IGBT hybrid power electronics, adjustable magnetic field motor. Materials science crossover.",
+  "topic": "InfiMotion TL300: first mass-produced EV drive unit with magnesium-aluminum alloy housing. 109.5 kg for 340 kW dual motors.",
   "article_number": 79,
   "category": "cars",
   "last_category": "cars",
@@ -14,6 +14,17 @@
   "em_dash_count": 0,
   "the_sentence_pct": 9.6,
   "hero_image_ready": true,
-  "last_updated": "2026-05-30T03:30:00Z",
-  "last_run_note": "Published #79 (InfiMotion TL300 magnesium-aluminum alloy EV motor housing, 9.14/10) — deployed to Cloudflare Pages. Next article #80 (watches category) to be researched on next run."
+  "next_draft": {
+    "slug": "ap-rd5-caliber-8100-chronograph",
+    "topic": "Audemars Piguet Royal Oak RD#5 Caliber 8100: rack-and-pinion reset replaces heart cam, stores energy during timing and releases on reset. 0.3mm pusher travel, 300g force (10-25x less than conventional). Hybrid vertical-toothed clutch, six-armed reset lever, instantaneous jumping minute counter via truncated pinion, flying tourbillon, BMG palladium bezel. 31.4mm x 4.0mm movement in 39mm x 8.1mm Jumbo case. Patent EP4555385A1.",
+    "category": "watches",
+    "writer": "Marcus Thorne",
+    "critique_score": 9.31,
+    "critique_passed": true,
+    "em_dash_count": 0,
+    "the_sentence_pct": 0.0,
+    "hero_image_ready": true
+  },
+  "last_updated": "2026-05-30T03:38:00Z",
+  "last_run_note": "Published #79 (InfiMotion TL300, 9.14/10). Draft #80 (AP RD#5 Caliber 8100, 9.31/10) researched, written, critiqued, hero image generated, queued for 2026-05-31."
 }
