@@ -19,12 +19,12 @@
     "topic": "Rolex Yacht-Master II 2026: Caliber 4162 replaces 4161, Ring Command bezel eliminated for pusher-driven UI, counterclockwise countdown seconds, Chronergy escapement with Seiko-derived geometry, Parachrom hairspring. Subtracting complexity to add capability.",
     "category": "watches",
     "writer": "Marcus Thorne",
-    "critique_score": null,
-    "critique_passed": false,
+    "critique_score": 9.22,
+    "critique_passed": true,
     "em_dash_count": 0,
-    "the_sentence_pct": 0,
-    "hero_image_ready": false
+    "the_sentence_pct": 2.9,
+    "hero_image_ready": true
   },
-  "last_updated": "2026-06-01T03:30:00Z",
-  "last_run_note": "Run at 20:30 PDT May 31: skip — already published #81 (Lamborghini L411) today. Rolex Yacht-Master II #82 queued for next eligible run. Next category: watches."
+  "last_updated": "2026-06-01T05:30:00Z",
+  "last_run_note": "Status check 05:30 UTC: skip — already published #81 today. Verified draft #82 (Rolex YM-II Caliber 4162): critique 9.22/10 passed, 0 em dashes, 2.9% The-starters, 0 slop, hero JPEG validated. Ready for 2026-06-02 publish."
 }
