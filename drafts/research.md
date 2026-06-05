@@ -1,78 +1,75 @@
-# Research: Porsche 911 GT2 RS Manthey vs. Corvette ZR1 at Road Atlanta — When Chassis Engineering Beats Power
+# Research: IWC ProSet Perpetual Calendar — Bidirectional Crown Setting via LIGA-Manufactured Gear Architecture
 
 ## Topic
-A 2019 Porsche 911 GT2 RS equipped with the Manthey Performance Kit just set a new production-car lap record at Road Atlanta (1:22.649), narrowly beating the 2025 Corvette ZR1's 1:22.82. The ZR1 has 1,064 hp from its twin-turbo 5.5L V8. The GT2 RS has 700 hp from its twin-turbo 3.8L flat-six. That's a 364 hp deficit — and the Porsche is nearly a decade old. The engineering story is about how chassis dynamics, aerodynamics, and suspension tuning can overcome massive power deficits. The Manthey Kit doesn't add a single horsepower. It adds downforce, damper adjustability, braking precision, and weight reduction through magnesium wheels.
+IWC's new Calibre 82665 introduces the ProSet perpetual calendar, a completely re-engineered version of Kurt Klaus's legendary 1985 crown-adjusted perpetual calendar. The breakthrough: bidirectional adjustment. For the first time in IWC's history, the perpetual calendar can be set both forward and backward using only the crown. The engineering story is about how IWC replaced the traditional program disc (which only allows forward motion, like a ratchet) with an entirely gear-based architecture featuring multi-layered program wheels and extendable/retractable mechanical "fingers" manufactured through the LIGA process. This is the kind of mechanical problem that maps directly to automotive gear train design: converting bidirectional input into synchronized multi-output motion across date, day, month, year, and moon phase.
 
 ## Key Engineering Data
 
-### GT2 RS Manthey Performance Kit
-- Engine unchanged: twin-turbo 3.8L flat-six, 700 hp, 528 lb-ft
-- 7-speed PDK, rear-wheel drive only
-- Manthey Kit components:
-  - Carbon fiber underbody
-  - Additional front spoiler flaps
-  - Modified rear spoiler
-  - Modified diffuser
-  - Aerodiscs on rear wheels (reduce wheel arch vortices, guide airflow to rear)
-  - Front downforce: ~108 lbs → ~154 lbs at 124 mph (+43%)
-  - Rear downforce: ~205 lbs → ~440 lbs at 124 mph (+115%)
-  - Coil-over suspension: 3-way adjustable front, 4-way adjustable rear
-  - Steel-encased (braided) brake lines for direct pedal feedback
-  - Magnesium wheels: 20" front, 21" rear, save ~25 lbs total
-  - Additional 2.3-gallon water tank for intercooler spray-cooling
-- Tires: Michelin Pilot Sport Cup 2 R N0 (road-legal)
-- Driver: Jörg Bergmeister (former factory ace, Porsche ambassador)
-- Kit MSRP: $113,140 (excludes installation)
-- Record lap: 1:22.649
+### The Problem: Unidirectional Perpetual Calendars
+- Traditional perpetual calendars use a program disc (or cam) that rotates once per 4 years
+- Program disc design inherently only works in one direction (like a ratchet)
+- Oversetting requires: (a) waiting for actual date to catch up, or (b) sending to watchmaker
+- Kurt Klaus's 1985 IWC perpetual calendar: crown-adjustable but forward-only
+- AP introduced crown-operated QP in 2025; H. Moser and Ochs und Junior also have reversible QPs
+- Ulysse Nardin (Dr. Ludwig Oechslin, 1990s) was first reversible perpetual calendar
 
-### Corvette ZR1
-- Twin-turbo 5.5L V8 LT7, 1,064 hp, 828 lb-ft
-- 8-speed dual-clutch, rear-wheel drive
-- Rear wing generates up to 1,200 lbs of downforce
-- Record lap: 1:22.82
-- Brand new (2025 model year launch)
+### The ProSet Solution: Gear-Based Architecture
+- Complete replacement of program disc with interconnected gear trains
+- "Extendable and retractable fingers" — mechanical actuators that engage/disengage calendar wheels
+- Multi-layered wheels: each layer encodes different information (month length, leap year status)
+- Layers activate fingers at the right time (end of month, leap year cycle change)
+- All indications advance/retreat in daily steps, staying synchronized
+- Crown turns clockwise = forward, counter-clockwise = backward
+- No external corrector pushers needed
+- LIGA manufacturing process (Lithography, Electroplating, and Molding) for complex gear geometries
+- LIGA allows near-vertical sidewalls and multi-level structures impossible with traditional machining
 
-### Also during same session
-- 2025 911 GT3 RS Manthey: 1:23.932 (new N/A production car record)
-  - Previous gen GT3 RS: 1:26.24 (2.3 seconds improvement)
-- 992.2 911 GT3 Manthey: 1:24.639
-- All three Porsches within 2 seconds of each other at Road Atlanta
+### Calibre 82665
+- Automatic winding (Pellaton system)
+- Silicon hairspring (antimagnetic)
+- Nickel-phosphorus escapement
+- Zirconium oxide ceramic components in winding system (wear resistance)
+- 28,800 vph (4 Hz)
+- 34 jewels
+- 60-hour power reserve
+- Moon phase deviation: 1 day per 1,044 years (dual hemisphere display)
+- Functions: hours, minutes, small seconds, perpetual calendar (date, day, month, 4-digit year, dual moonphase)
+- Smaller than predecessor (fits in 42mm case vs previous 46.5mm)
+- 100m water resistance (improved from predecessor)
+- Power reserve indicator removed (was on older caliber)
 
-### Engineering Principle
-- Power advantage shows most on straights (F=ma, v_max = f(P, drag))
-- Chassis/aero advantage compounds through every corner
-- Road Atlanta: 12 turns, 2.54 miles, significant elevation changes
-  - Commitment-testing corners where aero consistency matters
-  - Fast switchbacks where suspension compliance on kerbs is decisive
-- The Manthey Kit's aero philosophy: reduce wheel arch turbulence (aero discs), increase underbody efficiency (carbon), maximize rear downforce (+115%)
-- 3/4-way adjustable dampers allow track-specific tuning vs. fixed factory settings
-- Braided brake lines eliminate flex for more linear pedal feel
-- Magnesium wheels reduce unsprung mass by ~25 lbs total, improving suspension response frequency
-- Intercooler spray cooling: extended thermal endurance for sustained hot laps
+### Historical Context: Kurt Klaus
+- Kurt Klaus: IWC's master watchmaker
+- 1985: Designed the Da Vinci Perpetual Calendar (Ref. 3750)
+- First perpetual calendar adjustable entirely through the crown
+- Eliminated need for corrector pushers (small buttons on case flanks)
+- Used a program disc rotating once every 4 years
+- Brilliant for its time, but forward-only adjustment was the Achilles heel
+- ProSet framed as "continuation" of Klaus's vision, not a replacement
 
-### Wind Tunnel Data (from Manthey engineering interview)
-- Aero discs "create real downforce" per Manthey engineers
-- Rear wing angle can be reduced 2 degrees when running aero discs
-- Discs prevent vortices at wheel area, reduce pressure in wheel arch
-- Guide air more effectively to rear diffuser/wing
+### Automotive Parallel: Gear Trains
+- Automotive transmissions solve a similar problem: converting input motion to synchronized multi-output motion
+- Dual-clutch transmissions (like the PDK in Porsche) use gear trains to engage/disengage ratios
+- The ProSet's "fingers" are analogous to synchronizer sleeves in manual transmissions
+- LIGA process also used in automotive micro-electromechanical systems (MEMS sensors)
 
-### Context
-- GT2 RS launched 2017, approaching decade mark
-- Still 3rd fastest production car ever at Nürburgring (trailing only AMG One and Mustang GTD Competition)
-- Nürburgring record: 6:43.300 (with Manthey Kit, 2021)
-- Manthey-Racing: 51% owned by Porsche, originated from merge of Manthey and Raeder Motorsport
-- 45 Manthey Certified Porsche Centers in U.S.
+### The Models
+- IW329601: Le Petit Prince, 42mm steel, blue dial, bracelet — $38,800
+- IW339601: Le Petit Prince, 43mm white zirconium oxide ceramic, blue dial — $41,600
+- IW329602: 42mm rose gold, green dial — $54,700
+- All feature EasX-CHANGE strap system
+- Double moonphase at 12 o'clock
+- 4-digit year display between 7 and 8 o'clock
 
 ### Key Sources
-1. Carscoops, "Chevy's New Corvette ZR1 Set A Record At Road Atlanta. A 2019 Porsche Just Took It Back," May 2026
-2. EuropeSays/BrochuresHub coverage of Road Atlanta records, May 2026
-3. Stuttcars, "Manthey Kits for 911 GT3 and GT3 RS," technical specifications
-4. WhichCar, "Manthey Racing and the world's toughest job," engineering interview
-5. FlatSixes, "Porsche unveils Manthey Kits," pricing and specifications
-6. MotorTrend, "911 GT3 RS is Still the King of the 'Ring," Nürburgring context
+1. Hodinkee, "Introducing: The IWC Big Pilot's Watch Perpetual Calendar ProSet," April 2026
+2. EuropeSays/Kien Lee, "IWC Schaffhausen ushers in bidirectional simplicity," April 2026
+3. Time and Tide, "IWC Big Pilot's ProSet | HANDS ON," April 2026
+4. TodayOnTheWrist, "IWC Big Pilot's Watch Perpetual Calendar ProSet," April 2026
+5. MONOCHROME Watches (YouTube), "The Best QP You Can Buy?" April 2026
 
 ## Writer
-Elena Voss (rotating — Marcus Thorne wrote #84)
+Marcus Thorne (rotating — Elena Voss wrote #85)
 
 ## Angle
-"700 Beats 1,064" — How the Manthey Kit's chassis and aero engineering allows a 2019 Porsche with 700 hp to beat a brand-new Corvette with 1,064 hp at Road Atlanta. No additional power. Zero. The entire 0.171-second advantage comes from downforce, damping, unsprung mass reduction, braking linearity, and thermal management. This is the engineering case for why chassis dynamics matter more than peak power once you cross a threshold — and a demonstration that a well-sorted platform doesn't age the way raw horsepower numbers do. Efficient Design's core thesis in a single lap time.
+"Forward and Backward" — How IWC replaced a 40-year-old program disc with an entirely gear-based architecture that allows bidirectional perpetual calendar adjustment through the crown alone. The engineering story centers on how extendable/retractable mechanical fingers, manufactured through the LIGA micro-structuring process, engage multi-layered program wheels to keep date, day, month, year, and moon phase perfectly synchronized in both directions. The parallel to automotive gear trains is direct: synchronized engagement, bidirectional input, multi-output motion. Kurt Klaus solved "how to set a perpetual calendar without pushers" in 1985. Forty years later, IWC's next generation solved "how to make it impossible to set wrong."
