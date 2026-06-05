@@ -14,6 +14,22 @@
   "em_dash_count": 0,
   "the_sentence_pct": 6.3,
   "hero_image_ready": true,
-  "last_updated": "2026-06-05T03:30:00Z",
-  "last_run_note": "Run at 03:30 UTC Jun 5: Skip \u2014 already published #85 today. Draft #86 (IWC ProSet Perpetual Calendar, Marcus Thorne, watches) ready for 2026-06-06."
+  "next_draft": {
+    "slug": "iwc-proset-perpetual-calendar",
+    "topic": "IWC ProSet Perpetual Calendar — bidirectional crown-adjusted perpetual calendar via LIGA-manufactured gear architecture",
+    "article_number": 86,
+    "category": "watches",
+    "writer": "Marcus Thorne",
+    "ready_date": "2026-06-06"
+  },
+  "banked_draft": {
+    "slug": "moser-endeavour-flyback-agenclutch-chronograph",
+    "topic": "H. Moser & Cie. Endeavour Flyback Chronograph Dual Time Date: HMC 730 calibre (AGENHOR), AgenClutch toothless friction coupling",
+    "critique_score": 9.01,
+    "all_gates_passed": true,
+    "hero_image_ready": true,
+    "note": "Full draft + critique + hero image ready. Was duplicate-researched while prior run published #84/#85. Available for future publication."
+  },
+  "last_updated": "2026-06-05T09:37:00Z",
+  "last_run_note": "Run at 09:30 UTC Jun 5: Skip — already published #85 today. Moser Endeavour AgenClutch draft (9.01/10) banked for future use. Next: #86 IWC ProSet for 2026-06-06."
 }
