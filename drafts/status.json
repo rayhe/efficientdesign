@@ -1,35 +1,27 @@
 {
-  "phase": "IDLE",
-  "slug": "gt2-rs-manthey-vs-zr1-road-atlanta",
-  "topic": "Porsche 911 GT2 RS Manthey vs. Corvette ZR1 at Road Atlanta: 700 hp beats 1,064 hp through chassis/aero engineering, zero additional power",
-  "article_number": 85,
-  "category": "cars",
+  "phase": "DRAFT",
+  "slug": "iwc-proset-perpetual-calendar",
+  "topic": "IWC ProSet Perpetual Calendar — bidirectional crown-adjusted perpetual calendar via LIGA-manufactured gear architecture replacing Kurt Klaus's 1985 program disc",
+  "article_number": 86,
+  "category": "watches",
   "last_category": "cars",
-  "next_category": "watches",
-  "writer": "Elena Voss",
+  "next_category": "cars",
+  "writer": "Marcus Thorne",
   "published_date": "2026-06-05",
-  "published_today": true,
-  "critique_score": 9.21,
-  "critique_passed": true,
-  "em_dash_count": 0,
-  "the_sentence_pct": 6.3,
-  "hero_image_ready": true,
-  "next_draft": {
-    "slug": "iwc-proset-perpetual-calendar",
-    "topic": "IWC ProSet Perpetual Calendar \u2014 bidirectional crown-adjusted perpetual calendar via LIGA-manufactured gear architecture",
-    "article_number": 86,
-    "category": "watches",
-    "writer": "Marcus Thorne",
-    "ready_date": "2026-06-06"
-  },
+  "published_today": false,
+  "critique_score": null,
+  "critique_passed": false,
+  "em_dash_count": null,
+  "the_sentence_pct": null,
+  "hero_image_ready": false,
   "banked_draft": {
     "slug": "moser-endeavour-flyback-agenclutch-chronograph",
     "topic": "H. Moser & Cie. Endeavour Flyback Chronograph Dual Time Date: HMC 730 calibre (AGENHOR), AgenClutch toothless friction coupling",
     "critique_score": 9.01,
     "all_gates_passed": true,
     "hero_image_ready": true,
-    "note": "Full draft + critique + hero image ready. Was duplicate-researched while prior run published #84/#85. Available for future publication."
+    "note": "Full draft + critique + hero image ready. Available for future publication."
   },
-  "last_updated": "2026-06-05T23:30:00Z",
-  "last_run_note": "Run at 23:30 UTC Jun 5: Skip \u2014 already published #85 today. #86 IWC ProSet (Marcus Thorne, watches) and banked Moser Endeavour ready for upcoming days."
+  "last_updated": "2026-06-06T01:31:00Z",
+  "last_run_note": "Run at 01:31 UTC Jun 6: Starting #86 IWC ProSet Perpetual Calendar (Marcus Thorne, watches). Research prepped."
 }
