@@ -1,19 +1,19 @@
 {
-  "phase": "DRAFT",
+  "phase": "IDLE",
   "slug": "iwc-proset-perpetual-calendar",
   "topic": "IWC ProSet Perpetual Calendar — bidirectional crown-adjusted perpetual calendar via LIGA-manufactured gear architecture replacing Kurt Klaus's 1985 program disc",
   "article_number": 86,
   "category": "watches",
-  "last_category": "cars",
+  "last_category": "watches",
   "next_category": "cars",
   "writer": "Marcus Thorne",
-  "published_date": "2026-06-05",
-  "published_today": false,
-  "critique_score": null,
-  "critique_passed": false,
-  "em_dash_count": null,
-  "the_sentence_pct": null,
-  "hero_image_ready": false,
+  "published_date": "2026-06-06",
+  "published_today": true,
+  "critique_score": 9.39,
+  "critique_passed": true,
+  "em_dash_count": 0,
+  "the_sentence_pct": 4.4,
+  "hero_image_ready": true,
   "banked_draft": {
     "slug": "moser-endeavour-flyback-agenclutch-chronograph",
     "topic": "H. Moser & Cie. Endeavour Flyback Chronograph Dual Time Date: HMC 730 calibre (AGENHOR), AgenClutch toothless friction coupling",
@@ -22,6 +22,6 @@
     "hero_image_ready": true,
     "note": "Full draft + critique + hero image ready. Available for future publication."
   },
-  "last_updated": "2026-06-06T01:31:00Z",
-  "last_run_note": "Run at 01:31 UTC Jun 6: Starting #86 IWC ProSet Perpetual Calendar (Marcus Thorne, watches). Research prepped."
+  "last_updated": "2026-06-06T05:30:00Z",
+  "last_run_note": "Run at 05:30 UTC Jun 6: #86 already published and deployed by 01:37 UTC run. Status.json updated to reflect completion. Next: #87 (cars rotation)."
 }
