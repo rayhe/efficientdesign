@@ -1,19 +1,19 @@
 {
-  "phase": "IDLE",
-  "slug": "iwc-proset-perpetual-calendar",
-  "topic": "IWC ProSet Perpetual Calendar \u2014 bidirectional crown-adjusted perpetual calendar via LIGA-manufactured gear architecture replacing Kurt Klaus's 1985 program disc",
-  "article_number": 86,
-  "category": "watches",
+  "phase": "RESEARCH",
+  "slug": "ct5-v-blackwing-f1-supercharger-precision",
+  "topic": "CT5-V Blackwing F1 Collector Series: GM Motorsports supercharger upgrade (pulley ratio 3.14→3.24, taller CNC billet cover for charge-air thermal management) and Precision Package chassis engineering (70/60% stiffer springs, 1000% stiffer cradle bushing, adjustable knuckles for +0.4° camber, billet toe links)",
+  "article_number": 87,
+  "category": "cars",
   "last_category": "watches",
-  "next_category": "cars",
-  "writer": "Marcus Thorne",
+  "next_category": "watches",
+  "writer": "Elena Voss",
   "published_date": "2026-06-06",
-  "published_today": true,
-  "critique_score": 9.39,
-  "critique_passed": true,
-  "em_dash_count": 0,
-  "the_sentence_pct": 4.4,
-  "hero_image_ready": true,
+  "published_today": false,
+  "critique_score": null,
+  "critique_passed": false,
+  "em_dash_count": null,
+  "the_sentence_pct": null,
+  "hero_image_ready": false,
   "banked_draft": {
     "slug": "moser-endeavour-flyback-agenclutch-chronograph",
     "topic": "H. Moser & Cie. Endeavour Flyback Chronograph Dual Time Date: HMC 730 calibre (AGENHOR), AgenClutch toothless friction coupling",
@@ -22,6 +22,6 @@
     "hero_image_ready": true,
     "note": "Full draft + critique + hero image ready. Available for future publication."
   },
-  "last_updated": "2026-06-06T23:37:00Z",
-  "last_run_note": "Run at 23:37 UTC Jun 6: skip \u2014 #86 already published today. Banked Moser Endeavour ready (watches, 9.01). Next publish: #87 (cars rotation)."
+  "last_updated": "2026-06-07T01:31:00Z",
+  "last_run_note": "Run at 01:31 UTC Jun 7: researching #87 CT5-V Blackwing F1 Collector Series supercharger + Precision Package (cars rotation)."
 }
