@@ -1,7 +1,7 @@
 {
   "phase": "COMPLETE",
   "slug": "mercedes-amg-yasa-axial-flux-motor",
-  "topic": "Mercedes-AMG begins mass production of YASA axial flux motors at Berlin-Marienfelde — how a yokeless, segmented-armature pancake architecture using Soft Magnetic Composite stator segments delivers 59 kW/kg (3x Tesla's best radial flux designs) and could cascade 200 kg of weight savings through future AMG EVs",
+  "topic": "Mercedes-AMG begins mass production of YASA axial flux motors at Berlin-Marienfelde \u2014 how a yokeless, segmented-armature pancake architecture using Soft Magnetic Composite stator segments delivers 59 kW/kg (3x Tesla's best radial flux designs) and could cascade 200 kg of weight savings through future AMG EVs",
   "article_number": 90,
   "category": "cars",
   "last_category": "cars",
@@ -17,7 +17,7 @@
   "banked_draft": {
     "slug": "brembo-sensify-dry-brake-by-wire",
     "category": "cars",
-    "critique_score": 8.90,
+    "critique_score": 8.9,
     "critique_passed": true,
     "em_dash_count": 0,
     "the_sentence_pct": 2.0,
@@ -25,5 +25,5 @@
     "note": "Draft completed by competing run, banked for next available slot. Needs index/sitemap integration at ship time."
   },
   "last_updated": "2026-06-10T13:30:00Z",
-  "last_run_note": "Skip — already published #90 today (Mercedes-AMG YASA). Brembo Sensify draft banked (8.90/10). Resolved merge conflict from competing run."
+  "last_run_note": "Status check 17:30 UTC Jun 10: skip \u2014 already published #90 today."
 }
