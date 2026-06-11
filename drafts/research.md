@@ -1,21 +1,18 @@
-# Research: Mercedes-AMG YASA Axial Flux Motor
+# Research: Parivas Exo.1 Additive Manufacturing Watch Case
 
 ## Topic
-Mercedes-AMG begins mass-producing YASA axial flux motors at Berlin-Marienfelde. The yokeless, segmented-armature architecture using Soft Magnetic Composite delivers 59 kW/kg — triple the power density of Tesla's best radial flux designs. First production car: AMG GT 4-door coupe.
+Parivas launches the Exo.1, the first watch built entirely around additive manufacturing: a monolithic lattice case in 316L stainless steel printed as a single continuous structure across bezel, body, and lugs. Solar Dusted proprietary sintering finish. Floating hollow-core hour markers with embedded tritium tubes.
 
 ## Key Sources
-1. Reuters, "Mercedes launches mass production of electric motor for high-performance AMG brand," June 9, 2026
-2. IEEE Spectrum, "Axial Flux Motor Powers Supercars to New Heights," Jan 2026
-3. Mercedes-Benz official press release, Berlin-Marienfelde launch, June 9, 2026
-4. Hypebeast, AMG GT XX EV Endurance Records, Aug 2025
-5. electrive.com, "Mercedes-AMG unveils electric CONCEPT AMG GT XX with axial flux motors"
-6. New Atlas, "Mercedes-AMG GT XX EV sets 25 world records in 8 days"
+1. Parivas press release via PR Newswire, May 7, 2026
+2. WatchPro, "Parivas launches Exo.1 as additive manufacturing reshapes watch design," June 8, 2026
+3. 3dprinting.com, Incus/Element22 titanium smartwatch housing LMM process
+4. Harvard D3, "The Additive Artisan: Richemont's Use of 3D Printing in Mechanical Watchmaking"
+5. Metal-AM, AnalogLab Amano+ HP Binder Jetting 316L
+6. Sinterit, "DMLS & SLM 3D printing: how metal additive manufacturing works"
 
 ## Writer
 Elena Voss
 
 ## Article Number
-90
-
-## Score
-9.07/10 (7 critics, 8.5 threshold)
+91
