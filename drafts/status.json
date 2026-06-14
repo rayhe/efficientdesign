@@ -1,5 +1,5 @@
 {
-  "phase": "SHIP",
+  "phase": "IDLE",
   "slug": "bulgari-octo-finissimo-37-bvf100-miniaturization",
   "topic": "Bulgari Octo Finissimo 37mm BVF 100 miniaturization engineering",
   "article_number": 94,
@@ -15,6 +15,6 @@
   "the_sentence_pct": 1.1,
   "hero_image_ready": true,
   "banked_draft": null,
-  "last_updated": "2026-06-14T03:35:00Z",
-  "last_run_note": "Published #94 — Bulgari BVF 100 miniaturization"
+  "last_updated": "2026-06-14T03:36:00Z",
+  "last_run_note": "Published #94 — Bulgari BVF 100 miniaturization. QA passed: article 200, hero 200."
 }
