@@ -1,34 +1,29 @@
-# Research: Corvette ZR1 ZTK Downforce Load Path Engineering
+# Research: Bulgari Octo Finissimo 37mm BVF 100 Miniaturization
 
 ## Topic
-The Corvette ZR1's ZTK wing generates 1,200+ lbs of total downforce through a 17-lb carbon fiber wing, but at speeds above 180 mph the struts dig into the decklid paint, cracking and chipping it. This failure reveals the hidden engineering challenge of aerodynamic load paths: how enormous forces flow from a wing element through struts, mounting points, body panels, and into the chassis. The article examines swan-neck vs bottom-mount mounting, concentrated vs distributed loads, and how different manufacturers solve the problem of transferring half a ton of air pressure through thin composite panels.
+Bulgari's new Octo Finissimo 37mm debuted at Watches and Wonders 2026 with the BVF 100, a completely new movement that is 20% smaller in volume than the BVL 138 yet delivers 20% more power reserve (72 hours vs 60). The article examines: how you miniaturize a micro-rotor movement without losing power, the three-year development timeline, the redesigned bracelet with push-button butterfly clasp, the minute repeater variant, and where Bulgari sits in the ultra-thin race.
 
 ## Key Sources
-1. Autoblog, "Corvette ZR1 Owners Are Finding Out Downforce Has A Paint Problem," Sebastian Cenizo, June 11, 2026
-2. autoevolution, "Flex or Fail? The Corvette ZR1's Wing Is Chipping the Car's Paint, but Only at 180 Mph or Beyond," June 10, 2026
-3. Christian Wheeler / Wheeler YouTube channel, original documentation of ZR1 wing paint damage, October 2025
-4. Chevrolet, ZR1 ZTK performance package technical specifications (1,200+ lbs total downforce, 75-inch carbon fiber wing, 17 lbs weight)
-5. Verus Engineering, UCW Swan Neck Rear Wing Kit technical specifications (CFD-optimized, ANSYS adjoint solver, 500+ lbs rated)
-6. Manthey Racing, GT3 RS Performance Kit specifications (2,204 lbs / 1,000 kg downforce at 285 kph, DRS system)
-7. SAE, "Aerodynamic and Structural Design of a 2022 Formula One Front Wing Assembly" (structural load path analysis)
-8. Evasive Motorsports / Verus Engineering, swan-neck mount efficiency analysis
+1. Hodinkee, "Introducing: Bulgari Shrinks The Octo Finissimo To 37mm And Fits A Brand New Movement Inside," April 2026
+2. Bulgari official specs (bulgari.com) Ref. 104089, 104351, 104120, 104250
+3. Wrist Review, "Watches and Wonders 2026: Bulgari Octo Finissimo 37mm Novelties," Harlan Chapman-Green
+4. Time+Tide, "Bulgari Octo Finissimo 37 HANDS ON" Russell Sheldrake interview with Fabrizio Buonamassa
+5. Chrono24, "A Bvlgari Octo Finissimo Retrospective" full record timeline
+6. Hodinkee, "Introducing: The Bulgari Octo Finissimo Automatique" (2017) original BVL 138 specs
+7. Grail-Watch, "Bulgari Finissimo: Record-Setting Movements" Piaget 12P comparison
+8. WatchTime, "Entering a New Dimension with the Bulgari Octo Finissimo Ultra" BVL 180
 
 ## Key Technical Facts
-- ZR1 ZTK wing: 75 inches wide, ~17 lbs, carbon fiber
-- Total downforce: 1,200+ lbs at top speed, 978 lbs at 186 mph, 180 lbs at 80 mph
-- Top speed: 233 mph (base), 224 mph (with ZTK)
-- Paint damage threshold: ~180 mph
-- Wing uses same mount pattern as Z06
-- 3 confirmed cases of paint damage (2 ZR1s + 1 Z06 with ZR1 wing)
-- No foam gaskets or load-spreading cushioning at strut bases
-- GM covering warranty claims for repaint
-- Decklid is plastic/composite (not metal)
-- Swan-neck mounting improves wing efficiency by keeping bottom surface (low-pressure side) clean
-- Verus Engineering wing rated for 500+ lbs, uses 6061-T6 billet aluminum mounts with FEA analysis
-- Manthey GT3 RS: 2,204 lbs downforce at 177 mph through chassis-braced carbon wing with hatch reinforcement
+BVF 100: 2.35mm thick, 31mm diameter, 72hr PR, 3Hz, platinum micro-rotor, radiating Cotes de Geneve
+BVL 138: 2.23mm thick, 36.60mm diameter, 60hr PR, 3Hz, platinum micro-rotor
+Case 37mm: 37 x 6.45mm, 30m WR, ~65g titanium
+Case 40mm: 40 x 5.15mm (Ti), 30m WR
+Bracelet: new two-part link, push-button butterfly clasp (2yr dev)
+Minute Repeater 37mm: BVL 362, 3.12mm, 42hr, 20 pieces, CHF 161,000, cut-out markers as sounding board
+Record timeline: 8 world records 2014-2022
 
 ## Writer
 Marcus Thorne
 
 ## Article Number
-92
+94
