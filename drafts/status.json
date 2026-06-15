@@ -1,5 +1,5 @@
 {
-  "phase": "DRAFTING",
+  "phase": "IDLE",
   "slug": "dry-sump-oil-system-corvette-gt3",
   "topic": "Dry sump oil system engineering in the Corvette C8 and Porsche GT3",
   "article_number": 95,
@@ -7,14 +7,14 @@
   "last_category": "cars",
   "next_category": "watches",
   "writer": "Elena Voss",
-  "published_date": null,
-  "published_today": false,
-  "critique_score": null,
-  "critique_passed": false,
-  "em_dash_count": null,
-  "the_sentence_pct": null,
-  "hero_image_ready": false,
+  "published_date": "2026-06-15",
+  "published_today": true,
+  "critique_score": 9.0,
+  "critique_passed": true,
+  "em_dash_count": 0,
+  "the_sentence_pct": 0.0,
+  "hero_image_ready": true,
   "banked_draft": null,
-  "last_updated": "2026-06-15T01:30:00Z",
-  "last_run_note": "Phase: DRAFTING. Topic: dry sump oil systems in C8 Corvette and Porsche GT3."
+  "last_updated": "2026-06-15T01:39:00Z",
+  "last_run_note": "Published #95: Dry sump oil system engineering (Corvette C8 vs Porsche GT3). Deployed to Cloudflare Pages. QA passed."
 }
