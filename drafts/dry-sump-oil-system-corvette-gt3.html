@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seven Scavenge Points and a Sealed Valley: Inside the Dry Sump Systems That Let a Corvette and GT3 Ignore Physics</title>
+<meta name="description" content="Every C8 Corvette and every Porsche GT3 ship with dry sump oiling from the factory. The Corvette uses a sealed valley and three gerotor pumps. The GT3 scavenges from seven points through a vane-cell pump with an integrated centrifuge borrowed from the 911 RSR. Both solve the same problem differently, and both solve it completely.">
+<meta name="author" content="Elena Voss">
+<meta name="article:section" content="cars">
+<meta name="article:tag" content="dry sump, oil system, Corvette C8, LT2, Porsche GT3, 992, lubrication, crankcase vacuum, engineering, oiling system">
+<meta name="article:published_time" content="2026-06-15">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1a1a1a; --accent: #5a7a5a;
+    --meta: #777; --border: #e0ddd8; --code-bg: #f5f3ef;
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body {
+    font-family: var(--serif); background: var(--bg); color: var(--fg);
+    line-height: 1.75; max-width: 720px; margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem; font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; }
+  .subtitle { font-size: 1.15rem; color: var(--meta); line-height: 1.5; margin-bottom: 1.5rem; font-family: var(--sans); }
+  .meta { font-family: var(--sans); font-size: 0.85rem; color: var(--meta); margin-bottom: 2.5rem; }
+  .hero-image { width: 100%; margin: 0 0 2.5rem 0; }
+  .hero-image img { width: 100%; height: auto; display: block; }
+  .hero-image figcaption { font-size: 0.78rem; color: var(--meta); margin-top: 0.4rem; font-family: var(--sans); }
+  h2 { font-size: 1.35rem; font-family: var(--sans); font-weight: 700; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+  p { margin-bottom: 1.25rem; }
+  blockquote {
+    border-left: 3px solid var(--accent); padding-left: 1.25rem;
+    margin: 1.75rem 0; font-style: italic; color: #444;
+  }
+  .spec-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--sans); font-size: 0.88rem; }
+  .spec-table th { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--fg); font-weight: 700; }
+  .spec-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+  .spec-table tr:last-child td { border-bottom: none; }
+  @media (max-width: 600px) {
+    html { font-size: 16px; }
+    body { padding: 1.25rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<article>
+<h1>Seven Scavenge Points and a Sealed Valley: Inside the Dry Sump Systems That Let a Corvette and GT3 Ignore Physics</h1>
+<p class="subtitle">Oil weighs about 7.5 pounds per gallon. At 1.2 lateral g, those pounds slide sideways hard enough to uncover a pickup tube and starve an engine of lubrication in under two seconds. Chevrolet and Porsche arrived at different solutions to the same fluid dynamics problem, and both are worth understanding.</p>
+<p class="meta">By Elena Voss &middot; June 15, 2026 &middot; Cars</p>
+
+<figure class="hero-image">
+<img src="images/hero-dry-sump-oil-system-corvette-gt3.jpg" alt="Close-up of a dry sump oil reservoir and scavenge pump assembly showing braided steel lines and machined aluminum fittings" loading="lazy">
+<figcaption>A dry sump reservoir and pump assembly. Oil enters at the top, hits a spiral baffle, releases trapped air, and collects at the bottom for recirculation. What looks like plumbing is actually a precision fluid management system.</figcaption>
+</figure>
+
+<p>Here is a problem that will destroy your engine. You enter a long right-hander at sustained lateral acceleration above 0.9 g. Oil in the pan, all seven or eight quarts of it, piles against the left side of the crankcase. Your pickup tube sits in the center of the pan, maybe slightly offset. Within a second, the tube is sucking air instead of oil. Air does not lubricate bearings. Connecting rod bearings need a film of oil between 0.001 and 0.003 inches thick, maintained by continuous pressure, to prevent metal-on-metal contact with the crankshaft journals. When that film disappears, bearing temperatures spike past 400 degrees Fahrenheit within seconds. Copper and lead in the bearing overlay begin to melt. By the time you notice a drop in oil pressure on the gauge, assuming you even have a gauge and not just an idiot light, the damage is already catastrophic.</p>
+
+<p>Baffled oil pans help. Windage trays help more. Accusump accumulators buy you a few extra seconds of pressurized oil reserve. But none of these are real solutions. A real solution removes the oil from the crankcase entirely, stores it elsewhere, and uses dedicated pumps to keep it flowing regardless of what gravity and centripetal force are doing to the fluid. Both Chevrolet and Porsche decided this is important enough to warrant standard fitment, not as a track package upsell, but as baseline engineering on their most serious performance cars.</p>
+
+<h2>What Dry Sump Actually Means</h2>
+
+<p>In a conventional wet sump engine, oil lives in the pan bolted to the bottom of the block. A single pump, usually gear-driven or gerotor-type, draws oil from a pickup tube submerged in this pan and pushes it through the filter, then through galleries to the main bearings, rod bearings, cam journals, and valve train. After lubricating and cooling these components, oil drains back into the pan by gravity and the cycle repeats. Simple, cheap, and perfectly adequate for any driving that keeps lateral forces under about 0.7 g.</p>
+
+<p>A dry sump system splits this job in two. Scavenge pumps pull oil out of the crankcase and push it into an external reservoir, a separate tank that holds the system's entire oil supply. A pressure pump then draws oil from this reservoir and sends it to the engine's lubrication points. Because the reservoir is tall and narrow rather than flat and shallow, oil cannot slosh away from the pickup during cornering. And because scavenge pumps actively evacuate oil from the crankcase, they also pull a partial vacuum on the crankcase itself, which delivers a secondary benefit most people overlook.</p>
+
+<p>Crankcase vacuum matters. A spinning crankshaft at 7,000 rpm is moving its counterweights through whatever atmosphere exists inside the block. In a wet sump engine at atmospheric pressure, those counterweights churn through a mixture of air, oil mist, and pooled oil. This parasitic drag, called windage, can consume 10 to 20 horsepower in a high-displacement V8. Evacuating the crankcase to negative pressure, typically minus 5 to minus 15 inches of mercury in a production dry sump, reduces the density of the gas the crank spins through. Less dense gas means less drag. Recovered horsepower goes straight to the wheels.</p>
+
+<h2>Chevrolet's Approach: Seal Everything</h2>
+
+<p>When Chevrolet moved the Corvette's engine behind the driver for the C8 generation, they also made dry sump oiling standard on every trim, from the base Stingray with its 490-horsepower LT2 all the way up to the 1,064-horsepower ZR1 and its LT7. No previous Corvette had offered dry sump on the base model. On the C7, you needed either the Z51 Performance Package on the Stingray or one of the dedicated track variants. Making dry sump standard across the lineup was an engineering decision driven by packaging: the mid-engine layout drops the engine so low in the chassis that a conventional deep wet sump pan simply would not fit beneath the crankshaft with adequate ground clearance.</p>
+
+<p>GM's LT2 dry sump is unusual because it is almost entirely self-contained. Previous Corvette dry sump systems, going back to the C6 Z06's LS7 in 2006, used an external oil tank mounted on the firewall with braided lines running to and from the engine. Lines mean connections, connections mean potential leak points, and external routing adds weight and complexity. For the C8, the oil reservoir bolts directly to the front of the engine block. No external hoses for the main oil circuit. Three gerotor-type scavenge pumps sit inside the engine: two draw oil from the oil pan, and a third handles something Chevrolet calls the sealed valley.</p>
+
+<p>Here is where Chevrolet's engineering gets interesting. In a pushrod V8 like the LT2, oil sprayed onto the valve train by the rocker arms drains down through passages in the cylinder heads, into the valley between the two cylinder banks, and eventually into the crankcase. In a wet sump engine, this is fine because everything ends up in the pan anyway. In a dry sump engine, valley oil cascading into the crankcase works against the scavenge pumps trying to evacuate it. Chief engineer Jordan Lee described the sealed valley as unprecedented: the LT2 physically walls off the valley from the crankcase, trapping returning valve train oil in a separate chamber. A dedicated third scavenge pump evacuates this chamber and routes its oil directly to the reservoir, bypassing the crankcase entirely. Oil that never enters the crankcase never needs to be evacuated from it, which means less aeration, less windage, and a simpler, shallower oil pan.</p>
+
+<p>Chevrolet validated the system on an engine dynamometer bolted to a tilt stand. Engineers ran the LT2 at full load while tilting the entire assembly to simulate 1.2 g of sustained lateral, longitudinal, and combined acceleration in every direction. At no point during testing did oil pressure drop below safe operating thresholds. For context, 1.2 g sustained lateral acceleration is what a Z51-equipped Stingray generates on fresh Michelin Pilot Sport 4S tires through a high-speed sweeper. Most street driving rarely exceeds 0.3 g.</p>
+
+<h2>Porsche's Approach: Scavenge Everything</h2>
+
+<p>Porsche's relationship with dry sump lubrication predates most car enthusiasts' lifetimes. Air-cooled 911s ran dry sump from the 356-derived flat-six onward because the horizontally opposed cylinder layout and rear engine position made conventional wet sump packaging difficult. A flat engine has no real "bottom" in the traditional sense, just two banks of cylinders lying on their sides with the crankshaft between them. Oil collects everywhere.</p>
+
+<p>Modern GT3 variants take this legacy and push it to extremes demanded by a naturally aspirated flat-six spinning to 9,000 rpm. At that engine speed, piston velocity is ferocious, connecting rod loads are enormous, and any interruption in bearing lubrication is immediately destructive. Porsche's 4.0-liter engine in the 992 GT3 uses a vane-cell scavenge pump that extracts oil from seven separate points in the engine. Seven. Not three, not four. Seven individual scavenge pickups positioned to catch oil wherever it accumulates under every possible combination of acceleration, braking, and cornering forces.</p>
+
+<p>Why seven? Because a flat-six engine presents unique scavenging challenges. In a V8, gravity naturally pulls oil downward into the pan regardless of which cylinder bank it came from. In a horizontally opposed engine, oil collects in pockets along both banks, in the spaces around the crankshaft, and in areas that change depending on the car's attitude. Hard braking pushes oil toward the flywheel end. Hard acceleration pushes it toward the accessory drive. Sustained cornering stacks it along one bank. Seven scavenge points means Porsche can cover every accumulation zone with dedicated suction, eliminating dead spots where oil might pool undisturbed while the rest of the engine runs dry.</p>
+
+<p>Even more remarkable is the integrated centrifuge in the scavenge circuit. When pumps pull oil from the crankcase, they inevitably pull air along with it, creating a foamy emulsion that lubricates poorly and compresses under pressure instead of maintaining the rigid hydraulic film bearings require. Porsche's vane-cell pump feeds the scavenged oil-air mixture through a centrifugal separator before it reaches the external oil tank. Centrifugal force pushes denser oil outward while lighter air migrates to the center, where it is vented back to the crankcase ventilation system. By the time oil reaches the reservoir, it has already been de-aerated mechanically rather than relying on passive separation through baffles and settling time. Porsche adopted this technology from the 911 RSR race car's oiling system, marking its first appearance in a series-production sports car when the 991.2 GT3 debuted.</p>
+
+<p>One more detail deserves attention: the connecting rod bearing oil feed. Most production engines feed oil to the connecting rod bearings through passages drilled from the main bearing journals outward along the crankshaft throws. At very high rpm, centrifugal force fights against oil flowing outward through these passages, reducing flow exactly when the bearings need it most. Porsche uses a central oil feed for the GT3's connecting rod bearings, a design taken directly from the twelve-cylinder engine in the legendary 917 endurance racer. Central feeding routes oil through the hollow crankshaft center rather than through radial passages, reducing the distance oil must travel against centrifugal force and ensuring reliable film thickness even at 9,000 rpm.</p>
+
+<h2>What You Gain, What It Costs</h2>
+
+<p>Dry sump systems deliver four measurable advantages. Lower center of gravity, because the shallow pan allows the engine to sit closer to the ground. Consistent oil pressure under any dynamic loading condition. Reduced parasitic losses from crankcase vacuum and windage elimination. And increased oil capacity without increasing pan depth, which means better thermal management because more oil absorbs more heat before reaching critical temperatures.</p>
+
+<p>Against those gains: cost, complexity, and a checking procedure that confounds new owners every year. Dry sump oil changes are not difficult, but they are different. You drain both the pan and the reservoir, and you have to follow a specific warm-up and settling procedure to get an accurate level reading because oil migrates between the reservoir and the pan when the engine sits. Overfilling a dry sump can actually degrade performance by increasing the amount of oil exposed to the crankshaft, reintroducing the windage problem the system was designed to eliminate. Under-filling starves the pressure pump.</p>
+
+<p>Manufacturing cost is significant. Chevrolet's three-pump system on the LT2 adds complexity to what is otherwise a relatively straightforward pushrod V8. Porsche's seven-point scavenge with integrated centrifuge is substantially more expensive to produce than a conventional oil pump. Neither manufacturer has published the exact cost delta, but aftermarket dry sump kits for LS engines run $3,000 to $5,000 for the pump, pan, tank, and lines alone, before installation. Factory-integrated systems are cheaper per unit due to volume, but the tooling investment is enormous.</p>
+
+<p>For the C8 Corvette, the calculus was straightforward. Mid-engine packaging required a shallow pan, a shallow pan could not store enough oil, and therefore dry sump was the only viable architecture for the base car. Making it standard eliminated the cost of engineering and certifying two separate oiling systems. For Porsche, dry sump on the GT3 is a continuation of a six-decade engineering philosophy that treats sustained high-rpm, high-g operation as a design requirement rather than an edge case. When your naturally aspirated flat-six spins to nine thousand revolutions per minute and your customers take these cars to the N&uuml;rburgring Nordschleife, wet sump is not an option.</p>
+
+<h2>Two Philosophies, One Conclusion</h2>
+
+<p>Chevrolet sealed the valley, bolted the reservoir to the block, and eliminated external plumbing. Porsche scattered seven pickup points across the crankcase, added a centrifuge borrowed from a Le Mans prototype, and routed connecting rod oil through a design first used in 1970. Both approaches reflect the constraints of their respective engines: a compact pushrod V8 designed for packaging efficiency versus a wide, flat naturally aspirated six-cylinder engineered for maximum specific output at extreme rpm.</p>
+
+<p>Neither is objectively better. Chevrolet's self-contained system is more elegant from a packaging and serviceability standpoint. Porsche's multi-point scavenge with centrifugal de-aeration is more thorough from a fluid dynamics perspective. Both guarantee oil pressure at accelerations that would cause a wet sump engine to eat its own bearings, and both do it so transparently that most owners never think about it. Which, when you consider that a failed oil system typically results in a five-figure repair bill, might be the most important engineering achievement of all.</p>
+
+<table class="spec-table">
+<thead>
+<tr><th>Specification</th><th>C8 Corvette (LT2)</th><th>Porsche 992 GT3</th></tr>
+</thead>
+<tbody>
+<tr><td>System type</td><td>Dry sump, self-contained</td><td>Dry sump, external tank</td></tr>
+<tr><td>Scavenge pump type</td><td>Gerotor (3 stages)</td><td>Vane-cell (7 pickup points)</td></tr>
+<tr><td>Sealed valley</td><td>Yes (dedicated 3rd pump)</td><td>No (flat-six layout)</td></tr>
+<tr><td>Oil-air separation</td><td>Spiral baffle in reservoir</td><td>Integrated centrifuge + baffle</td></tr>
+<tr><td>Oil capacity</td><td>7.5 quarts (7.1 L)</td><td>6.4 liters (6.8 qt)</td></tr>
+<tr><td>Max validated lateral g</td><td>1.2 g sustained</td><td>>1.5 g (track validated)</td></tr>
+<tr><td>Reservoir mounting</td><td>Bolted to front of block</td><td>Separate external tank</td></tr>
+<tr><td>Con-rod oil feed</td><td>Radial (from mains)</td><td>Central (917-derived)</td></tr>
+<tr><td>Engine redline</td><td>6,500 rpm</td><td>9,000 rpm</td></tr>
+<tr><td>Standard fitment</td><td>All C8 trims</td><td>GT3/GT3 RS only</td></tr>
+</tbody>
+</table>
+
+</article>
+</body>
+</html>
