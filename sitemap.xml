@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://efficientdesign.net/</loc><lastmod>2026-06-17</lastmod><priority>1.0</priority></url>
+  <url><loc>https://efficientdesign.net/</loc><lastmod>2026-06-18</lastmod><priority>1.0</priority></url>
   <url><loc>https://efficientdesign.net/stories/hublot-djokovic-goat-textile-composite-engineering.html</loc><lastmod>2026-06-17</lastmod><priority>0.8</priority></url>
   <url><loc>https://efficientdesign.net/stories/bulgari-octo-finissimo-37-bvf100-miniaturization.html</loc><lastmod>2026-06-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://efficientdesign.net/stories/parivas-exo1-additive-manufacturing-lattice-case.html</loc><lastmod>2026-06-11</lastmod><priority>0.8</priority></url>
@@ -74,6 +74,12 @@
   <url>
     <loc>https://efficientdesign.net/stories/gordon-murray-t50-fan-car-aerodynamics.html</loc>
     <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://efficientdesign.net/stories/mclaren-w1-aerocell-active-long-tail.html</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
