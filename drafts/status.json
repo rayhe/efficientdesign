@@ -1,5 +1,5 @@
 {
-  "phase": "DRAFT",
+  "phase": "IDLE",
   "slug": "vacheron-twin-beat-dual-frequency-perpetual-calendar",
   "topic": "Vacheron Constantin Traditionnelle Twin Beat Perpetual Calendar: dual-frequency Caliber 3610 QP, three differentials, 70-day standby power reserve, double-gear spring-winding mechanism",
   "article_number": 100,
@@ -7,14 +7,14 @@
   "last_category": "watches",
   "next_category": "cars",
   "writer": "Marcus Thorne",
-  "published_date": null,
-  "published_today": false,
-  "critique_score": null,
-  "critique_passed": false,
-  "em_dash_count": null,
-  "the_sentence_pct": null,
-  "hero_image_ready": false,
+  "published_date": "2026-06-19",
+  "published_today": true,
+  "critique_score": 9.0,
+  "critique_passed": true,
+  "em_dash_count": 0,
+  "the_sentence_pct": 5.7,
+  "hero_image_ready": true,
   "banked_draft": null,
-  "last_updated": "2026-06-19T01:32:00Z",
-  "last_run_note": "Starting article #100: Vacheron Twin Beat dual-frequency perpetual calendar. RESEARCH phase complete."
+  "last_updated": "2026-06-19T03:33:00Z",
+  "last_run_note": "Article #100 published. Vacheron Twin Beat dual-frequency perpetual calendar. Critique 9.0 avg. Deployed to Cloudflare Pages. Next category: cars."
 }
