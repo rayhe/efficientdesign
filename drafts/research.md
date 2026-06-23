@@ -1,29 +1,45 @@
-# Research: Bulgari Octo Finissimo 37mm BVF 100 Miniaturization
+# Research: Corvette ZR1X Pikes Peak Altitude Engineering
 
-## Topic
-Bulgari's new Octo Finissimo 37mm debuted at Watches and Wonders 2026 with the BVF 100, a completely new movement that is 20% smaller in volume than the BVL 138 yet delivers 20% more power reserve (72 hours vs 60). The article examines: how you miniaturize a micro-rotor movement without losing power, the three-year development timeline, the redesigned bracelet with push-button butterfly clasp, the minute repeater variant, and where Bulgari sits in the ultra-thin race.
+## Event Facts
+- 104th Pikes Peak International Hill Climb, June 22, 2026
+- Course: 12.42 miles, 156 turns, summit at 14,115 ft (4,302 m)
+- Start elevation: ~9,390 ft (2,862 m)
+- Elevation gain: ~4,725 ft (1,440 m)
+- Driver: JR Hildebrand (IndyCar veteran, Pikes Peak veteran, 3rd attempt)
+- Time: 9:30.104 (new production car record)
+- Previous record: 9:53.541 by David Donner in 2022 Porsche 911 Turbo S (non-race day certified)
+- Donner same-day race result: 9:53.740 (Porsche 911 Turbo S)
+- Margin over previous record: 23.437 seconds
+- Class: Time Attack 1 (won by 15 sec over Jeff Zwart in GT2 RS Clubsport)
+- Average speed: 80.3 mph
+- Safety-only mods: roll cage, fuel cell, fire suppression, racing seat, cutoff switches
+- Tires: stock Michelin Pilot Sport Cup 2 R on stock carbon wheels
+- Package: ZTK Performance Package
+- Livery: America's 250th anniversary theme
+- Emelia Hartford in ZR1 (RWD, no hybrid) set fastest woman on four wheels record
+- Tony Roma, Exec Chief Engineer for Global Corvette, on hand
 
-## Key Sources
-1. Hodinkee, "Introducing: Bulgari Shrinks The Octo Finissimo To 37mm And Fits A Brand New Movement Inside," April 2026
-2. Bulgari official specs (bulgari.com) Ref. 104089, 104351, 104120, 104250
-3. Wrist Review, "Watches and Wonders 2026: Bulgari Octo Finissimo 37mm Novelties," Harlan Chapman-Green
-4. Time+Tide, "Bulgari Octo Finissimo 37 HANDS ON" Russell Sheldrake interview with Fabrizio Buonamassa
-5. Chrono24, "A Bvlgari Octo Finissimo Retrospective" full record timeline
-6. Hodinkee, "Introducing: The Bulgari Octo Finissimo Automatique" (2017) original BVL 138 specs
-7. Grail-Watch, "Bulgari Finissimo: Record-Setting Movements" Piaget 12P comparison
-8. WatchTime, "Entering a New Dimension with the Bulgari Octo Finissimo Ultra" BVL 180
+## ZR1X Powertrain Specs
+- LT7: 5.5L twin-turbo flat-plane V8, 1,064 hp, 828 lb-ft
+- Front electric motor: 186 hp, 145 lb-ft (from E-Ray, strengthened internals)
+- Combined: 1,250 hp
+- Battery: 1.9 kWh (same capacity as E-Ray, but higher peak operating voltage, greater usable energy)
+- Front motor engaged through 160 mph
+- 8-speed DCT (Tremec TR9080)
+- eAWD with no physical connection between front/rear drivetrains
+- Battery recharges via regenerative braking from front drive unit only
 
-## Key Technical Facts
-BVF 100: 2.35mm thick, 31mm diameter, 72hr PR, 3Hz, platinum micro-rotor, radiating Cotes de Geneve
-BVL 138: 2.23mm thick, 36.60mm diameter, 60hr PR, 3Hz, platinum micro-rotor
-Case 37mm: 37 x 6.45mm, 30m WR, ~65g titanium
-Case 40mm: 40 x 5.15mm (Ti), 30m WR
-Bracelet: new two-part link, push-button butterfly clasp (2yr dev)
-Minute Repeater 37mm: BVL 362, 3.12mm, 42hr, 20 pieces, CHF 161,000, cut-out markers as sounding board
-Record timeline: 8 world records 2014-2022
+## Altitude Engineering
+- NA power loss: ~3% per 1,000 ft (Garrett Motion data)
+- At summit (14,115 ft): ~42% NA power loss
+- Turbo engines partially compensate via increased compressor work
+- Air density at 14,115 ft: ~0.582 of sea-level ISA standard
+- Electric motors: zero altitude penalty
+- Less dense air = less aero downforce (ZTK wing ~42% less effective at summit)
+- Less dense air = reduced radiator/intercooler cooling capacity
 
 ## Writer
-Marcus Thorne
+Elena Voss
 
 ## Article Number
-94
+105
