@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Point-Six to Six: How Computationally Designed Steel Rewired the Weakest Link in Motorsport</title>
+<meta name="description" content="MIT professor Gregory Olson used computational thermodynamics to design Ferrium C61, a gear steel with the surface hardness of a carburized case and the core toughness of armor plate. In Baja 1000 dune buggies, gear life jumped from 0.6 races to six. Red Bull Racing adopted it for Formula One and eliminated gearbox failures entirely across four world championship seasons. Now MIT undergraduates are machining C61 gears for their own electric race car.">
+<meta name="author" content="Elena Voss">
+<meta name="article:section" content="cars">
+<meta name="article:tag" content="Ferrium C61, QuesTek, computational materials design, CALPHAD, ICME, gear steel, M2C carbide, martensitic, Red Bull Racing, Formula One, Baja 1000, MIT, Gregory Olson, Materials Genome Initiative, metallurgy, heat treatment">
+<meta name="article:published_time" content="2026-06-28">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1a1a1a; --accent: #5a7a5a;
+    --meta: #777; --border: #e0ddd8; --code-bg: #f5f3ef;
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body {
+    font-family: var(--serif); background: var(--bg); color: var(--fg);
+    line-height: 1.75; max-width: 720px; margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem; font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; }
+  .subtitle { font-size: 1.15rem; color: var(--meta); line-height: 1.5; margin-bottom: 1.5rem; font-family: var(--sans); }
+  .meta { font-family: var(--sans); font-size: 0.85rem; color: var(--meta); margin-bottom: 2.5rem; }
+  .hero-image { width: 100%; margin: 0 0 2.5rem 0; }
+  .hero-image img { width: 100%; height: auto; display: block; }
+  .hero-image figcaption { font-size: 0.78rem; color: var(--meta); margin-top: 0.4rem; font-family: var(--sans); }
+  h2 { font-size: 1.35rem; font-family: var(--sans); font-weight: 700; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+  p { margin-bottom: 1.25rem; }
+  blockquote {
+    border-left: 3px solid var(--accent); padding-left: 1.25rem;
+    margin: 1.75rem 0; font-style: italic; color: #444;
+  }
+  .spec-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--sans); font-size: 0.88rem; }
+  .spec-table th { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--fg); font-weight: 700; }
+  .spec-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+  .spec-table tr:last-child td { border-bottom: none; }
+  @media (max-width: 600px) {
+    html { font-size: 16px; }
+    body { padding: 1.25rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<article>
+<h1>Point-Six to Six: How Computationally Designed Steel Rewired the Weakest Link in Motorsport</h1>
+<p class="subtitle">MIT professor Gregory Olson used computational thermodynamics to design a gear steel with the surface hardness of a carburized case and the core toughness of armor plate. In Baja 1000 dune buggies, gear life jumped tenfold. Red Bull Racing adopted it for Formula One and eliminated gearbox failures entirely. Now MIT undergraduates are machining that same alloy into gears for their own electric race car.</p>
+<p class="meta">By Elena Voss &middot; June 28, 2026 &middot; Cars</p>
+
+<figure class="hero-image">
+<img src="images/hero-ferrium-c61-computational-steel-gear-racing.jpg" alt="Close-up macro photograph of precision-machined steel racing gears showing polished tooth surfaces and carburized case layer, warm workshop lighting reflecting off the hardened gear faces" loading="lazy">
+<figcaption>A Ferrium C61 ring-and-pinion set for off-road racing. Over 100 sets have been deployed in SCORE International events including the Baja 1000. Where conventional 9310 steel gears lasted an average of 0.6 races before failure, C61 gears completed six.</figcaption>
+</figure>
+
+<h2>Racing's Most Predictable Failure</h2>
+
+<p>Ask a Formula One chief mechanic to name the most common mechanical DNF, and the answer comes quickly: gearbox. Not engine. Not suspension. Gearbox. Gear teeth live in a punishing world of Hertzian contact stress, bending fatigue, and thermal cycling, all compressed into components that weigh as little as regulations permit. Every shift hammers the tooth flanks with loads that concentrate at microscopic contact patches, and at race speeds those shifts arrive several thousand times per event.</p>
+
+<p>Conventional gear steels present an unavoidable tradeoff. A hard surface resists the contact fatigue that pits and spalls tooth flanks. A tough core absorbs the bending loads that would snap teeth at their roots. But metallurgical hardness and toughness work against each other. Increasing carbon content raises hardness and drops toughness. Tempering at higher temperatures improves toughness but softens the case. AISI 9310, the aerospace standard that found its way into racing gearboxes, represents a careful compromise: acceptable surface hardness around 60 HRC, decent fracture toughness, reliable fatigue properties. Nothing spectacular in any dimension, but nothing catastrophically weak either.</p>
+
+<p>For decades, that compromise was the ceiling. Engineers could adjust tooth profiles, optimize gear ratios, and refine lubrication, but the fundamental material properties were fixed by the available alloys. A gearbox designer selecting 9310 in 1990 was working with essentially the same metallurgical limits as one selecting it in 2010. What changed that ceiling was not a new discovery in a furnace. It was a professor with a database and a computational model.</p>
+
+<h2>Designing Steel on a Screen</h2>
+
+<p>Gregory B. Olson arrived at MIT in 1985 with an idea that most metallurgists considered premature at best. Instead of making steels and then measuring what properties emerged, he wanted to specify the properties first and then compute the composition and heat treatment required to achieve them. He founded the Steel Research Group with the explicit goal of treating alloy design as a solvable engineering problem rather than an empirical search.</p>
+
+<p>His approach built on CALPHAD, a computational thermodynamics framework that maps the free energy of multicomponent alloy systems across composition and temperature. CALPHAD databases encode how iron, carbon, nickel, cobalt, chromium, molybdenum, and other elements interact thermodynamically in solid solution, in carbide precipitates, and at grain boundaries. Given a target composition, the model predicts which phases will form at each temperature, how fast they precipitate, and what mechanical properties the resulting microstructure will deliver.</p>
+
+<p>Olson saw that if you could predict properties from composition, you could invert the process. Define the properties you need. Set up the computational model. Run it in reverse to find the composition and thermal processing that satisfy every constraint simultaneously. Instead of making fifty melts and testing them all, you compute the answer, make one or two confirming heats, and verify against prediction. What took years of empirical iteration could, in principle, compress to months.</p>
+
+<p>Around 1990, the Army Research Office funded an SRG project to develop improved gear steels for helicopter transmissions. Rotor drive gears in aircraft like the CH-47 Chinook endure sustained high loads, elevated temperatures, and zero tolerance for failure. 9310 worked, but its limitations constrained payload capacity. If a better steel could handle 20 percent more load at the same size, the helicopter could carry measurably more weight without a gearbox redesign.</p>
+
+<p>Olson's computational approach yielded Ferrium C61. He designed the alloy over a single weekend. Not the testing, not the qualification. Those took years. But the composition itself, the specific balance of nickel, cobalt, chromium, molybdenum, and carbon that would produce the target microstructure, emerged from the computational model in days.</p>
+
+<h2>Armor Core, Gear Surface</h2>
+
+<p>C61's microstructure achieves something that conventional carburizing steels cannot: a surface case hard enough to resist rolling contact fatigue combined with a core tough enough to absorb impact loads that would fracture brittle steels. Olson described the result in practical terms: "Surface hardness was the same as for a conventional gear steel, but we gave it the core properties of an armor steel."</p>
+
+<p>At the atomic scale, C61's performance originates from nanoscale M2C carbide precipitates dispersed throughout a nickel-cobalt lath martensitic matrix. M2C carbides are molybdenum-rich compounds roughly 5 to 20 nanometers in diameter. They form during secondary hardening, a tempering stage where the alloy is held at 900 to 925°F and these tiny particles nucleate within the martensitic laths. Because the carbides are so small and so numerous, they pin dislocations efficiently. Resistance to plastic deformation climbs without the brittleness that comes from large, blocky carbides at grain boundaries.</p>
+
+<p>Conventional gear steels like 9310 temper at 300 to 350°F. At those temperatures, the hardening mechanism is retained carbon in martensite, not precipitate strengthening. Push the temperature higher and conventional steels soften as carbon diffuses out. C61's M2C precipitation pathway inverts this relationship. Higher tempering temperatures drive more M2C nucleation and growth, which increases hardness rather than reducing it. Peak properties arrive at temperatures 400 to 600°F above what conventional steels can tolerate.</p>
+
+<p>In numbers, C61 delivers a core ultimate tensile strength of 240 ksi, a 39 percent increase over 9310's approximately 173 ksi. Its fracture toughness exceeds 9310 by roughly 50 percent. Axial fatigue endurance sits near 155 ksi compared to 110 ksi for 9310. And because the secondary hardening mechanism is thermally stable, those properties hold at operating temperatures that would permanently soften a conventional carburized steel. A gear that runs hot in sustained high-load conditions retains its case hardness and core strength where 9310 would begin to degrade.</p>
+
+<h2>Baja Dunes and Shattered Conventional Wisdom</h2>
+
+<p>Olson co-founded QuesTek Innovations in Evanston, Illinois to commercialize what his lab had computed. C61 became the company's first product. An early path to market emerged not from aviation but from off-road racing.</p>
+
+<p>Baja 1000 Class 1600 dune buggies present a savage test for gearbox components. A buggy launches off a sand dune at speed with its wheels spinning freely. When it lands, the wheels bite, and the drive gears absorb an instantaneous shock load that conventional steels cannot reliably survive. QuesTek pitched C61 ring-and-pinion sets to racing teams running these cars. Prior to the switch, gear life averaged 0.6 races. On average, the gearset did not survive a single event. Teams would preposition replacement gear sets along the route, planning for the failure rather than preventing it.</p>
+
+<p>With C61 ring-and-pinion sets, average gear life rose to six races. A tenfold improvement. Same gearbox housing, same lubrication, same shock loads. Only the material changed. Over 100 C61 gear sets have since been deployed in SCORE International events, and the 3-4x durability improvement documented in controlled testing understates what teams observed in the field.</p>
+
+<p>QuesTek brought the Baja data to Formula One teams. One listened.</p>
+
+<h2>Red Bull's Silent Revolution</h2>
+
+<p>Red Bull Racing's adoption of Ferrium C61 for its Formula One gearbox did not arrive with a press release or a marketing campaign. It arrived with an absence: an absence of gearbox failures. In a sport where mechanical DNFs from transmission problems had been common enough to factor into championship point calculations, Red Bull's gearsets simply stopped breaking.</p>
+
+<p>"Once Red Bull adopted our steel for the gearset, they never had any gearbox failures, and they were world champions four times in the last decade," Olson has said publicly. Four constructors' championships. Zero gearbox DNFs. In a discipline where every team runs the same number of races and every mechanical failure hands points to rivals, eliminating an entire category of failure is not an incremental improvement. It is a structural competitive advantage.</p>
+
+<p>Publicly available FIA technical reports do not disclose gearbox material specifications. Red Bull has not confirmed the relationship in official team communications. Olson's statements represent the primary source, made in an academic and institutional context rather than a commercial marketing context, and they have not been disputed.</p>
+
+<p>What makes the F1 application particularly demanding is the weight constraint. FIA regulations impose minimum car weights, and teams allocate mass with obsessive precision. Every gram saved in the gearbox can be repositioned as ballast where it improves handling. A steel that delivers equivalent or superior gear performance at reduced cross-section allows lighter gear teeth, thinner webs, and smaller shafts. C61's 39 percent advantage in core tensile strength over 9310 translates directly into either smaller gears at equal load capacity or greater load margins at equal size. In a weight-critical application, both options carry strategic value.</p>
+
+<h2>Manufacturing Without the Oil Bath</h2>
+
+<p>Beyond raw performance, C61 offers manufacturing advantages that reduce cost and lead time. Conventional gear steel processing requires carburizing at moderate temperatures, followed by an oil quench that plunges the glowing part into a tank of quenchant. Oil quenching induces severe thermal gradients that distort the gear, requiring extensive post-quench grinding to restore tooth geometry. To protect surfaces that should not be carburized, manufacturers must copper-plate those areas before heat treatment and strip the plating afterward. Each step adds time, cost, and potential for error.</p>
+
+<p>C61 was designed for high-temperature vacuum carburization followed by mild gas quenching. Vacuum carburizing eliminates intergranular oxidation, a persistent quality problem in atmospheric carburizing furnaces. Gas quenching produces far less distortion than oil quenching because the cooling rate is more uniform and less violent. Reduced distortion means less material must be left as grinding stock, which reduces final machining time and cost. Copper plating becomes unnecessary. QuesTek estimates that the combined processing advantages cut carburizing time by up to 50 percent compared to conventional steels, primarily because C61's efficient M2C strengthening mechanism requires less total carbon in the case layer.</p>
+
+<p>Latrobe Specialty Steel Company in Pennsylvania produces C61 commercially under AMS 6517 specification. SAE AMS 2759/7 covers its thermal processing. Multiple heat treaters have developed qualified cycles, and the ability to dial in case depth profiles with precision gives manufacturers flexibility that the fixed processing windows of conventional steels do not provide.</p>
+
+<h2>Full Circle at MIT</h2>
+
+<p>In 2025, the student-run MIT Motorsports team approached Olson about obtaining Ferrium C61 for their Formula SAE Electric race car. QuesTek sold sample stock at a steep discount, along with instructions for heat treatment. Undergraduates machined the gears themselves, designed the drivetrain around them, and assembled the car in their campus shop.</p>
+
+<p>MIT Motorsports' 2026 car competed in the Formula SAE Electric competition in June, racing against student-built electric vehicles from universities worldwide. Forty years after Olson founded the Steel Research Group in the same department, a material born from computational thermodynamics on an MIT campus was running in student-fabricated gears on an MIT race car. Undergraduate hands cut the teeth that a professor's algorithms had designed.</p>
+
+<p>Olson's work influenced more than one alloy. His demonstration that computational methods could design structural materials with targeted properties helped establish the field of Integrated Computational Materials Engineering, or ICME. In 2011, President Obama announced the Materials Genome Initiative, a national program to accelerate materials discovery through computation. Olson's Steel Research Group was among the bodies of work that proved the concept was viable. Nobody knew whether computers could design alloys in 1985. By 2026, the evidence runs on racetracks.</p>
+
+<h2>Why It Matters Beyond the Grid</h2>
+
+<p>Ferrium C61 is not the only product of QuesTek's computational approach. Ferrium C64 (AMS 6509) extends the concept with even higher surface hardness, reaching 62 to 64 HRC, targeted at applications where contact fatigue dominates, such as planetary gears in rotorcraft epicyclical transmissions. Ferrium S53 (AMS 5922) is an ultra-high-strength stainless steel designed to eliminate cadmium plating on military landing gear. Ferrium M54 (AMS 6516) is a drop-in replacement for AerMet 100 in structural aerospace applications. Each was computationally designed using the same CALPHAD-based framework, and each reached flight qualification faster than any empirically developed predecessor.</p>
+
+<p>For automotive and motorsport engineers, the broader lesson may be more durable than any specific alloy. Gear steels sat at the same performance plateau for decades because the empirical approach to alloy development is slow, expensive, and biased toward incremental changes to known compositions. Computational design breaks that constraint. It searches a vastly larger composition space, it evaluates tradeoffs that would require hundreds of experimental heats to map empirically, and it produces designs that no intuitive guess would have reached. C61's nickel-cobalt-molybdenum balance was not an obvious formulation. It was computed.</p>
+
+<p>A dune buggy team that replaced its gears after every half-race now replaces them after six. An F1 team that budgeted for gearbox failures stopped budgeting for them. And a group of MIT undergraduates, machining gears in a campus workshop, is running a steel that was designed on a computer screen forty years ago in the building next door. Materials science does not move fast. But when it moves, it rewires everything downstream.</p>
+
+<table class="spec-table">
+<tr><th colspan="2">Ferrium C61 vs. AISI 9310 Gear Steel Comparison</th></tr>
+<tr><td>Designation</td><td>Ferrium C61 (AMS 6517) vs. AISI 9310</td></tr>
+<tr><td>Core Ultimate Tensile Strength</td><td>240 ksi vs. ~173 ksi (+39%)</td></tr>
+<tr><td>Core Fracture Toughness</td><td>~50% improvement over 9310</td></tr>
+<tr><td>Axial Fatigue Endurance</td><td>~155 ksi vs. ~110 ksi</td></tr>
+<tr><td>Surface Hardness (Carburized)</td><td>Comparable (~60+ HRC, C64 variant reaches 62-64 HRC)</td></tr>
+<tr><td>Tempering Temperature</td><td>900-925°F vs. 300-350°F (9310)</td></tr>
+<tr><td>Matrix Microstructure</td><td>Ni-Co lath martensite with nanoscale M2C carbide precipitates</td></tr>
+<tr><td>Carburization Time Reduction</td><td>Up to 50% (efficient M2C strengthening requires less case carbon)</td></tr>
+<tr><td>Quench Method</td><td>Mild gas quench (vs. oil quench for 9310)</td></tr>
+<tr><td>Baja 1000 Gear Life</td><td>6 races (vs. 0.6 races for 9310, 10x improvement)</td></tr>
+<tr><td>Manufacturer</td><td>Latrobe Specialty Steel Company, Latrobe, PA</td></tr>
+<tr><td>Designer</td><td>QuesTek Innovations LLC (ICME/CALPHAD computational design)</td></tr>
+</table>
+
+</article>
+</body>
+</html>
