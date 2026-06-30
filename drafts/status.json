@@ -1,20 +1,20 @@
 {
-    "phase": "IDLE",
-    "slug": "gshock-mtg-b4000-ai-carbon-frame",
-    "topic": "G-Shock MTG-B4000 AI-Engineered Carbon Frame",
-    "article_number": 112,
-    "category": "watches",
+    "phase": "CRITIQUE",
+    "slug": "ferrari-morphing-aero-deformable-bodywork",
+    "topic": "Ferrari Morphing Aerodynamic Bodywork - Elastically Deformable Composites",
+    "article_number": 113,
+    "category": "cars",
     "last_category": "watches",
     "next_category": "cars",
     "writer": "Elena Voss",
     "published_date": "2026-06-29",
-    "published_today": true,
+    "published_today": false,
     "critique_score": 9.43,
     "critique_passed": true,
     "em_dash_count": 0,
     "the_sentence_pct": 4.8,
     "hero_image_ready": true,
     "banked_draft": null,
-    "last_updated": "2026-06-29T07:40:00Z",
-    "last_run_note": "Article #112 published successfully. Completed SHIP after prior timeout."
+    "last_updated": "2026-06-30T07:35:00Z",
+    "last_run_note": "Skipped: article #112 already published today (2026-06-29). 1/day max."
 }
