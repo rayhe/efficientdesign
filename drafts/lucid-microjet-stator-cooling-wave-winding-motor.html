@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oil in the Teeth &mdash; Efficient Design</title>
+  <meta name="description" content="How Lucid Motors carved oil cooling channels directly into the stator laminations and replaced 192 laser welds with a single continuous copper wave winding to build the most power-dense production EV motor ever made.">
+  <meta property="og:title" content="Oil in the Teeth: How Lucid Shrank 670 Horsepower Into a Carry-On Bag">
+  <meta property="og:description" content="Inside the engineering of Lucid's microjet stator cooling, continuous wave winding, and integrated rotor differential — the innovations that let a 31-kilogram motor produce 10 horsepower per pound.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://efficientdesign.net/stories/images/hero-lucid-microjet-stator-cooling-wave-winding-motor.jpg">
+  <meta property="og:url" content="https://efficientdesign.net/stories/lucid-microjet-stator-cooling-wave-winding-motor.html">
+  <link rel="canonical" href="https://efficientdesign.net/stories/lucid-microjet-stator-cooling-wave-winding-motor.html">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Oil in the Teeth: How Lucid Shrank 670 Horsepower Into a Carry-On Bag",
+  "description": "How Lucid Motors carved oil cooling channels directly into the stator laminations and replaced 192 laser welds with a single continuous copper wave winding to build the most power-dense production EV motor ever made.",
+  "author": {
+    "@type": "Person",
+    "name": "Marcus Thorne"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Efficient Design",
+    "url": "https://efficientdesign.net"
+  },
+  "datePublished": "2026-07-12",
+  "dateModified": "2026-07-12",
+  "url": "https://efficientdesign.net/stories/lucid-microjet-stator-cooling-wave-winding-motor.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://efficientdesign.net/stories/lucid-microjet-stator-cooling-wave-winding-motor.html"
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": "en-US",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://efficientdesign.net/stories/images/hero-lucid-microjet-stator-cooling-wave-winding-motor.jpg"
+  },
+  "articleSection": "Cars"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Lucid's microjet stator cooling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lucid's microjet stator cooling is a patented system that cuts narrow channels directly into the teeth of the stator's steel laminations. Automatic transmission fluid flows through these channels, extracting heat at the point of generation rather than from the stator's outer surface. At the end-windings, the channels narrow to create a sprayer-jet effect that coats the copper directly with coolant. This approach replaces conventional water-jacket cooling and allows higher continuous power output from a smaller motor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Lucid's continuous wave winding differ from hairpin windings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most EV motors use hairpin (bar-wound) stators that require approximately 192 laser welds to connect individual copper segments at the end turns. Lucid's continuous wave winding uses a single length of square copper wire woven in a continuous pattern and inserted radially into the stator lamination stack as one piece. This eliminates the welds entirely, reduces electrical resistance at the joints, produces smaller end-turns, and enables fully automated CNC manufacturing at Lucid's Arizona factory."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html" class="logo">Efficient Design</a>
+    <nav>
+      <a href="../index.html">Stories</a>
+      <a href="../about.html">About</a>
+    </nav>
+    <button class="theme-toggle" onclick="document.documentElement.classList.toggle('dark');localStorage.setItem('theme',document.documentElement.classList.contains('dark')?'dark':'light')" aria-label="Toggle dark mode">◐</button>
+  </header>
+  <main>
+    <article class="story">
+      <div class="story-kicker">Cars</div>
+      <h1>Oil in the Teeth: How Lucid Shrank 670 Horsepower Into a Carry-On Bag</h1>
+      <div class="byline">Marcus Thorne</div>
+      <div class="dateline">July 12, 2026</div>
+
+      <img class="story-hero" src="images/hero-lucid-microjet-stator-cooling-wave-winding-motor.jpg" alt="Macro photograph of an electric motor stator with copper wave windings visible between steel lamination teeth, showing oil cooling channels cut into the lamination stack, under warm directional workshop lighting">
+
+      <div class="pull-stat">10 HP/lb</div>
+      <div class="pull-label">Power density from a single 31-kilogram motor. Each Lucid drive unit produces 670 horsepower, weighs 74 kilograms complete with inverter, differential, and reduction gear, and fits inside an airline carry-on bag.</div>
+
+      <p>Most electric motors look the same at a distance. Cylindrical housing, copper coils, some wiring. Open one up from a Tesla Model S Plaid, a Porsche Taycan Turbo, or a Lucid Air, though, and the engineering philosophies diverge immediately. Different winding patterns. Different cooling strategies. Different answers to the same fundamental question: how do you extract maximum torque from a magnetic field while keeping the copper from melting?</p>
+
+      <p>Lucid's answer involved cutting slots into the steel itself, pouring oil through the gaps, and eliminating nearly two hundred welded joints from every motor they build. What emerged is arguably the most power-dense production EV motor on the planet: 670 horsepower from 31 kilograms of hardware, roughly one-third lighter than competing units from the two companies most often cited as benchmarks.</p>
+
+      <h2>Where Heat Actually Lives</h2>
+
+      <p>Electric motor efficiency sounds abstract until you understand what limits it. Copper windings carry current, current generates heat through resistive losses, and that heat degrades performance in two ways. First, it raises electrical resistance, which further increases heat production in a vicious feedback loop. Second, it damages insulation on the wires, which eventually causes short circuits and motor failure. Every EV motor engineer faces the same constraint: how quickly you can remove heat from the copper determines how much continuous power the motor can deliver.</p>
+
+      <p>Conventional EV motors cool the stator from outside. A water jacket wraps around the stator's cylindrical housing, pulling heat outward through the steel laminations. This works, but poorly. Heat must conduct through layers of steel and insulation before reaching the coolant. By the time thermal energy arrives at the water jacket, the copper at the center has been baking for milliseconds that matter at high power draws.</p>
+
+      <p>Porsche's Taycan uses this water-jacket approach with an eight-pole rotor spinning at 16,000 RPM. Tesla's Plaid motor directs oil at the stator's outer surface, an improvement over water cooling but still reliant on heat traveling outward from the windings. Lucid's VP of Powertrain, Emad Dlala, decided neither was close enough to the source.</p>
+
+      <h2>Microchannels in the Laminations</h2>
+
+      <p>Stators are built from hundreds of thin steel laminations stamped from electrical steel sheet and stacked together. Lucid's engineers modified the stamping dies to cut narrow additional slots into the teeth of each lamination, the finger-like projections that separate the copper winding slots. When stacked, these cuts align into continuous microchannels running axially through the stator teeth, right next to where the copper sits.</p>
+
+      <p>Automatic transmission fluid, chosen for its thermal stability and dielectric properties, flows through these channels under pressure. Because the oil runs directly adjacent to the copper windings rather than around the outside of the housing, thermal resistance drops dramatically. Heat travels millimeters to reach coolant instead of centimeters.</p>
+
+      <p>At the end-windings, where copper loops back around at each end of the stator, the channels narrow progressively. This constriction accelerates the fluid and creates a sprayer-jet effect, coating the copper end-turns with a fine mist of ATF. End-windings are the hottest region of any motor because they sit outside the lamination stack with no steel to conduct heat away. Lucid's microjet design attacks this problem directly, spraying coolant precisely where temperatures peak.</p>
+
+      <p>One surprising consequence of this cooling architecture: Lucid eliminated physical temperature sensors from the motor entirely. Instead, the control software uses a physics-based thermal model that calculates winding temperature in real time from current flow, duty cycle, coolant temperature, and ambient conditions. Removing the sensors reduced part count and eliminated a common failure point, while the software model provides faster response to thermal events than any thermocouple could.</p>
+
+      <h2>Square Wire, Zero Welds</h2>
+
+      <p>Cooling innovation alone does not explain the motor's power density. How copper fills the stator slots matters equally, and here Lucid departed from industry convention in a way that required building entirely new manufacturing equipment.</p>
+
+      <p>Most high-performance EV motors use hairpin windings, sometimes called bar-wound stators. Individual copper bars are pre-shaped, inserted into the stator slots, then laser-welded at the end-turns to complete the electrical circuit. A typical hairpin stator requires approximately 192 laser welds to connect all the bar segments. Each weld introduces a tiny area of altered metallurgy, slightly higher resistance, and a potential quality risk.</p>
+
+      <p>Lucid uses continuous wave winding instead. A single length of square-profile copper wire is woven into a continuous wave-like pattern and inserted radially into the lamination stack as one integrated piece. No individual bars. No end-turn welds. Eight stacked rectangular conductors fill each slot, and their square cross-section maximizes the copper-to-air ratio within each slot compared to round wire, which wastes space in the corners.</p>
+
+      <p>Eric Bach, Lucid's SVP of Product and Chief Engineer, has noted that continuous wave winding is common in alternators and small generators. Scaling it to a high-performance traction motor required solving problems those applications never encounter: managing electromagnetic forces at 20,000 RPM, maintaining insulation integrity under sustained high current, and automating the winding process for mass production. Lucid built a custom CNC winding machine at its Casa Grande, Arizona factory. It remains, by the company's account, the only machine of its kind in the world.</p>
+
+      <p>Benefits compound. Eliminating 192 welds removes 192 points of elevated resistance, which reduces I²R losses across the winding. Smaller end-turns from the continuous pattern shorten the motor's overall length, cutting parasitic mass. And full automation means every stator is wound identically, removing the quality variation that plagues manual or semi-automated welding operations.</p>
+
+      <h2>Hiding a Differential Inside the Rotor</h2>
+
+      <p>Lucid's six-pole permanent-magnet synchronous motor spins at 20,000 RPM. For reference, Porsche's Taycan motor reaches 16,000 RPM with an eight-pole design, and Tesla's Plaid motor pushes 23,000 RPM but requires a carbon-fiber wrap around the rotor to keep magnets from flying apart under centrifugal force. Lucid's approach avoids the carbon wrap by using fewer poles and a slightly lower peak speed, trading a small amount of top-end RPM for simpler, lighter construction.</p>
+
+      <p>What Lucid did with the space inside the rotor shaft is where integration becomes remarkable. A four-element planetary gearset and differential sit inside the hollow rotor shaft itself, occupying volume that in other designs is simply empty spinning steel. Operating the differential at rotor speed (high speed, low torque) rather than at wheel speed (low speed, high torque) reduces gear loads and allows smaller, lighter gear components.</p>
+
+      <p>Machined oil channels in the shaft serve double duty, lubricating the planetary gears and contributing to rotor cooling. A single component carries structural, drivetrain, and thermal management functions simultaneously. This integration eliminated the offset drivetrain geometry that most EV drive units require, shortened the overall unit length, and freed the packaging space that lets the Lucid Air offer a 280-liter front trunk.</p>
+
+      <h2>Six Identical Modules, Variable Power</h2>
+
+      <p>Power electronics tell the rest of the density story. Lucid designed a modular silicon carbide inverter where each identical module handles 250 kilowatts. Different Lucid models use different numbers of modules: the standard Air uses two or four, while the Sapphire tri-motor flagship stacks six modules to reach megawatt-class power delivery.</p>
+
+      <p>Silicon carbide MOSFETs switch faster and waste less energy as heat compared to traditional silicon IGBTs, especially at the 900-volt operating voltage Lucid chose for its architecture. Double-sided cooling plates sandwich each power module, extracting heat from both the component face and its substrate. By keeping the inverter modules identical across all vehicle trims, Lucid simplified its supply chain, reduced tooling costs, and achieved scale economies that a bespoke-per-trim approach cannot match.</p>
+
+      <p>Stators across different power levels are physically identical. Only the wire interconnections between winding segments differ, allowing the same manufacturing line to produce motors for a 480-horsepower touring sedan or a 1,200-horsepower track weapon. Modularity at this level is rare in automotive powertrains, where performance variants typically require distinct components from casting onward.</p>
+
+      <h2>Sapphire: Three Motors, One Architecture</h2>
+
+      <p>All of these innovations culminate in the Lucid Air Sapphire, which pairs a twin-motor rear-drive unit with a single-motor front unit. Combined output exceeds 1,200 horsepower, with the rear motors providing independent torque vectoring between left and right wheels.</p>
+
+      <p>Performance figures reflect the system's capability: 0-60 mph in under two seconds, 0-100 mph in under four seconds, the standing quarter-mile in under nine seconds, and a top speed beyond 200 mph. Carbon-ceramic brakes come standard. No preconditioning routines are required to achieve these numbers, a notable distinction from competitors where peak performance demands battery warm-up procedures that can take fifteen minutes or more.</p>
+
+      <p>Each complete drive unit (motor, inverter, differential, reduction gear) weighs 74 kilograms. With three drive units, the Sapphire's total powertrain mass is roughly 222 kilograms for 1,200-plus horsepower. For comparison, a single turbocharged V8 engine producing similar power typically weighs 250-350 kilograms before accounting for its transmission, driveshaft, differential, and cooling system.</p>
+
+      <h2>What the Weight Reveals</h2>
+
+      <p>Munro & Associates, the teardown firm known for its unsentimental evaluations of automotive engineering, weighed and compared the core components of Lucid, Tesla, and Porsche motors side by side. Lucid's motor came in at 31.4 kilograms. Tesla's Plaid motor weighed 40.1 kilograms. Porsche's Taycan motor hit 47 kilograms. All three produce roughly comparable peak power per motor, which makes the weight gap stark.</p>
+
+      <p>Lighter motors are not automatically better. A heavier motor with superior sustained power output could be the smarter engineering choice for certain applications. But Lucid's lighter weight comes not from material substitution or aggressive hollowing but from fundamental design choices that reduce the amount of copper, steel, and housing material needed to produce equivalent output. Less copper per winding (from higher slot fill), less steel per stator (from shorter end-turns), and less housing (from eliminating external cooling jackets in favor of internal channels). Every gram removed traces back to a specific engineering decision, not to a blanket "lightweighting" directive.</p>
+
+      <p>Emad Dlala has emphasized that Lucid's team did not optimize the motor in isolation. "We didn't make the world's best motor in isolation and then tried to make the world's best inverter," he said in a Munro Live interview. "We made the complete system world-class by trading capabilities and attributes between the two." Inverter switching frequency influenced winding design. Cooling channel geometry affected electromagnetic field distribution. Rotor shaft diameter was constrained by the planetary gears inside it. Every parameter was a negotiation across disciplines, and the 31.4-kilogram result emerged from thousands of those negotiations resolved simultaneously rather than sequentially.</p>
+
+      <p>For a sedan that also offers 500 miles of range, limo-like rear legroom, and a front trunk larger than most SUVs, the motor engineering is not the whole story. But it is the foundation that makes everything else possible. When the motor is small enough to fit in a carry-on and efficient enough to waste almost nothing, the rest of the vehicle design gets room to breathe. That room is exactly where Lucid's engineers chose to put a trunk.</p>
+
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2026 Efficient Design</p>
+  </footer>
+</body>
+</html>
