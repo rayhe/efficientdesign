@@ -1,0 +1,9 @@
+{
+  "text": "{\"file_path\":\"\\/mnt\\/data\\/watchmaker_oil_macro.webp\",\"snapshot_handle\":\"GNfDryzGUaTIqg0HAD_B0V1M6DRybg1iAQBj\",\"status\":\"Generated 1 image(s)\",\"tools_called_tag\":\"\\n[tools_called: generate_image]\",\"usage\":{\"generation_calls\":1,\"input_tokens\":10441,\"output_tokens\":1183,\"reasoning_tokens\":304},\"media_context_handle\":\"su8iqk\"}",
+  "attachments": [
+    {
+      "url": "https://scontent.xx.fbcdn.net/v/t39.105495-1/749150737_1719002376126047_5933139435332660097_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=111&_nc_ohc=51m-jEFHQQAQ7kNvwGc--2M&sdl=0&ccb=14-4&oh=00_AQCCTE62AsIVNtwdnOpUgy8kz8wbLGS28aPPTq_6ZhSZpg&oe=6A62686A&_nc_sid=a21977",
+      "media_handle": ""
+    }
+  ]
+}
