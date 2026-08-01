@@ -1,9 +1,9 @@
 {
   "article_number": 145,
-  "phase": "DRAFT",
-  "last_category": "watches",
+  "phase": "SHIPPED",
+  "last_category": "cars",
   "next_category": "watches",
-  "published_date": null,
+  "published_date": "2026-08-01",
   "slug": "koenigsegg-lst-light-speed-transmission-multi-clutch",
   "title": "Three Shafts, Seven Clutches, Nine Ratios: Inside Koenigsegg's Light Speed Transmission"
 }
