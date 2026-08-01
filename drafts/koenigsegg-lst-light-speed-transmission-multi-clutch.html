@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Shafts, Seven Clutches, Nine Ratios: Inside Koenigsegg's Light Speed Transmission</title>
+<meta name="description" content="Koenigsegg's Light Speed Transmission uses three gear shafts and seven wet clutches to achieve nine forward ratios from only six gear pairs. It can skip gears instantaneously, weighs just 90 kg with fluids, and eliminates synchronizers, collars, and selector forks entirely. Inside the engineering that made dual-clutch technology look outdated.">
+<meta name="author" content="Elena Voss">
+<meta name="article:section" content="cars">
+<meta name="article:tag" content="Koenigsegg, Light Speed Transmission, LST, multi-clutch, Jesko, UPOD, dual-clutch, DCT, transmission, gearbox, CC850, shift-by-wire, hypercar, compounding gears">
+<meta name="article:published_time" content="2026-08-01">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1a1a1a; --accent: #5a7a5a;
+    --meta: #777; --border: #e0ddd8; --code-bg: #f5f3ef;
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body {
+    font-family: var(--serif); background: var(--bg); color: var(--fg);
+    line-height: 1.75; max-width: 720px; margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem; font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; }
+  .subtitle { font-size: 1.15rem; color: var(--meta); line-height: 1.5; margin-bottom: 1.5rem; font-family: var(--sans); }
+  .meta { font-family: var(--sans); font-size: 0.85rem; color: var(--meta); margin-bottom: 2.5rem; }
+  .hero-image { width: 100%; margin: 0 0 2.5rem 0; }
+  .hero-image img { width: 100%; height: auto; display: block; }
+  .hero-image figcaption { font-size: 0.78rem; color: var(--meta); margin-top: 0.4rem; font-family: var(--sans); }
+  h2 { font-size: 1.35rem; font-family: var(--sans); font-weight: 700; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+  p { margin-bottom: 1.25rem; }
+  blockquote {
+    border-left: 3px solid var(--accent); padding-left: 1.25rem;
+    margin: 1.75rem 0; font-style: italic; color: #444;
+  }
+  .spec-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--sans); font-size: 0.88rem; }
+  .spec-table th { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--fg); font-weight: 700; }
+  .spec-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+  .spec-table tr:last-child td { border-bottom: none; }
+  @media (max-width: 600px) {
+    html { font-size: 16px; }
+    body { padding: 1.25rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<article>
+<h1>Three Shafts, Seven Clutches, Nine Ratios: Inside Koenigsegg's Light Speed Transmission</h1>
+<p class="subtitle">Dual-clutch transmissions predict the next gear. If they guess wrong, the driver feels it. Koenigsegg solved this by building a gearbox that never needs to guess at all. Its three-shaft, seven-clutch architecture can skip from seventh gear to fourth in the time a conventional DCT takes to pre-select a single adjacent ratio.</p>
+<p class="meta">By Elena Voss &middot; August 1, 2026 &middot; Cars</p>
+
+<figure class="hero-image">
+<img src="images/hero-koenigsegg-lst-light-speed-transmission-multi-clutch.jpg" alt="Close-up of the Koenigsegg Light Speed Transmission showing its compact multi-clutch housing, gear shafts, and hydraulic actuator assembly" loading="lazy">
+<figcaption>At 90 kg with fluids and roughly half the length of the seven-speed DCT it replaced, Koenigsegg's Light Speed Transmission houses nine forward ratios in a package that eliminates every synchronizer, collar, and selector fork found in conventional multi-speed gearboxes. Each of its seven wet clutches has its own pressure sensor and hydraulic actuator.</figcaption>
+</figure>
+
+<h2>Why Dual-Clutch Transmissions Hit a Wall</h2>
+
+<p>Dual-clutch transmissions transformed performance cars in the early 2000s. By splitting the gear set across two input shafts, each controlled by its own clutch, a DCT could pre-engage the predicted next gear while the current one was still driving the wheels. Open one clutch, close the other, and the ratio change happens in milliseconds with almost no torque interruption. Porsche's PDK, Volkswagen's DSG, and dozens of variants from other manufacturers refined the concept over two decades.</p>
+
+<p>But the architecture carries two constraints that no amount of software refinement can eliminate. First, a DCT is sequential. It can only pre-select the gear immediately adjacent to the current one. Sitting in seventh and wanting fourth means passing through sixth, then fifth, then fourth, with each shift requiring its own clutch swap. Second, a DCT must predict which direction the driver wants to shift. Odd-numbered gears live on one input shaft, even-numbered on the other. If you are in fifth gear and the system pre-selects sixth, but you actually want fourth, it must disengage sixth from its shaft, engage fourth, and then perform the clutch handoff. That reversal takes time. Not a lot. But enough to feel.</p>
+
+<p>For most drivers, these constraints are invisible. In a Porsche 911, a PDK upshift takes roughly 200 milliseconds. Nobody is complaining about that during a highway merge. But Christian von Koenigsegg does not build cars for highway merges. He builds cars that produce 1,600 horsepower on E85 fuel and hit 330 km/h on a runway. In that context, every sequential downshift through three gears is a measurable loss of acceleration. Every wrong prediction by the pre-selection algorithm is a gap in the torque curve that a competitor can exploit.</p>
+
+<p>Koenigsegg's first response was to avoid transmissions entirely. In 2015, the Regera used a direct-drive system with a single reduction gear and three electric motors filling in the torque gaps where different ratios would normally operate. No gears meant no shift delays. But direct drive only worked because those electric motors could compensate for missing mechanical ratios. For the Jesko, announced in 2019, Koenigsegg wanted nine forward gears and zero compromises on shift speed. Direct drive would not work. A DCT would not work either. So the company built something new.</p>
+
+<h2>Compound Gearing: Nine Ratios from Six Pairs</h2>
+
+<p>A conventional nine-speed DCT requires nine pairs of gears. One driving gear and one driven gear for each ratio, arranged across two parallel shafts, with synchronizers and selector forks sliding into position to lock the correct pair. It works, but it is heavy, long, and mechanically complex.</p>
+
+<p>Koenigsegg's Light Speed Transmission uses three shafts instead of two. Each shaft carries two permanently meshed gear pairs. Power enters through the input shaft from the engine. From there, it can flow to the second shaft, or from the second shaft onward to the third. Because gears on different shafts can combine in series, two gear ratios can multiply together to produce a third ratio that neither could achieve alone. This is compounding: the same principle that lets a bicycle's two-chainring, five-sprocket drivetrain produce ten speeds, not seven.</p>
+
+<p>With three shafts and six gear pairs, the LST produces nine distinct forward ratios. A traditional DCT needs nine gear pairs for nine ratios. Half the gear pairs means a shorter, lighter transmission. Koenigsegg quotes the total weight at 90 kg including fluids, and claims the package is roughly 50 percent shorter in length than the seven-speed DCT that previously served in the Agera.</p>
+
+<table class="spec-table">
+<tr><th>Parameter</th><th>Koenigsegg LST</th><th>Typical 7-speed DCT</th></tr>
+<tr><td>Forward ratios</td><td>9</td><td>7</td></tr>
+<tr><td>Gear shafts</td><td>3</td><td>2</td></tr>
+<tr><td>Gear pairs required</td><td>6</td><td>7</td></tr>
+<tr><td>Clutches</td><td>7 wet multi-disc</td><td>2 (wet or dry)</td></tr>
+<tr><td>Synchronizers</td><td>0</td><td>7</td></tr>
+<tr><td>Selector forks</td><td>0</td><td>3&ndash;4</td></tr>
+<tr><td>Weight (with fluids)</td><td>90 kg (198 lb)</td><td>~120&ndash;140 kg</td></tr>
+</table>
+
+<h2>Seven Clutches Instead of Moving Parts</h2>
+
+<p>In a DCT or manual gearbox, selecting a gear means physically sliding a synchronizer sleeve along its shaft until dog teeth lock the chosen gear pair to the shaft. Selector forks, actuated by hydraulic pistons or electric motors, push those sleeves into position. Synchronizer rings equalize rotational speed between shaft and gear before the dog teeth engage. All of this involves mechanical translation: parts physically moving back and forth along the axis of the shaft.</p>
+
+<p>Koenigsegg eliminated every one of those moving components. In the LST, all six gear pairs are permanently meshed. None of them slide. Instead, seven wet multi-disc clutches control which gear pairs transmit power and which ones freewheel. Engaging a gear means clamping a clutch. Disengaging means releasing it. Each clutch has its own dedicated pressure sensor and its own hydraulic actuator, giving the transmission's control unit independent, simultaneous authority over all seven.</p>
+
+<p>This architecture is why the LST can skip gears. In a DCT, jumping from seventh to fourth requires three sequential synchronizer engagements, each preceded by a speed-matching phase. In the LST, it requires releasing whatever clutches are currently engaged and simultaneously clamping the clutches that route power through the gear pairs whose compound ratio equals fourth gear. One action, not three. And because wet multi-disc clutches can be modulated with extreme precision (squeeze harder for more torque transfer, lighter for slip), the handoff between old and new ratios can be made as smooth or as aggressive as the software chooses.</p>
+
+<p>Reverse gear uses the seventh clutch in a configuration that routes the input shaft directly to the output shaft, skipping the intermediate gear set entirely. Because this reverses the relationship between input and output rotation, the wheels spin backward. No dedicated reverse idler gear is needed.</p>
+
+<h2>UPOD: Software That Picks the Right Ratio Instantly</h2>
+
+<p>Hardware that can skip gears is only half the equation. Software must decide which gear to skip to. Koenigsegg calls its shift logic UPOD, for Ultimate Power On Demand. At any given moment, UPOD reads vehicle speed and engine speed, calculates which of the nine ratios would place the engine at its peak power RPM for maximum acceleration, and stands ready to engage that ratio.</p>
+
+<p>In normal driving, the transmission shifts sequentially: second to third, third to fourth. UPOD operates transparently in the background, identical to any well-calibrated automatic. But Koenigsegg built a physical interface for moments when the driver wants everything the powertrain can deliver.</p>
+
+<p>Both the steering-wheel paddles and the center-console shifter have a dual-notch mechanism. Pull a paddle to the first detent, and the transmission shifts one gear up or down, conventionally. Pull the paddle past that first notch to a second, stiffer detent, and UPOD takes over. It calculates the optimal gear for maximum power at the current speed and engages it, even if that means skipping three or four ratios in a single action.</p>
+
+<p>For the Jesko Absolut, which produces 1,600 horsepower on E85 and has a claimed top speed of 330 km/h, this capability is not academic. Accelerating out of a tight corner at 80 km/h might demand third gear. UPOD can drop from seventh to third in the time it takes the driver's thumb to complete the paddle pull. No sequential stepping, no prediction errors, no waiting for synchronizers to spin up.</p>
+
+<h2>No Flywheel, and What That Does to the Sound</h2>
+
+<p>Because the LST uses clutch-to-clutch engagement rather than a traditional single dry clutch, it dispenses with the conventional flywheel entirely. In a manual or single-clutch automated transmission, the flywheel serves as a rotational energy reservoir: it smooths out combustion pulses from the engine and stores enough angular momentum to prevent the engine from stalling during clutch slip. Flywheels are heavy. A typical dual-mass flywheel in a performance car weighs 12 to 18 kg.</p>
+
+<p>Removing the flywheel reduces rotational inertia dramatically. Combined with the Jesko's flat-plane crankshaft (already lighter than a cross-plane crank because it needs fewer and smaller counterweights), the entire rotating assembly from crankshaft to transmission input has unusually low inertia. Low rotational inertia connects directly to shift quality: when the LST changes gears, the engine must change RPM to match the new ratio. Less spinning mass means the engine reaches target RPM faster, and less energy is wasted on acceleration or deceleration of metal that contributes nothing to propulsion. At idle, this produces an unexpected acoustic consequence: without the damping influence of a heavy flywheel, individual combustion events in the V8 are more distinct. Journalists who have driven the Jesko consistently describe its idle note as reminiscent of a Formula One car, with each firing pulse audible rather than blurred into a continuous hum.</p>
+
+<h2>CC850: Nine Speeds Disguised as Six</h2>
+
+<p>Having built a transmission that shifts faster than any DCT, Koenigsegg then used the same hardware to simulate the thing a DCT was designed to replace: a manual gearbox. In the CC850, introduced in 2023 to celebrate Christian von Koenigsegg's fiftieth birthday, the LST operates behind a clutch pedal and a gated shifter. Both are entirely shift-by-wire. Neither has a mechanical connection to the transmission.</p>
+
+<p>In manual mode, the driver selects from six of the nine forward ratios through a traditional H-pattern gate. Force-feedback actuators in the shifter provide the resistance and notchiness of a mechanical linkage. Clutch pedal pressure is electronic, tuned to mimic the engagement curve of a traditional single-disc clutch. Von Koenigsegg has described the target feel as a cross between a Mazda MX-5 and a gated Ferrari manual.</p>
+
+<p>Move the shifter to the right and pull it rearward, and the CC850 switches to full automatic mode using all nine ratios. UPOD manages shifts with the same gear-skipping capability as in the Jesko. It is the same transmission, the same clutch pack, the same three-shaft architecture. Only the human interface changes.</p>
+
+<p>This is arguably the more impressive achievement. Building a faster DCT is an incremental advance. Building a shift-by-wire system that convincingly replicates the feel of a manual gearbox using hardware that bears no resemblance to one is a fundamentally different kind of engineering problem. It requires not just mechanical precision but an understanding of human haptic perception: how much resistance feels right at each point in the shift gate, how engagement should progress through the clutch pedal's travel, what acoustic and tactile cues make a shift feel "real" when there are no synchronizer rings clicking into place.</p>
+
+<h2>What Seven Clutches Cost</h2>
+
+<p>No engineering decision is free. Where a DCT manages heat dissipation across two clutch packs, the LST must cool seven. Wet clutches run submerged in transmission fluid, which absorbs heat and carries it to a cooler, but seven clutch packs multiplied by 1,600 horsepower of peak input torque generate substantial thermal load during aggressive driving. Each clutch also requires its own hydraulic actuator circuit with independent pressure regulation, which means seven solenoid valves, seven pressure sensors, and the control algorithms to coordinate them all within milliseconds. In a conventional DCT, two clutch circuits and a handful of selector solenoids handle the entire job. Koenigsegg has not published thermal management data for the LST, but the engineering complexity of keeping seven independent clutch packs within operating temperature while managing 1,106 pound-feet of torque is non-trivial.</p>
+
+<p>Clutch wear is another open question. Synchronizer rings in a traditional gearbox are sacrificial components, but they only contact their mating surfaces during the fraction of a second when speeds equalize. Wet multi-disc clutches, by contrast, transmit power continuously during engagement and experience slip during every shift event. They are designed for long service life in applications like automatic transmissions and motorcycle gearboxes, but the LST operates in a power regime far beyond anything those applications encounter. Koenigsegg's limited production volumes and attentive service network soften this concern in practice. Whether the architecture could scale to higher volumes without proportionally higher maintenance costs is an unanswered question.</p>
+
+<p>Other manufacturers have explored multi-clutch territory with different compromises. Honda's DCT for the Africa Twin motorcycle uses a conventional dual-clutch layout but pairs it with a planetary gearset to achieve a more compact package. ZF's ubiquitous 8HP torque-converter automatic uses four clutches and two brakes to manage its planetary gear sets, but still shifts sequentially and cannot skip ratios in a single action. Rimac's Nevera sidesteps the problem entirely by using a single-speed reduction gear for each of its four electric motors, trading ratio flexibility for the flat torque curve of electric drive. Each approach accepts different constraints. Koenigsegg is the only company that chose to solve the multi-speed shift-time problem by adding clutches instead of removing gears.</p>
+
+<p>Koenigsegg has since adapted the LST architecture for the Gemera, its four-seat hybrid grand tourer. In that application, dubbed the LSTT (Light Speed Transmission Transaxle), the transmission wraps around the engine to accommodate all-wheel drive. Same three-shaft compound-gearing principle, different packaging constraints. It is evidence that the architecture is not a one-off stunt but a platform Koenigsegg intends to build on.</p>
+
+<h2>Ninety Kilograms and a Different Question</h2>
+
+<p>Most transmission engineering over the past two decades has focused on reducing shift time. From torque-converter automatics to automated manuals to DCTs, the industry optimized for one metric: how quickly can you change ratios without interrupting power delivery? Koenigsegg's LST essentially solves that problem. When you can engage any of nine ratios from any other ratio in the time it takes a DCT to pre-select a single adjacent one, shift speed stops being the constraint.</p>
+
+<p>What remains is a question the LST answers quietly through its spec sheet. At 90 kg with fluids and half the length of a comparable DCT, it demonstrates that compound gearing and multi-clutch control can deliver more ratios with fewer parts, less weight, and a smaller package. No synchronizers to wear. No selector forks to bend. No prediction algorithm to guess wrong. Just seven clutches, three shafts, and software that knows which combination to engage.</p>
+
+<p>Only 125 Jesko units will be produced. CC850 production is similarly limited. At roughly $3 million per car, the LST will never appear in a volume vehicle. But the architecture it proves has implications beyond the hypercar niche. Multi-speed gearboxes are appearing in next-generation EVs (ZF and others are developing two- and four-speed EV transmissions to improve highway efficiency), and every one of them faces the same trade-off between ratio count and shift speed. Compound gearing could deliver more ratios from fewer gear pairs. Multi-clutch control could eliminate the sequential constraint entirely. Koenigsegg built it for a 1,600-horsepower hypercar. What they demonstrated is a set of principles that scale down as readily as they scale up.</p>
+
+</article>
+</body>
+</html>
