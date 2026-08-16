@@ -1,9 +1,9 @@
 {
   "article_number": 160,
-  "phase": "CRITIQUE",
-  "last_category": "cars",
-  "next_category": "watches",
-  "published_date": "2026-08-15",
+  "phase": "IDLE",
+  "last_category": "watches",
+  "next_category": "cars",
+  "published_date": "2026-08-16",
   "slug": "omega-speedmaster-chronoscope-caliber-9908-column-wheel-triple-scale",
   "title": "Three Scales, One Sweep: How the Chronoscope Puts Three Analog Computers Behind a Column Wheel"
 }
