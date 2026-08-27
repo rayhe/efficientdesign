@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eighty Decisions Per Second &mdash; Efficient Design</title>
+  <meta name="description" content="GM's Dynamic Fuel Management system monitors the accelerator pedal 80 times per second and selects from 17 cylinder firing patterns, deactivating individual cylinders on a combustion-event-by-combustion-event basis. The V8 spends more than 60% of its operating time running on fewer than eight cylinders.">
+  <meta property="og:title" content="Eighty Decisions Per Second: The Skip-Fire Algebra Inside GM's Dynamic Fuel Management">
+  <meta property="og:description" content="GM's Dynamic Fuel Management system monitors the accelerator pedal 80 times per second and selects from 17 cylinder firing patterns, deactivating individual cylinders on a combustion-event-by-combustion-event basis. The V8 spends more than 60% of its operating time running on fewer than eight cylinders.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://efficientdesign.net/stories/images/hero-gm-dynamic-fuel-management-skip-fire-cylinder-deactivation.jpg">
+  <meta property="og:url" content="https://efficientdesign.net/stories/gm-dynamic-fuel-management-skip-fire-cylinder-deactivation.html">
+  <link rel="canonical" href="https://efficientdesign.net/stories/gm-dynamic-fuel-management-skip-fire-cylinder-deactivation.html">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Eighty Decisions Per Second: The Skip-Fire Algebra Inside GM's Dynamic Fuel Management",
+  "description": "GM's Dynamic Fuel Management system monitors the accelerator pedal 80 times per second and selects from 17 cylinder firing patterns, deactivating individual cylinders on a combustion-event-by-combustion-event basis. The V8 spends more than 60% of its operating time running on fewer than eight cylinders.",
+  "author": {
+    "@type": "Person",
+    "name": "Elena Voss"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Efficient Design",
+    "url": "https://efficientdesign.net"
+  },
+  "datePublished": "2026-08-27",
+  "dateModified": "2026-08-27",
+  "url": "https://efficientdesign.net/stories/gm-dynamic-fuel-management-skip-fire-cylinder-deactivation.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://efficientdesign.net/stories/gm-dynamic-fuel-management-skip-fire-cylinder-deactivation.html"
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": "en-US",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://efficientdesign.net/stories/images/hero-gm-dynamic-fuel-management-skip-fire-cylinder-deactivation.jpg"
+  },
+  "articleSection": "Cars"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is GM Dynamic Fuel Management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dynamic Fuel Management (DFM) is GM's production implementation of Tula Technology's Dynamic Skip Fire algorithm. Unlike earlier Active Fuel Management, which toggled between V8 and V4 modes, DFM can independently deactivate any of the engine's eight cylinders on a per-combustion-event basis. A dedicated controller samples the accelerator pedal 80 times per second and selects from 17 distinct cylinder firing patterns, allowing the V8 to operate in reduced-cylinder modes more than 60% of the time during normal driving."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the DFM lost-motion lifter work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each of the engine's 16 hydraulic valve lifters contains a two-piece body with a locking pin mechanism. In normal operation, oil pressure holds the locking pin engaged, and the lifter transmits camshaft lobe motion to the pushrod and valve. When a cylinder is commanded to deactivate, a solenoid redirects oil pressure to retract the locking pin. The inner body of the lifter then collapses inside the outer body, absorbing the camshaft lobe's motion without transferring it to the pushrod. The valve stays closed, fuel injection cuts off, and the cylinder produces no power while the piston continues to reciprocate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What vehicles use GM Dynamic Fuel Management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DFM debuted on the 2019 Chevrolet Silverado and GMC Sierra with the 5.3L L84 and 6.2L L87 EcoTec3 V8 engines. It subsequently expanded across GM's full-size truck and SUV lineup, including the Chevrolet Tahoe, Suburban, GMC Yukon, and Cadillac Escalade. Over one million vehicles equipped with Tula's Dynamic Skip Fire technology are on the road worldwide. Note that GM's performance V8s, such as the LT2 in the Corvette Stingray, continue to use the simpler Active Fuel Management system rather than the full DFM architecture."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../" class="back">&larr; Efficient Design</a>
+    </header>
+
+    <article class="story">
+      <div class="story-kicker">Cars</div>
+      <h1>Eighty Decisions Per Second: The Skip-Fire Algebra Inside GM's Dynamic Fuel Management</h1>
+      <div class="byline">Elena Voss</div>
+      <div class="dateline">August 27, 2026</div>
+
+      <img class="story-hero" src="images/hero-gm-dynamic-fuel-management-skip-fire-cylinder-deactivation.jpg" alt="Close-up macro photograph of a hydraulic valve lifter assembly showing the locking pin mechanism and oil control solenoid under warm workshop lighting">
+
+      <div class="pull-stat">17</div>
+      <div class="pull-label">Distinct cylinder firing patterns available to a GM V8 equipped with Dynamic Fuel Management. Active Fuel Management, its predecessor, had two: all eight cylinders, or four.</div>
+
+      <p>A V8 engine is almost always too much engine. On the highway at a steady 70 miles per hour, a 6.2-liter small block produces roughly 20 horsepower at the wheels. It is capable of 420. For most of the hours that a Silverado or a Tahoe spends on public roads, seven of its eight cylinders are burning fuel to produce torque that nobody asked for.</p>
+
+      <p>General Motors understood this problem early. In 2005, they introduced Active Fuel Management on the Gen IV small block V8. AFM was a binary switch. Under light load, the engine shut down four predetermined cylinders and ran as a V4. Under heavier load, all eight came back. Two modes. One transition boundary. It worked, but the approach was blunt. Drivers noticed the changeover as a subtle lurch. Tuners noticed that the system spent time in neither mode when conditions hovered near the switching threshold, oscillating between V8 and V4 with an indecisiveness that cost fuel rather than saving it.</p>
+
+      <p>Fourteen years later, a Silicon Valley startup named Tula Technology convinced GM to stop thinking in halves.</p>
+
+      <h2>From Binary to Fractional</h2>
+
+      <p>Tula Technology was founded in 2008 in San Jose, California, with a single engineering thesis: cylinder deactivation should not be a mode the engine toggles into. It should be a continuous calculation. Every combustion event in every cylinder should be an independent decision, fire or skip, made in real time based on instantaneous torque demand.</p>
+
+      <p>GM invested in Tula in 2012. Six years of co-development followed. In 2019, the production result debuted on the Chevrolet Silverado and GMC Sierra under GM's marketing name: Dynamic Fuel Management. Tula calls the underlying algorithm Dynamic Skip Fire.</p>
+
+      <p>Where AFM chose between two states, DFM chooses between 17 distinct cylinder firing patterns. Where AFM evaluated torque demand periodically and toggled a bank of four cylinders, DFM's dedicated controller samples the accelerator pedal position 80 times per second and calculates exactly which cylinders need to fire on the next combustion event. It does not choose a mode. It chooses a firing fraction. Fire every third cylinder. Every second. Two out of three. Five out of eight. The controller continuously adjusts this fraction, ramping up and down in response to minute changes in pedal input, road grade, vehicle speed, and accessory load.</p>
+
+      <p>Jordan Lee, GM's chief engineer for the small block V8 program, framed the philosophy simply. Rather than shrinking the engine and adding turbochargers, GM chose to keep the V8's proven capability and save fuel by operating only the cylinders the driver actually needs at any given moment. DFM is the arithmetic that makes that possible.</p>
+
+      <h2>Sixteen Latching Pins</h2>
+
+      <p>AFM's hardware was relatively straightforward. Eight of the engine's 16 valve lifters were collapsible, corresponding to four specific cylinders. Solenoids built into the engine's valley plate controlled oil pressure to these lifters. When deactivation was commanded, oil pressure retracted a latching pin inside the lifter body, and the two-piece lifter collapsed on itself. Cam lobe motion was absorbed within the lifter rather than transmitted to the pushrod. With the valve stuck closed and the fuel injector shut off, the cylinder produced no combustion. Its piston still reciprocated, pumping against a sealed column of trapped gas, but it contributed no torque.</p>
+
+      <p>DFM required a fundamental hardware change: every lifter had to be capable of deactivation, not just the eight designated for AFM duty. All 16 hydraulic valve lifters in a DFM engine contain the lost-motion mechanism. Each has its own oil control solenoid. Each can be independently commanded to latch or unlatch on any given engine revolution.</p>
+
+      <p>When a cylinder is told to fire, oil pressure holds the locking pin engaged. Cam rotation pushes the lifter body, which pushes the pushrod, which opens the valve. Normal combustion follows. When a cylinder is told to skip, the solenoid redirects oil flow. Pressure retracts the locking pin. Now the outer body of the lifter follows the cam lobe, but the inner body stays collapsed. Cam motion never reaches the pushrod. Both intake and exhaust valves remain seated. No air enters. No fuel is injected. No spark fires. The piston compresses and decompresses the small volume of gas trapped in the sealed cylinder, acting as a low-friction gas spring that returns most of its compression energy on the downstroke.</p>
+
+      <p>Switching between active and deactivated states happens within one engine revolution. At 6,000 RPM, that revolution takes 10 milliseconds. Oil pressure must reach the solenoid, actuate the control port, and either seat or unseat the locking pin within the window between one cam lobe event and the next. Hydraulic response time, solenoid actuation time, and latch engagement geometry all had to be designed to fit this window across the engine's full operating speed range.</p>
+
+      <h2>The Algorithm: Firing Density as a Continuous Variable</h2>
+
+      <p>Tula's contribution was not primarily hardware. It was the control algorithm that decides which cylinders fire and which skip, and in what sequence, to deliver the requested torque while keeping noise and vibration within production-vehicle limits.</p>
+
+      <p>In a conventional V8 with a fixed firing order of 1-8-7-2-6-5-4-3, the intervals between power pulses are evenly spaced at 90 degrees of crankshaft rotation. Shut down half the cylinders in a fixed pattern, as AFM does, and the remaining four fire at uneven intervals. The engine runs as a rough-firing four-cylinder with the rotating mass of an eight-cylinder. Vibration increases. The cabin resonance changes. Noise quality shifts from a smooth V8 rumble to something less refined.</p>
+
+      <p>DFM's algorithm treats the problem as a sequence optimization. Given 17 available firing patterns, the controller selects not only how many cylinders fire but which specific cylinders fire in which order. Pattern selection accounts for the crankshaft's rotational inertia, the frequencies and amplitudes of torsional vibration each pattern produces, and the interaction of those frequencies with the vehicle's structural resonances. Certain combinations of active and inactive cylinders produce vibration signatures that are inherently smoother than others at a given engine speed. Tula's algorithm maps these relationships and avoids the rough combinations.</p>
+
+      <p>Beyond the 17 discrete patterns, the system works with 64 available firing fractions. A firing fraction defines the ratio of active combustion events to total possible events over a rolling window. A fraction of 8/8 is full V8 operation. A fraction of 4/8 is equivalent to running on four cylinders. A fraction of 1/8 means one cylinder fires for every eight events. In practice, a fraction of 3/8 does not mean the same three cylinders fire repeatedly. It means that across multiple engine revolutions, the controller distributes firing events among different cylinders to equalize thermal loading and minimize repetitive vibration patterns.</p>
+
+      <p>Transitions between firing fractions are managed by ramping. Instead of jumping from 6/8 directly to 3/8, the algorithm may step through 5/8 and 4/8 over several engine cycles. Ramp rate depends on how quickly the driver's torque demand is changing. A gentle throttle lift produces a slow ramp. A sudden lift-off produces a faster one. GM states the system can make 80 firing decisions per second, but the actual transition smoothness depends on how those decisions are sequenced relative to crankshaft position and engine speed.</p>
+
+      <h2>Solving Vibration at the Torque Converter</h2>
+
+      <p>Getting the combustion events right was half the problem. Getting those uneven power pulses through the driveline without the occupants feeling them was the other half.</p>
+
+      <p>DFM engines are paired exclusively with GM's 8L90 eight-speed or 10L80 ten-speed automatic transmissions. Both use torque converters, and both received a new component specifically for DFM duty: a centrifugal pendulum absorber integrated into the torque converter's lock-up clutch assembly.</p>
+
+      <p>A centrifugal pendulum absorber consists of weighted pendulums mounted on a carrier plate. As the torque converter rotates, centrifugal force pushes the pendulums outward along curved tracks. When torsional vibration from the engine reaches the converter, the pendulums swing along their tracks in opposition to the vibration, canceling the oscillation. The key property is that pendulum frequency is proportional to rotational speed. As engine RPM rises, the pendulums automatically tune themselves to the changing frequency of the dominant torsional excitation. No electronic control is required.</p>
+
+      <p>Without this absorber, DFM's irregular firing patterns would transmit perceptible vibration through the driveshaft to the cabin. With it, the torque converter acts as a mechanical low-pass filter that adapts in real time to whatever firing fraction the algorithm selects. The transmission controller collaborates too, modulating torque converter clutch slip based on the current firing pattern. At certain firing fractions where torsional excitation is higher, the converter allows slightly more slip to further isolate vibration. At smoother fractions, the clutch locks more firmly for better efficiency.</p>
+
+      <h2>What the Numbers Show</h2>
+
+      <p>During GM's industry-standard EPA test cycle for the 2019 Silverado 2WD with the 5.3-liter L84 V8, the engine operated with fewer than eight active cylinders for more than 60 percent of the test duration. On the prior-year Silverado with AFM, the comparable figure was 51 percent, a nine-point improvement.</p>
+
+      <p>Real-world fuel savings depend heavily on driving conditions. GM quotes 5 to 15 percent improvement over engines without cylinder deactivation. Tula's independent testing on the 6.2-liter L94 showed up to 18 percent fuel economy improvement on certain drive cycles. At highway cruise, where the engine loafs at low load for sustained periods, DFM keeps most cylinders deactivated almost continuously. The 6.2-liter engine that is capable of 420 horsepower effectively shrinks itself to a two- or three-cylinder for minutes at a time, expanding back to eight only when the driver pushes the pedal.</p>
+
+      <p>Emissions improve alongside fuel consumption. Tula's SAE paper documented reductions in CO, CO2, and hydrocarbon emissions during DFM operation. Firing cylinders at higher individual loads improves combustion completeness and raises catalyst temperature, which increases catalytic converter efficiency. Under certain conditions, NOx emissions also decreased.</p>
+
+      <p>Cost was designed to be modest. Tula estimated the per-engine hardware cost at $300 to $600, depending on the base engine's existing deactivation infrastructure. For an engine already equipped with AFM hardware on half its lifters, upgrading to full DFM required adding lost-motion capability to the remaining eight lifters, additional solenoids, oil gallery modifications, and the Tula control module. For consumers, DFM was included as standard equipment on the relevant engine options, not offered as a separate cost upgrade.</p>
+
+      <h2>Lifter Reliability and the Engineering Trade-off</h2>
+
+      <p>DFM's mechanical elegance comes with a durability question that GM owners know well. Both AFM and DFM lifters have a documented history of failure. Stuck lifters, lifters that fail to collapse or re-latch properly, produce a characteristic ticking noise at idle that can escalate into misfires and, if left unchecked, camshaft damage as the stuck lifter grinds against its lobe.</p>
+
+      <p>DFM doubles down on the hardware that causes these failures. Where AFM placed lost-motion mechanisms in eight of 16 lifters, DFM places them in all 16. Every lifter in the engine is a complex, multi-piece hydraulic component that must latch and unlatch reliably across thousands of cycles per hour, at temperatures ranging from cold-start to sustained high-load operation, using engine oil as its hydraulic medium. Oil quality, viscosity, contaminant levels, and change intervals all affect how long the latch mechanism functions correctly.</p>
+
+      <p>Engineers acknowledge the trade-off. Running fewer cylinders under light load genuinely saves fuel. EPA testing shows consistent 5 to 7 percent improvements in ideal conditions. But the mechanism that enables this saving asks 16 small mechanical assemblies to perform a hydraulic switching operation thousands of times per day, for the duration of the vehicle's service life, without scheduled rebuilds. Production tolerances, oil degradation, and thermal cycling conspire against indefinite reliability. The question is not whether the engineering concept is sound. It is whether the production hardware can sustain the concept's demands over 200,000 miles without intervention.</p>
+
+      <h2>From Gasoline to Diesel to Electric</h2>
+
+      <p>Tula did not stop at gasoline V8s. In collaboration with Cummins, the company applied its algorithm to heavy-duty diesel engines. Diesel Dynamic Skip Fire, tested on a Cummins X15 in a Class 8 truck, achieved a 74 percent reduction in nitrogen oxide emissions and a 5 percent reduction in CO2 on a low-load cycle. Diesel engines are unthrottled, so the fuel-saving mechanism differs from gasoline applications. In diesel DSF, deactivating cylinders raises the exhaust temperature of the remaining active cylinders, keeping the aftertreatment system in its optimal temperature window during low-load cruising when exhaust would otherwise cool below the threshold for effective NOx conversion.</p>
+
+      <p>More recently, Tula extended the skip-fire principle to electric motors. Dynamic Motor Drive applies the same per-event decision logic to the commutation of stator windings in an electric motor. Instead of energizing all phases continuously, the controller selectively skips commutation events to reduce losses at partial load. Tula claims DMD can improve motor efficiency enough to allow a synchronous reluctance motor with reduced permanent magnet content to approach the efficiency of a full permanent-magnet motor. If validated in production, this could reduce reliance on rare-earth materials while maintaining range and performance.</p>
+
+      <h2>The Algebra Continues</h2>
+
+      <p>Dynamic Fuel Management is not a headline technology. Nobody buys a Silverado because of its cylinder deactivation system. It runs invisibly in the background, making and remaking its decision 80 times per second: fire or skip, fire or skip, fire or skip. When it works, the driver feels nothing. Journalists who drove DFM-equipped prototypes reported that transitions between firing fractions were imperceptible from the cabin, a stark contrast to AFM's detectable V8-to-V4 lurch. A 6.2-liter V8 produces exactly the torque demanded by the right foot and nothing more. Fuel that would have been burned producing unwanted torque stays in the tank.</p>
+
+      <p>Over one million vehicles carry Tula's algorithm on the road. The controller is still making its calculations, still choosing its fractions, still cycling its latching pins. The question it answers, combustion by combustion, is the same one that GM's engineers asked when they first studied the problem: how much of this engine does the driver actually need right now?</p>
+
+      <p>Most of the time, the answer is less than half.</p>
+
+      <div class="ref-section">
+        <h2>Sources</h2>
+        <ol>
+          <li>GM Authority, "GM Dynamic Fuel Management Cylinder Deactivation Technology," gmauthority.com, detailing DFM's 17 cylinder patterns, 80 Hz pedal sampling rate, Jordan Lee quotes, solenoid-controlled lost-motion lifter mechanism, and 2019 Silverado debut.</li>
+          <li>Green Car Congress, "Chevrolet introduces Dynamic Fuel Management cylinder deactivation on 2019 Silverado; Tula Dynamic Skip Fire," May 2018, covering DFM vs AFM comparison, 60%+ reduced-cylinder operation time, and L84 5.3L engine specifications.</li>
+          <li>Green Car Congress, "Tula Technology reports up to 18% fuel economy gain in GM 6.2L V8 using Dynamic Skip Fire technology," April 2016, documenting SAE Paper 2016-01-0672, L94 6.2L testing, DSF hardware modifications including lost-motion lifters and oil gallery changes, combustion stability improvements, and emissions data (CO, CO2, HC, NOx reductions).</li>
+          <li>Autoblog, "2019 Chevy Silverado 5.3L V8 Prototype Drive: Trying out Chevy's V8-7-6-5-4-3-2-1," detailing firing fraction ramping, cylinder rotation within fractions, centrifugal pendulum torque converter damper, and torque converter clutch slip modulation.</li>
+          <li>Gears Magazine, "Sipping Fuel," describing 64 available firing fractions, solenoid-per-cylinder architecture, 8L90 and 10L80 DFM-specific transmissions with centrifugal pendulum counterweight converters, and TCC low-speed application strategy.</li>
+          <li>Jalopnik, "GM's AFM And DFM Often Get Blamed For Lifter Failure, So Let's Explore How They Work," 2026, covering AFM deactivation of cylinders 1/4/6/7, DFM's all-16-lifter deactivation capability, lifter failure modes including stuck latches and camshaft wear, and EPA 5-7% fuel economy improvement figures.</li>
+          <li>Tula Technology et al., "Dynamic Skip Fire (DSF): Design and Development of a New Cylinder Deactivation Strategy," SAE Technical Paper 2016-01-0672, DOI 10.4271/2016-01-0672, documenting DSF algorithm design, L94 6.2L V8 testing methodology, NEDC and FTP-75 cycle fuel economy improvements up to 18%, and emissions breakdown (CO, CO2, HC, NOx).</li>
+          <li>BusinessWire, "Tula's DMD Improves Electric Motor Efficiency While Reducing Rare Earth Materials in Battery Electric Vehicles," April 2021, detailing Dynamic Motor Drive (DMD) application of skip-fire logic to electric motor commutation, synchronous reluctance motor efficiency gains, and rare-earth reduction strategy.</li>
+          <li>FreightWaves, "Cylinder skipping cuts NOx pollution 74% in Cummins-Tula testing," covering diesel Dynamic Skip Fire (dDSF) on Cummins X15, Class 8 truck testing, 74% NOx reduction, 5% CO2 reduction, and SAE World Congress technical paper.</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
