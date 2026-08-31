@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fixed Four: Why the 535-HP LS6 Kept AFM and Skipped DFM  -  Efficient Design</title>
+  <meta name="description" content="GM's new 6.7-liter LS6 V8 for the 2027 Corvette keeps Active Fuel Management with a fixed four-cylinder shutdown instead of adopting Dynamic Fuel Management's 17 patterns. Inside the lifter engineering, oil control, and reliability tradeoff that shaped the most powerful standard Corvette engine ever.">
+  <meta property="og:title" content="Fixed Four: Why the 535-HP LS6 Kept AFM and Skipped DFM">
+  <meta property="og:description" content="Four cylinders off, not one to seven. Why GM's Gen 6 Small Block LS6 retained a simpler cylinder-deactivation system despite DFM's 80-decisions-per-second flexibility.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://efficientdesign.net/stories/images/hero-corvette-ls6-afm-cylinder-deactivation-engineering.jpg">
+  <meta property="og:url" content="https://efficientdesign.net/stories/corvette-ls6-afm-cylinder-deactivation-engineering.html">
+  <link rel="canonical" href="https://efficientdesign.net/stories/corvette-ls6-afm-cylinder-deactivation-engineering.html">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Fixed Four: Why the 535-HP LS6 Kept AFM and Skipped DFM",
+  "description": "GM's new 6.7-liter LS6 V8 for the 2027 Corvette keeps Active Fuel Management with a fixed four-cylinder shutdown instead of adopting Dynamic Fuel Management's 17 patterns. Inside the lifter engineering, oil control, and reliability tradeoff.",
+  "author": {
+    "@type": "Person",
+    "name": "Elena Voss"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Efficient Design",
+    "url": "https://efficientdesign.net"
+  },
+  "datePublished": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "url": "https://efficientdesign.net/stories/corvette-ls6-afm-cylinder-deactivation-engineering.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://efficientdesign.net/stories/corvette-ls6-afm-cylinder-deactivation-engineering.html"
+  },
+  "isAccessibleForFree": true,
+  "inLanguage": "en-US",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://efficientdesign.net/stories/images/hero-corvette-ls6-afm-cylinder-deactivation-engineering.jpg"
+  },
+  "articleSection": "Cars"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between AFM and DFM in GM V8s?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AFM (Active Fuel Management) deactivates a fixed set of four cylinders, typically 1, 4, 6, and 7 on a V8, using eight collapsible lifters. DFM (Dynamic Fuel Management) can deactivate any combination of cylinders, from one to seven, enabling 17 distinct firing patterns. DFM monitors pedal position 80 times per second and uses oil-controlled valves for faster response."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did GM keep AFM on the LS6 instead of switching to DFM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GM retained AFM for simplicity and reliability. AFM uses fewer collapsible lifters and a simpler valley plate solenoid system. DFM has a reputation among owners for added complexity and has been associated with lifter sticking and cam wear in Gen 5 Small Block applications. For the first Gen 6 Small Block, GM opted for the proven fixed-pattern system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does AFM hurt the 2027 Corvette LS6 fuel economy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The 2027 Corvette Stingray with the 6.7L LS6 is EPA-rated at 15 mpg city, 25 mpg highway, 18 mpg combined, down 1 mpg combined from the LT2. Over five years the EPA calculator estimates $1,250 more in fuel costs and 22 fewer miles of range, from 352 to 330 miles, despite AFM, dual fuel injection, and higher compression."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../" class="back">&larr; Efficient Design</a>
+    </header>
+
+    <article class="story">
+      <div class="story-kicker">Cars × Powertrain Engineering</div>
+      <h1>Fixed Four: Why the 535-HP LS6 Kept AFM and Skipped DFM</h1>
+      <div class="byline">Elena Voss</div>
+      <div class="dateline">August 31, 2026</div>
+
+      <img class="story-hero" src="images/hero-corvette-ls6-afm-cylinder-deactivation-engineering.jpg" alt="Macro photograph of a hydraulic valve lifter assembly showing oil control passages and collapsible mechanism under warm directional workshop lighting">
+
+      <div class="pull-stat">4 vs 17</div>
+      <div class="pull-label">AFM deactivates a fixed four cylinders. DFM can run 17 distinct firing patterns, deactivating one to seven cylinders in real time. For its first Gen 6 Small Block, GM chose the simpler number.</div>
+
+      <p>GM had a choice to make with the first Gen 6 Small Block, replacing the LT2's 6.2 liters with 6.7, raising compression to a borderline absurd 13.0:1, adding port injection to direct injection, forging the pistons and rods, fitting a 95-millimeter throttle body and a tunnel-ram intake, and making 535 horsepower without a turbo in sight, which was the straightforward part, old-school displacement with modern combustion control, the kind of engineering that makes a naturally aspirated V8 hit 200 mph in a base Stingray.</p>
+
+      <p>Then came the fuel-saving question that every modern V8 has to answer for the EPA, even a Corvette V8 that spends most of its life cruising at 65 mph on flat interstate using maybe two liters worth of torque while carrying 6.7 liters everywhere, burning fuel you never needed to burn, which is why Jordan Lee, GM's global chief engineer for Small Block V8s, framed it years earlier as keeping the capability of a larger V8 and switching off half the cylinders when they are not needed, a simple logic whose implementation gets messy when lifters, oil circuits, and NVH tuning enter the picture.</p>
+
+      <p>Two implementations exist, one older and one newer and cleverer, and LS6 deliberately kept the older one because predictable calibration and proven hardware outweigh theoretical flexibility when you are validating a new 6.7-liter combustion system at 13.0:1 compression.</p>
+
+      <h2>AFM: Eight Lifters That Collapse on Command</h2>
+
+      <p>Active Fuel Management in a pushrod V8 is brutally literal, with sixteen hydraulic roller lifters sitting between cam lobes and pushrods, one per valve, eight conventional and always rigid, always transmitting cam motion to the valve, and eight collapsible, so that when oil pressure is directed to their control ports, internal locking pins retract, the lifter body collapses, and cam motion no longer reaches the pushrod, leaving the valve shut, no air entering, no fuel injected, piston still reciprocating but doing zero thermodynamic work.</p>
+
+      <p>Which cylinders shut down is fixed, and on most Gen 5 Small Blocks cylinders 1, 4, 6, and 7 go dark, leaving a firing order that still balances reasonably while solenoids mounted in the valley plate, part of the Valve Lifter Oil Manifold or VLOM, divert oil from the main gallery to those eight lifters so that when deactivation is commanded, solenoids energize, oil pressure builds in the control circuit, lifters collapse within one cam revolution, fuel cuts, and the engine becomes a 3.35-liter inline-four that happens to share a crankshaft with four dead holes, until torque is demanded and solenoids de-energize, oil bleeds off, spring pressure relatches the pins, and valves resume.</p>
+
+      <p>That is the whole trick, just two states, V8 or V4, with no intermediate patterns, no rotating deactivation, and no cylinder count that varies continuously with pedal position, so AFM toggles between eight and four while calibration decides when that toggle is smooth enough that a driver never notices, and when calibration is good you never notice, but when a lifter sticks you notice immediately.</p>
+
+      <p>Ticking at idle is the telltale, because a lifter that fails to relatch leaves its cylinder's valves permanently shut, the cylinder misfires, the ECU flags a code, and the valvetrain clatters because a collapsed lifter has lash where it should have preload, and if you leave it, the roller can skid on the cam lobe instead of rolling, grinding the lobe flat, turning a $40 lifter job into a camshaft replacement that requires pulling the engine apart, which illustrates why AFM does not fail because the idea is wrong, since running fewer cylinders under light load genuinely saves 5 to 7 percent fuel in EPA testing, but fails because asking a small hydraulic mechanism to collapse and relatch thousands of times a day for years pushes the limits of oil cleanliness, machining tolerance, and thermal cycling.</p>
+
+      <h2>DFM: Seventeen Ways to Burn Less</h2>
+
+      <p>Dynamic Fuel Management debuted on second-generation EcoTec3 engines for 2019 model year and took the same hydraulic principle and removed the fixed-cylinder constraint, so every lifter, all sixteen, can deactivate independently, and instead of a valley plate with four solenoids controlling four cylinders, DFM uses oil-controlled valves, OCVs, that respond faster than the older Lifter Oil Manifold Assembly and a dedicated controller that samples accelerator pedal position 80 times per second.</p>
+
+      <p>Eighty samples per second means a decision every 12.5 milliseconds, faster than a single combustion event at 3,000 rpm which takes about 40 milliseconds for two crank revolutions, and that sampling rate lets the controller calculate exactly how much torque the driver wants right now and choose how many cylinders must fire to deliver it, sometimes eight, sometimes seven, sometimes five or three or two, with seventeen distinct firing patterns available, some fixed like one-quarter, one-half, three-quarters, others rotating like one-fifth, one-third, two-fifths, two-thirds, where the active cylinders cycle around the engine to even out thermal load and vibration.</p>
+
+      <p>On paper, DFM should be strictly better, because why run four cylinders when three would suffice, and why carry the NVH penalty of a fixed V4 mode when you could rotate which cylinders fire and spread heat more evenly, and in GM's trucks and SUVs DFM delivered measurable efficiency gains over AFM, particularly in mixed driving where part-throttle operation dominates, improving EPA combined numbers and diminishing customer complaints about V4 drone because the system avoided lingering in a single deactivated pattern.</p>
+
+      <p>Complexity is the price, because sixteen deactivating lifters instead of eight doubles the number of components that can stick, seventeen patterns instead of two multiplies calibration work, OCV hardware, wiring, and control software add cost and failure modes, and owners on truck forums and Corvette forums have associated DFM with similar lifter concerns as AFM, sometimes more, because a lifter that deactivates in seventeen different ways still has to relatch perfectly every time, which is why Michigan Motorsports, a supplier that sells delete kits for both systems, notes that a true delete replaces deactivation hardware with conventional roller lifters, non-AFM camshafts, new guide trays, and blocking of the deactivation oil circuit, a reminder that simplicity sells when complexity has a reputation.</p>
+
+      <h2>Why LS6 Stayed Fixed</h2>
+
+      <p>GM Authority first reported the LS6's AFM retention on August 28, and Autoblog confirmed the EPA implications a day later, noting that LS6 uses AFM not DFM, the same fixed four-cylinder shutdown as LT1 in the C7 and LT2 in the C8 Stingray, and Autoblog reports the 2027 Stingray's EPA rating falls to 15 city, 25 highway, 18 combined, down from 19 combined with LT2, despite AFM and despite dual injection and higher compression, while range drops from 352 to 330 miles, five-year fuel cost rises $1,250, and Grand Sport with wider aero and stickier rubber lands at 15 city, 23 highway, 17 combined.</p>
+
+      <p>Those numbers make the decision look counterintuitive, because if DFM saves more fuel, why accept worse EPA numbers with the simpler system, and three reasons emerge from engineering logic and from CorvetteForum teardown chatter that explain why predictable NVH, proven reliability, and commonality across Gen 6 variants outweigh a single mpg.</p>
+
+      <p>First, reliability perception matters more on Corvette than on Silverado, because truck buyers tolerate occasional lifter replacements under warranty while Corvette buyers, especially those tracking their cars, amplify any valvetrain concern into forum threads that last years, and GM's own Service Bulletin 20-NA-038 shows how widespread AFM and DFM hardware already is across LT4, LTA, LT1, LT2, L83, L86, L84, L87, L82 families, so adding DFM's sixteen deactivating lifters to a 6.7-liter engine that already runs 13.0:1 compression and forged internals would introduce a second variable into a combustion system already at the edge of pump-gas knock tolerance, which is why keeping AFM isolates risk.</p>
+
+      <p>Second, NVH tuning for a sports car is different. A truck in DFM can cycle through seventeen patterns without a driver caring which cylinders fire, as long as fuel economy improves. A Corvette driver at 3,500 rpm in Sport mode will notice if the engine's firing order changes every few seconds. Fixed V4 is predictable, calibration can hide the transition with torque-converter slip on automatic or with spark and throttle smoothing on manual, and exhaust tuning can mask the four-cylinder thrum. Rotating patterns create a constantly shifting exhaust note that is harder to tune for. Center-exit exhaust, now optional on LS6 cars with four tips bundled like Z06 and ZR1, amplifies any irregularity. AFM's binary nature makes exhaust tuning simpler.</p>
+
+      <p>Third, Gen 6 Small Block rollout strategy. GM has not disclosed full Gen 6 family plans, but retaining AFM on the first variant suggests the company may use AFM across the Gen 6 lineup initially, reserving DFM or a future evolution for later. Commonizing on eight deactivating lifters instead of sixteen reduces part proliferation, simplifies assembly at Tonawanda, and lets validation focus on combustion, knock control, and dual-injection blending rather than on deactivation pattern calibration. CorvetteForum users noting identical part numbers for LT2 and LS6 lifters, eight AFM and eight standard, support that commonality argument, though GM has not published LS6 lifter specs and one post speculates Gen 6 may move deactivation from collapsible lifter to collapsible rocker stud.</p>
+
+      <p>Performance is not compromised. LS6 makes 535 horsepower and 520 pound-feet, 40 more than LT2, with a 95-millimeter throttle body, high-velocity intake ports that are shorter and smaller-diameter than LT2's, revised ram-air intake, tri-Y headers replacing LT2's four-into-one, and a tunnel-ram manifold that improves mixture homogeneity before the charge enters the chamber. Dual injection helps compression, port injection at low load cleans valves and cools charge through evaporative cooling, direct injection at high load provides precise control, E68 ECU blends based on coolant temp, intake temp, barometric pressure, and knock feedback. All of that exists whether AFM or DFM is present.</p>
+
+      <h2>The Efficiency Stack Beyond Cylinders</h2>
+
+      <p>AFM is only one layer in LS6's efficiency approach, and not the most powerful one. Raising compression from LT2's 11.5:1 to 13.0:1 extracts more work per combustion event, increasing Otto cycle thermal efficiency. That alone accounts for most of the power gain, because higher compression squeezes the mixture into a smaller volume before ignition, producing higher peak pressure acting on the piston crown. Knock is the limiter, and dual injection is the enabler. Port injection cools intake charge, lowering knock tendency, letting the engine run 13.0:1 on 91 or 93 octane. It can run on regular if needed, with reduced output.</p>
+
+      <p>Improved airflow contributes too. Larger throttle body, shorter high-velocity ports that improve air speed and cylinder filling at moderate rpm, and tri-Y headers that pair cylinders for better scavenging. On each bank, the two rearmost cylinders join, the front two join, then both pairs combine. Tri-Y scavenging uses exhaust pulses to pull residual gas from neighboring cylinders, improving volumetric efficiency without adding hardware. Those changes, plus dual injection, plus compression, produce more power without forced induction, which is exactly how Mike Kociba summarized the program: there is no replacement for displacement.</p>
+
+      <p>EPA numbers show limits. More displacement, more power, same highway mpg, lower city and combined, higher fuel cost, shorter range. Cylinder deactivation helps, but it cannot offset 500 extra cubic centimeters and higher friction from longer stroke. LS6's stroke grows from LT2's 92 mm to 100 mm, bore stays 103.25 mm, stroke-to-bore ratio moves to 0.969:1, an undersquare long-stroke design that favors torque over revs. Longer stroke means more piston travel per revolution, more leverage on crank, more side load on cylinder walls, more friction. AFM saves some fuel at cruise, but physics charges its own tax.</p>
+
+      <h2>What Gets Traded, What Stays</h2>
+
+      <p>Choosing AFM over DFM trades potential fuel savings for predictability. DFM's 17 patterns could have clawed back perhaps 1 mpg combined in EPA testing, based on truck gains, though Corvette's duty cycle differs from Silverado's. AFM's fixed pattern gives calibration engineers a single transition to perfect, a single exhaust note to tune, a single vibration order to damp with the existing centrifugal pendulum absorber approach used on other Small Blocks. It also gives owners a system they already understand, with delete kits, diagnostics, and aftermarket knowledge accumulated over fifteen years of AFM production.</p>
+
+      <p>For buyers who plan to track the car, AFM will deactivate only at light load anyway, which rarely occurs on circuit. Wide-open throttle near 6,600 rpm redline uses all eight cylinders, direct injection dominates, port injection supplements, forged pistons and rods handle peak cylinder pressure, high-capacity lubrication system sustains oil pressure through sustained high-g corners. Cylinder deactivation is irrelevant at full load. Its presence matters only on highway cruises between track sessions, where running as a four-cylinder reduces heat, fuel burn, and emissions without affecting lap times.</p>
+
+      <p>Grand Sport X adds a wrinkle. That variant pairs LS6 with the same 186-horsepower front eAxle used in ZR1X and E-Ray, a 1.9-kWh battery in the tunnel, no driveshaft, through-the-road hybrid, combined 721 horsepower, roughly 665 pound-feet. Front motor provides launch traction and corner-exit pull, software manages torque split every 10 milliseconds based on wheel speed, steering angle, yaw rate, lateral and longitudinal acceleration, throttle, brake pressure, battery state. In that car, AFM matters even less, because electric assist can fill torque holes during transitions. EPA has not released Grand Sport X fuel economy yet.</p>
+
+      <p>Seventy-one years after the first Small Block, GM's answer to turbocharging remains more cubic inches, only now those cubic inches come with 13.0:1 squeeze, two injectors per cylinder, a tunnel-ram intake, tri-Y headers, forged internals that raise the ceiling for future modifications, and a cylinder-deactivation system that shuts off the same four cylinders it always has. Familiar, not novel. That familiarity is the point.</p>
+
+      <p>Eight lifters collapse, four pistons coast, fuel cuts, valves stay shut, and a 6.7-liter V8 pretends to be half its size until the driver asks for everything. Then it becomes whole again, 535 horsepower through a Tremec eight-speed dual-clutch, 5.56:1 final drive, center-exit exhaust optional, top speed 200 mph in base Stingray trim. No turbos, no supercharger, no electric boost unless you buy the X. Just displacement, compression, and better combustion.</p>
+
+      <p>And the same four cylinders off when you do not need them. Sometimes simpler survives because it has survived.</p>
+
+      <div class="ref-section">
+        <h2>Sources</h2>
+        <ol>
+          <li>GM Authority, "2027 Corvette LS6 Engine Includes This Fuel-Saving Tech," August 28, 2026  -  LS6 retains AFM not DFM, 6.7L V8 LS6 535 hp 520 lb-ft, 13.0:1 compression, 95mm throttle, tunnel-ram, dual injection, forged pistons/rods, high-capacity lubrication, 17 DFM patterns vs fixed AFM.</li>
+          <li>Autoblog, "EPA Estimates 2027 Corvette Stingray Costs $1,250 More to Fuel," August 30, 2026  -  AFM retention, EPA 15/25/18 vs 19 combined predecessor, $1,250 fuel cost increase, range 330 vs 352 miles, Grand Sport 15/23/17, 200 mph top speed, 40 hp gain.</li>
+          <li>Jalopnik, "GM's AFM And DFM Often Get Blamed For Lifter Failure, So Let's Explore How They Work," June 2026  -  AFM 8 collapsible lifters of 16, cylinders 1/4/6/7, valley plate solenoids, oil pressure collapse, DFM every lifter deactivates, 80 samples/sec, 17 patterns, lifter sticking, ticking, cam lobe wear, 5-7% EPA improvement, Jordan Lee quote.</li>
+          <li>LSX Magazine, "DOD, AFM, And DFM Deletes: A Q&A With Michigan Motorsports"  -  DOD/AFM same four-cylinder strategy, DFM multiple combos down to 2 cylinders, VLOM/DFM control hardware, true delete replaces cam, lifters, trays, blocks oil circuit.</li>
+          <li>CorvetteForum, "AFM on LS6 worse than on LT2? Page 2," July 2026  -  LS6 likely 8 AFM + 8 standard like LT2, part number confusion, speculation Gen 6 moves to collapsible rocker stud, cam ICL retarded 7 degrees, exhaust duration increase, head flow discussion.</li>
+          <li>Cadillac V-Net Service Bulletin 20-NA-038, "AFM and DFM Usage," April 2021  -  AFM VLOM vs DFM OCV faster response, firing pattern types fixed vs rotating 1/5 1/3 2/5 2/3, usage chart across LT4, LTA, LT1, LT2, LT5, L83/L86, L87, L82/L84, L8T, LV3.</li>
+          <li>Hagerty Media, "2027 Chevrolet Corvette Grand Sport First Look: Familiar Formula, New LS6," March 2026  -  higher compression, enlarged throttle, high-velocity ports shorter smaller-diameter, revised ram-air, dual injection port low load direct high load, regular octane safe with reduced power, tri-Y headers, center-exit option, Grand Sport X 186 hp eAxle 1.9 kWh 721 hp combined.</li>
+          <li>General Motors Newsroom, "The 2027 Chevrolet Corvette's All-New, Next-Generation V8," March 2026  -  LS6 Gen 6 Small Block architecture, bore spacing 4.4 in unchanged, stroke 100mm vs 92mm, 6.7L displacement, aluminum block iron liners, A356 T6 heads, OHV 2 valves/cyl, 13.0:1, dual injection, tunnel-ram 92mm throttle, forged internals, E68 ECU, 535 hp 520 lb-ft @4600 6600 redline, Tremec 8-speed 5.56 final drive.</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
