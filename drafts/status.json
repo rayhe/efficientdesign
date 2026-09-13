@@ -1,1 +1,15 @@
-{"article_number":188,"author":"Marcus Thorne","commit":"36ca8bd1f82631b571facaa6236e6f72d70ef81c","critique_score":9.07,"hero_image":"stories/images/hero-moser-streamliner-tourbillon-skeleton-ceramic-alpine-double-hairspring.jpg","last_category":"watches","next_category":"cars","phase":"PENDING_DEPLOY","published_date":"2026-09-13","push_pending":true,"slug":"moser-streamliner-tourbillon-skeleton-ceramic-alpine-double-hairspring","title":"Gravity Is the Enemy: Moser's Double Hairspring Tourbillon Fights Physics with Two Springs"}
+{
+  "article_number": 188,
+  "author": "Marcus Thorne",
+  "commit": "36ca8bd1f82631b571facaa6236e6f72d70ef81c",
+  "critique_score": 9.07,
+  "hero_image": "stories/images/hero-moser-streamliner-tourbillon-skeleton-ceramic-alpine-double-hairspring.jpg",
+  "last_category": "watches",
+  "next_category": "cars",
+  "phase": "PENDING_DEPLOY",
+  "published_date": "2026-09-13",
+  "push_pending": true,
+  "slug": "moser-streamliner-tourbillon-skeleton-ceramic-alpine-double-hairspring",
+  "title": "Gravity Is the Enemy: Moser's Double Hairspring Tourbillon Fights Physics with Two Springs",
+  "deploy_note": "2026-09-13 06:45 PDT run: push+deploy blocked, egress proxy hatch-egress-proxy:3128 connection-refused (fleet-side outage); retry on next cron cycle"
+}
