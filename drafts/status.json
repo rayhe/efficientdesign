@@ -11,5 +11,5 @@
   "push_pending": true,
   "slug": "moser-streamliner-tourbillon-skeleton-ceramic-alpine-double-hairspring",
   "title": "Gravity Is the Enemy: Moser's Double Hairspring Tourbillon Fights Physics with Two Springs",
-  "deploy_note": "2026-09-13 12:30 PDT run: push+deploy STILL blocked - egress proxy hatch-egress-proxy:3128 TCP connection-refused (fleet-side; all 6 stored credentials returned 000, fails before auth). git push origin main failed on proxy connect. No new article (1/day cap already filled today by #188). Local QA still holds from 10:30 run (0 em dashes, 9.7% The-initial sentences, no banned phrases, JPEG hero 1920x1280 valid, index+sitemap reference slug). Commits a95e1fb/d5b2849/1349ddb pending push, retry next cycle"
+  "deploy_note": "2026-09-13 14:30 PDT run: push+deploy STILL blocked - egress proxy hatch-egress-proxy:3128 TCP connection-refused (fleet-side; all 6 stored credentials returned 000, direct curl to github.com and api.cloudflare.com also 000 - zero VM outbound network). No new article (1/day cap already filled today by #188). Local QA still holds (0 em dashes, 9.7% The-initial sentences, no banned phrases, JPEG hero 1920x1280 valid, index+sitemap reference slug). Commits e29b670/a95e1fb/d5b2849/1349ddb/8ffbfc1 pending push, retry next cycle"
 }
