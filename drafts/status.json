@@ -1,15 +1,1 @@
-{
-  "article_number": 188,
-  "author": "Marcus Thorne",
-  "commit": "36ca8bd1f82631b571facaa6236e6f72d70ef81c",
-  "critique_score": 9.07,
-  "deploy_note": "2026-09-13 22:30 PDT run: no new article (1/day cap filled by #188). Push+deploy STILL blocked - egress proxy TCP-unreachable on all 6 credential lines (fleet-side outage continues). Commits ed24207/d55c98e/a08ce38/e29b670/1349ddb/d5b2849/a95e1fb/8ffbfc1/7fa5862 pending push, retry next cycle",
-  "hero_image": "stories/images/hero-moser-streamliner-tourbillon-skeleton-ceramic-alpine-double-hairspring.jpg",
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "PENDING_DEPLOY",
-  "published_date": "2026-09-13",
-  "push_pending": true,
-  "slug": "moser-streamliner-tourbillon-skeleton-ceramic-alpine-double-hairspring",
-  "title": "Gravity Is the Enemy: Moser's Double Hairspring Tourbillon Fights Physics with Two Springs"
-}
+{"article_number":189,"author":"Elena Voss","commit":"f36054dd1f86b85d28b05279d84c01bdcdd9194f","critique_score":9.07,"deploy_note":"2026-09-14 00:30 PDT run: article #189 produced locally, committed. Push+deploy STILL blocked - egress proxy TCP-unreachable (fleet-side outage continues). Commits ed24207/d55c98e/a08ce38/e29b670/1349ddb/d5b2849/a95e1fb/8ffbfc1/7fa5862/64b87f6/f36054d pending push, retry next cycle","hero_image":"stories/images/hero-rivian-r2-second-shift-normal-production-ramp.jpg","last_category":"cars","next_category":"watches","phase":"PENDING_DEPLOY","published_date":"2026-09-14","push_pending":true,"slug":"rivian-r2-second-shift-normal-production-ramp","title":"The Second Shift Is the Product: Rivian's R2 Ramp at Normal"}
