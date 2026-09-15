@@ -1,1 +1,15 @@
-{"article_number":190,"author":"Marcus Thorne","commit":"28e65c0","critique_score":8.94,"deploy_note":"2026-09-15 00:30 PDT run: article #190 written, critiqued (8.94/10 PASS), QA passed, committed locally as 28e65c0. Push+deploy skipped - egress proxy still TCP-refused (fleet outage ~80h). Retry next cycle","hero_image":"stories/images/hero-tag-heuer-carrera-chronograph-sport-2026-redesign.jpg","last_category":"watches","next_category":"cars","phase":"PENDING_DEPLOY","published_date":"2026-09-15","push_pending":true,"slug":"tag-heuer-carrera-chronograph-sport-2026-redesign","title":"The 42mm Fix: TAG Heuer Rebuilds the Carrera Chronograph Sport Around Its Case"}
+{
+  "article_number": 190,
+  "author": "Marcus Thorne",
+  "commit": "e86edec",
+  "critique_score": 8.94,
+  "deploy_note": "2026-09-15 02:30 PDT run: 1-article/day rule already satisfied (#190, 8.94/10, committed locally 28e65c0). No new article written. Push+deploy still blocked - egress proxy TCP-refused (fleet outage ~81h). Retry next cycle",
+  "hero_image": "stories/images/hero-tag-heuer-carrera-chronograph-sport-2026-redesign.jpg",
+  "last_category": "watches",
+  "next_category": "cars",
+  "phase": "PENDING_DEPLOY",
+  "published_date": "2026-09-15",
+  "push_pending": true,
+  "slug": "tag-heuer-carrera-chronograph-sport-2026-redesign",
+  "title": "The 42mm Fix: TAG Heuer Rebuilds the Carrera Chronograph Sport Around Its Case"
+}
