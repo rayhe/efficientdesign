@@ -3,7 +3,7 @@
   "author": "Marcus Thorne",
   "commit": "e86edec",
   "critique_score": 8.94,
-  "deploy_note": "2026-09-15 02:30 PDT run: 1-article/day rule already satisfied (#190, 8.94/10, committed locally 28e65c0). No new article written. Push+deploy still blocked - egress proxy TCP-refused (fleet outage ~81h). Retry next cycle",
+  "deploy_note": "2026-09-15 04:30 PDT run: 1-article/day rule already satisfied (#190, 8.94/10, committed locally 28e65c0). No new article written. Push+deploy retry FAILED - proxy auth-test 000 on all 3 credential lines (fleet outage ~81h); direct github.com TCP/443 + DNS also down. Retry next cycle",
   "hero_image": "stories/images/hero-tag-heuer-carrera-chronograph-sport-2026-redesign.jpg",
   "last_category": "watches",
   "next_category": "cars",
