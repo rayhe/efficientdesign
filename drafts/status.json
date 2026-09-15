@@ -3,7 +3,7 @@
   "author": "Marcus Thorne",
   "commit": "c4d3f35",
   "critique_score": 8.94,
-  "deploy_note": "2026-09-15 14:30 PDT run: 1-article/day rule already satisfied (#190, 8.94/10, committed locally). No new article written. Push+deploy retry FAILED again - proxy auth-test 000 on all 6 credential lines (fleet outage ~94h). Retry next cycle",
+  "deploy_note": "2026-09-15 16:30 PDT run: 1-article/day rule already satisfied (#190, 8.94/10, committed locally). No new article written. Push+deploy retry FAILED again - proxy auth-test 000 on all 6 credential lines (fleet outage ~94h). Retry next cycle",
   "hero_image": "stories/images/hero-tag-heuer-carrera-chronograph-sport-2026-redesign.jpg",
   "last_category": "watches",
   "next_category": "cars",
