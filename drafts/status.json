@@ -3,7 +3,7 @@
   "author": "Elena Voss",
   "commit": "f36054dd1f86b85d28b05279d84c01bdcdd9194f",
   "critique_score": 9.07,
-  "deploy_note": "2026-09-14 16:30 PDT run: article #189 already published today (1/day cap) - no new article. Push+deploy retry blocked - all 6 proxy credentials 000 on example.com, direct egress 000 (fleet outage ~52h). Proxy TCP connection refused (git push fails after 1ms). Unpushed stack: 17 commits ahead of origin/main. browser.search works (alternate path alive) but push/deploy need VM egress. Retry next cycle",
+  "deploy_note": "2026-09-14 18:30 PDT run: article #189 already published today (1/day cap) - no new article. Push+deploy retry blocked - all 6 proxy credentials 000 on example.com, direct egress 000 (fleet outage ~54h). Proxy TCP connection refused (git push fails after 1ms). Unpushed stack: 19 commits ahead of origin/main. browser.search works (alternate path alive) but push/deploy need VM egress. Retry next cycle",
   "hero_image": "stories/images/hero-rivian-r2-second-shift-normal-production-ramp.jpg",
   "last_category": "cars",
   "next_category": "watches",
