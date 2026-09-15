@@ -1,7 +1,7 @@
 {
   "article_number": 190,
   "author": "Marcus Thorne",
-  "commit": "bbc3c96",
+  "commit": "ee4a7be",
   "critique_score": 8.94,
   "deploy_note": "2026-09-15 08:30 PDT run: 1-article/day rule already satisfied (#190, 8.94/10, committed locally). No new article written. Push+deploy retry FAILED - proxy auth-test 000 on all 6 credential lines (fleet outage ~84h). Retry next cycle",
   "hero_image": "stories/images/hero-tag-heuer-carrera-chronograph-sport-2026-redesign.jpg",
