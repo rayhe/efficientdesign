@@ -1,1 +1,16 @@
-{"article_number":191,"author":"Elena Voss","commit":"2d3d59e","critique_score":9.0,"deploy_note":"2026-09-16 00:30 PDT run: article #191 shipped. Push to origin/main succeeded. Cloudflare Pages deploy succeeded (https://6b284ec4.efficientdesign.pages.dev).","hero_image":"stories/images/hero-ruf-b8-erprober-flat-eight-engineering.jpg","last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-09-16","push_pending":false,"run_note":"2026-09-16 02:30 PDT run: SKIPPED (1 article/day cap; #191 already published today).","slug":"ruf-b8-erprober-flat-eight-engineering","title":"Two More Cylinders: RUF Builds the Flat-Eight Porsche Never Sold"}
+{
+  "article_number": 191,
+  "author": "Elena Voss",
+  "commit": "2d3d59e",
+  "critique_score": 9.0,
+  "deploy_note": "2026-09-16 00:30 PDT run: article #191 shipped. Push to origin/main succeeded. Cloudflare Pages deploy succeeded (https://6b284ec4.efficientdesign.pages.dev).",
+  "hero_image": "stories/images/hero-ruf-b8-erprober-flat-eight-engineering.jpg",
+  "last_category": "cars",
+  "next_category": "watches",
+  "phase": "SHIPPED",
+  "published_date": "2026-09-16",
+  "push_pending": false,
+  "run_note": "2026-09-16 06:30 PDT run: SKIPPED (1 article/day cap; #191 already published today).",
+  "slug": "ruf-b8-erprober-flat-eight-engineering",
+  "title": "Two More Cylinders: RUF Builds the Flat-Eight Porsche Never Sold"
+}
