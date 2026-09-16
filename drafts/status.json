@@ -1,15 +1,1 @@
-{
-  "article_number": 190,
-  "author": "Marcus Thorne",
-  "commit": "c4d3f35",
-  "critique_score": 8.94,
-  "deploy_note": "2026-09-15 22:30 PDT run: 1/day rule already satisfied (#190). Egress restored - Cloudflare Pages deploy succeeded (https://f5baa537.efficientdesign.pages.dev, live on efficientdesign.net). Push already synced.",
-  "hero_image": "stories/images/hero-tag-heuer-carrera-chronograph-sport-2026-redesign.jpg",
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SHIPPED",
-  "published_date": "2026-09-15",
-  "push_pending": false,
-  "slug": "tag-heuer-carrera-chronograph-sport-2026-redesign",
-  "title": "The 42mm Fix: TAG Heuer Rebuilds the Carrera Chronograph Sport Around Its Case"
-}
+{"article_number":191,"author":"Elena Voss","commit":"2d3d59e","critique_score":9.0,"deploy_note":"2026-09-16 00:30 PDT run: article #191 shipped. Push to origin/main succeeded. Cloudflare Pages deploy succeeded (https://6b284ec4.efficientdesign.pages.dev).","hero_image":"stories/images/hero-ruf-b8-erprober-flat-eight-engineering.jpg","last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-09-16","push_pending":false,"slug":"ruf-b8-erprober-flat-eight-engineering","title":"Two More Cylinders: RUF Builds the Flat-Eight Porsche Never Sold"}
