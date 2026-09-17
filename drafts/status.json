@@ -3,14 +3,14 @@
   "author": "Marcus Thorne",
   "commit": "3d43767",
   "critique_score": 8.94,
-  "deploy_note": "2026-09-17 00:30 PDT run: article #192 shipped. Push to origin/main succeeded. Cloudflare Pages deploy succeeded (https://9915bea8.efficientdesign.pages.dev).",
+  "deploy_note": "no action; next run 2026-09-18",
   "hero_image": "stories/images/hero-hublot-mp14-origin-koons-central-tourbillon.jpg",
   "last_category": "watches",
   "next_category": "cars",
-  "phase": "SHIPPED",
+  "phase": "SKIPPED_1DAY_CAP",
   "published_date": "2026-09-17",
   "push_pending": false,
-  "run_note": "2026-09-17 00:30 PDT run: SHIPPED article #192 (Hublot MP-14 Origin by Jeff Koons, automatic central tourbillon). Rhythm gate failed twice (143, 178.7) then passed (201.9) after 13 surgical revisions.",
+  "run_note": "2026-09-17 04:30 PDT run: skipped (1/day cap, article #192 already published today)",
   "slug": "hublot-mp14-origin-jeff-koons-central-tourbillon-sapphire",
   "title": "Center of the Universe: Hublot's MP-14 Origin and the Automatic Central Tourbillon Problem"
 }
