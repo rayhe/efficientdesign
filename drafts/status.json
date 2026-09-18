@@ -10,7 +10,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-09-18",
   "push_pending": false,
-  "run_note": "2026-09-18 06:30 PDT run: skipped, 1 article/day cap already met (#193 published today); next topic watches (rotation)",
+  "run_note": "2026-09-18 08:30 PDT run: skipped, 1 article/day cap already met (#193 published today); verified push (local==remote f12f123) and live URL 200; next topic watches (rotation)",
   "slug": "gm-gen6-l76-l78-truck-v8",
   "title": "From Corvette to Silverado: How GM Rebuilt the Small Block for the Truck Line"
 }
