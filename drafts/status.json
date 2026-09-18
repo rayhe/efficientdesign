@@ -1,16 +1,1 @@
-{
-  "article_number": 192,
-  "author": "Marcus Thorne",
-  "commit": "3d43767",
-  "critique_score": 8.94,
-  "deploy_note": "no action; next run 2026-09-18",
-  "hero_image": "stories/images/hero-hublot-mp14-origin-koons-central-tourbillon.jpg",
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SKIPPED_1DAY_CAP",
-  "published_date": "2026-09-17",
-  "push_pending": false,
-  "run_note": "2026-09-17 22:30 PDT run: skipped (1/day cap, article #192 already published today); next run 2026-09-18",
-  "slug": "hublot-mp14-origin-jeff-koons-central-tourbillon-sapphire",
-  "title": "Center of the Universe: Hublot's MP-14 Origin and the Automatic Central Tourbillon Problem"
-}
+{"article_number":193,"author":"Marcus Thorne","commit":"bb50f8c","critique_score":8.84,"deploy_note":"wrangler pages deploy, project efficientdesign","hero_image":"stories/images/hero-gm-gen6-l76-l78-truck-v8.jpg","last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-09-18","push_pending":false,"run_note":"2026-09-18 00:30 PDT run: article #193 published (GM Gen 6 L76/L78 truck V8s, unveiled Sep 17 at Flint); next run 2026-09-19","slug":"gm-gen6-l76-l78-truck-v8","title":"From Corvette to Silverado: How GM Rebuilt the Small Block for the Truck Line"}
