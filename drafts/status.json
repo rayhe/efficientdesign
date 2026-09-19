@@ -1,16 +1,1 @@
-{
-  "article_number": 193,
-  "author": "Marcus Thorne",
-  "commit": "bb50f8c",
-  "critique_score": 8.84,
-  "deploy_note": "wrangler pages deploy, project efficientdesign",
-  "hero_image": "stories/images/hero-gm-gen6-l76-l78-truck-v8.jpg",
-  "last_category": "cars",
-  "next_category": "watches",
-  "phase": "SHIPPED",
-  "published_date": "2026-09-18",
-  "push_pending": false,
-  "run_note": "2026-09-18 22:30 PDT run: skipped, 1 article/day cap already met (#193 published today, SHIPPED phase); next topic watches (rotation)",
-  "slug": "gm-gen6-l76-l78-truck-v8",
-  "title": "From Corvette to Silverado: How GM Rebuilt the Small Block for the Truck Line"
-}
+{"article_number":194,"author":"Marcus Thorne","commit":"8ede834","critique_score":8.97,"deploy_note":"BLOCKED: Cloudflare API token invalid (code 9109) via wrangler and direct API curl; needs fresh token from Ray's dash. GitHub push verified (HEAD == origin 8ede834). Local QA 7/7 PASS.","deploy_pending":true,"hero_image":"stories/images/hero-casio-g-shock-gst-w1000-multi-component-metalwork.jpg","last_category":"watches","next_category":"cars","phase":"SHIPPED","published_date":"2026-09-19","push_pending":false,"run_note":"2026-09-19 00:30 PDT run: published #194. Topic pivot: initial Monza Flyback 50th draft scrapped after discovering #180 (Sep 5) already covered it; switched to Casio G-Shock GST-W1000 (announced Sep 9). Gates: em dash 0, rhythm PASS (var 345.8, short 11.6%, long 53.5%), The-starters 8.8%, banned phrases 0. 7-critic avg 8.97/10.","slug":"casio-g-shock-gst-w1000-multi-component-metalwork","title":"Dressed to Take a Hit: Casio's GST-W1000 Makes G-Shock Do Jewelry"}
