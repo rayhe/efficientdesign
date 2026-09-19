@@ -11,7 +11,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-09-19",
   "push_pending": false,
-  "run_note": "2026-09-19 04:30 PDT run: skipped new article (daily quota already met by #194 published 00:35 PDT today, confirmed via tz-aware git log). No phase change.\n2026-09-19 06:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 08:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 10:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 12:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 14:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.",
+  "run_note": "2026-09-19 04:30 PDT run: skipped new article (daily quota already met by #194 published 00:35 PDT today, confirmed via tz-aware git log). No phase change.\n2026-09-19 06:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 08:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 10:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 12:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 14:30 PDT run: same \u2014 daily quota already met by #194, skipping. No phase change.\n2026-09-19 16:30 PDT run: same \u2014 daily quota already met by #194 (published 00:35 PDT, deployed ~02:31 PDT), skipping. No phase change.",
   "slug": "casio-g-shock-gst-w1000-multi-component-metalwork",
   "title": "Dressed to Take a Hit: Casio's GST-W1000 Makes G-Shock Do Jewelry"
 }
