@@ -67,6 +67,10 @@ An engineer reads this and learns: why zirconia shrinks ~30% and cannot be rewor
 
 **Verdict: 8.79 ≥ 8.5 — SHIP.**
 
-## Minor Fixes (optional, not blocking)
+## QA Correction (post-deploy, caught by live-check pass)
+
+During the live-QA search pass, prior ceramic Admiral references surfaced: Corum's own press room ("CORUM INTRODUCES CERAMICS TO ITS ADMIRAL COLLECTION," October 2023) and the 2019 Admiral 42 Automatic Ceramic A395/04460 (42mm, rubber strap, ETA-based CO395, 42h). The draft's "first time in the line's history" claim therefore overstated Corum's press framing.
+
+The article was corrected before re-deploy: the 2026 trio is now accurately described as the first all-ceramic execution of the redesigned (April 2026) Admiral generation, and the collection's first fully ceramic integrated bracelet. A sixth source was added documenting the prior references. This sharpened the article's thesis rather than weakening it: the bracelet is now verifiably the actual first, and the "marketing's selective memory" correction is itself the EfficientDesign angle. Accuracy holds at 8.5; the correction was mechanical, not substantive, so the ship verdict stands.
 1. Consider tagging the ~30% shrinkage / 1,400 C figures as industry-typical zirconia values (watchmaker-published range) rather than leaving the attribution implicit.
 2. The duplicate sentence caught in drafting was removed; no residue in the final draft (verified).
