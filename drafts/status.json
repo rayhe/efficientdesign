@@ -1,1 +1,17 @@
-{"article_number":196,"author":"Marcus Thorne","commit":"391e834","critique_score":8.79,"deploy_note":"DEPLOYED 2026-09-21 ~00:40 PDT: wrangler deploy of #196 succeeded; verified live at efficientdesign.net (story 200 with corrected copy, hero 200, homepage card confirmed via curl). QA caught and fixed: draft initially repeated Corum press 'first ceramic in line history' claim, but prior ceramic Admiral 42 refs exist (Corum Press Room Oct 2023, A395/04460 2019). Corrected to 'first all-ceramic execution of the redesigned generation + first ceramic integrated bracelet', source added.","deploy_pending":false,"hero_image":"stories/images/hero-corum-admiral-ceramic-unforgiving-material.jpg","last_category":"watches","next_category":"cars","phase":"SHIPPED","published_date":"2026-09-21","push_pending":false,"run_note":"2026-09-21 00:30 PDT run: new article #196 researched/drafted/critiqued (8.79/10, ships). Topic: Corum Admiral all-ceramic (Geneva Watch Days 2026, Sept 2) - 39mm x 8.90mm, integrated ceramic bracelet, CO231/CO232 72h, 18,900/33,000/24,900 CHF. Gates passed (1 em dash, 10.3% The-starts, no slop). Hero image generated+validated. Shipped, pushed (391e834), deployed. Next run skips (daily quota met).","slug":"corum-admiral-ceramic-unforgiving-material","title":"One Shot: Corum's Admiral Goes Ceramic, and the Material That Forgives Nothing"}
+{
+  "article_number": 196,
+  "author": "Marcus Thorne",
+  "commit": "391e834",
+  "critique_score": 8.79,
+  "deploy_note": "DEPLOYED 2026-09-21 ~00:40 PDT: wrangler deploy of #196 succeeded; verified live at efficientdesign.net (story 200 with corrected copy, hero 200, homepage card confirmed via curl). QA caught and fixed: draft initially repeated Corum press 'first ceramic in line history' claim, but prior ceramic Admiral 42 refs exist (Corum Press Room Oct 2023, A395/04460 2019). Corrected to 'first all-ceramic execution of the redesigned generation + first ceramic integrated bracelet', source added.",
+  "deploy_pending": false,
+  "hero_image": "stories/images/hero-corum-admiral-ceramic-unforgiving-material.jpg",
+  "last_category": "watches",
+  "next_category": "cars",
+  "phase": "SHIPPED",
+  "published_date": "2026-09-21",
+  "push_pending": false,
+  "run_note": "2026-09-21 02:30 PDT run: SKIPPED - article #196 (Corum Admiral all-ceramic) already published/deployed today; daily quota (1/day) met. Pipeline not re-run. next_category stays cars.",
+  "slug": "corum-admiral-ceramic-unforgiving-material",
+  "title": "One Shot: Corum's Admiral Goes Ceramic, and the Material That Forgives Nothing"
+}
