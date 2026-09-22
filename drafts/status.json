@@ -1,1 +1,18 @@
-{"article_number":197,"author":"Elena Voss","commit":"d23656c","critique_score":8.93,"deploy_note":"DEPLOYED 2026-09-22 ~00:40 PDT: wrangler deploy of #197 succeeded (6 files uploaded); verified live at efficientdesign.net (story 200, homepage card present). Hero image NOT included: media.generate_image upstream unavailable this run (failed 3 attempts, terminal). Article ships without hero (no broken image refs: og:image, story-hero img, JSON-LD image all removed). Backfill hero on a later run when the media pipeline recovers. ALSO FIXED: sitemap was missing the #196 (corum-admiral) entry from the previous run; added it plus the #197 entry, homepage lastmod -> 2026-09-22.","deploy_pending":false,"hero_image":null,"hero_pending":true,"last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-09-22","push_pending":false,"run_note":"2026-09-22 00:30 PDT run: article #197 (GM Mongoose 8.3L Duramax V8, Elena Voss) researched, drafted, critiqued (8.93/10 PASS), committed, pushed, deployed. Gates: em dashes 0/3, The-starters 12.7%, rhythm PASS (variance 311.7, short 9.0%, long 49.3%). next_category rotates to watches.","slug":"duramax-mongoose-8-3l-v8-diesel-engineering","title":"The Mongoose Hunts Scorpions: GM's 8.3L Duramax and the Thermal Argument for Cubic Inches"}
+{
+  "article_number": 197,
+  "author": "Elena Voss",
+  "commit": "d23656c",
+  "critique_score": 8.93,
+  "deploy_note": "DEPLOYED 2026-09-22 ~00:40 PDT: wrangler deploy of #197 succeeded (6 files uploaded); verified live at efficientdesign.net (story 200, homepage card present). Hero image NOT included: media.generate_image upstream unavailable this run (failed 3 attempts, terminal). Article ships without hero (no broken image refs: og:image, story-hero img, JSON-LD image all removed). Backfill hero on a later run when the media pipeline recovers. ALSO FIXED: sitemap was missing the #196 (corum-admiral) entry from the previous run; added it plus the #197 entry, homepage lastmod -> 2026-09-22.",
+  "deploy_pending": false,
+  "hero_image": null,
+  "hero_pending": true,
+  "last_category": "cars",
+  "next_category": "watches",
+  "phase": "SHIPPED",
+  "published_date": "2026-09-22",
+  "push_pending": false,
+  "run_note": "2026-09-22 04:30 PDT run: skipped \u2014 article #197 already published today (deployed ~00:40 PDT, 1/day max rule). Next run will produce #198 (watches, next_category rotation). Hero backfill for #197 still pending (media pipeline was down last run).",
+  "slug": "duramax-mongoose-8-3l-v8-diesel-engineering",
+  "title": "The Mongoose Hunts Scorpions: GM's 8.3L Duramax and the Thermal Argument for Cubic Inches"
+}
