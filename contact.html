@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &mdash; Efficient Design</title>
+  <meta name="description" content="Get in touch with Efficient Design. Call or text 650-796-9910 with questions, corrections, or story tips.">
+  <meta property="og:title" content="Contact — Efficient Design">
+  <meta property="og:description" content="Questions, corrections, or story tips? Call or text 650-796-9910.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:url" content="https://efficientdesign.net/contact.html">
+  <link rel="canonical" href="https://efficientdesign.net/contact.html">
+  <script>
+    (function(){var t=localStorage.getItem('theme');
+    if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))
+    document.documentElement.classList.add('dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact — Efficient Design",
+  "description": "Contact page for Efficient Design, a publication about watches and cars.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Efficient Design",
+    "url": "https://efficientdesign.net",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-650-796-9910",
+      "contactType": "general"
+    }
+  },
+  "url": "https://efficientdesign.net/contact.html",
+  "inLanguage": "en-US"
+}
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="./" class="back">&larr; Efficient Design</a>
+    </header>
+
+    <article class="story">
+      <div class="story-kicker">Contact</div>
+      <h1>Get in Touch</h1>
+      <div class="byline">The Editors</div>
+
+      <div class="pull-stat"><a href="tel:+16507969910">650-796-9910</a></div>
+      <div class="pull-label">Call or text. The fastest way to reach us.</div>
+
+      <p>Questions about a story, a correction on a technical detail, or a tip on an engineering story we should cover? Call or text us at <a href="tel:+16507969910">650-796-9910</a>.</p>
+
+      <p>We read everything. We especially appreciate tips on movements, manufacturing processes, and engineering decisions that other publications skip.</p>
+
+    </article>
+  </div>
+
+
+  <script>
+    // Theme toggle - system/light/dark
+    (function() {
+      const toggle = document.createElement('button');
+      toggle.className = 'theme-toggle';
+      
+      function getEffective() {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'dark') return 'dark';
+        if (stored === 'light') return 'light';
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      
+      function getStored() {
+        return localStorage.getItem('theme') || 'system';
+      }
+      
+      function apply() {
+        const effective = getEffective();
+        const stored = getStored();
+        document.documentElement.classList.toggle('dark', effective === 'dark');
+        if (stored === 'system') {
+          toggle.textContent = '⚙️ System';
+        } else if (stored === 'dark') {
+          toggle.textContent = '☀️ Light';
+        } else {
+          toggle.textContent = '🌙 Dark';
+        }
+      }
+      
+      toggle.onclick = function() {
+        const stored = getStored();
+        if (stored === 'system') {
+          localStorage.setItem('theme', 'dark');
+        } else if (stored === 'dark') {
+          localStorage.setItem('theme', 'light');
+        } else {
+          localStorage.removeItem('theme');
+        }
+        apply();
+      };
+      
+      // Listen for system preference changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+        if (!localStorage.getItem('theme')) apply();
+      });
+      
+      document.body.appendChild(toggle);
+      apply();
+    })();
+
+  </script>
+</body>
+</html>
