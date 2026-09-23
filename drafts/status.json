@@ -12,7 +12,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-09-22",
   "push_pending": false,
-  "run_note": "2026-09-22 16:30 PDT run: skipped new article (1/day max, #197 already published today). Verified #197 hero backfill LIVE: og:image + story-hero present on story page (200 via -L), hero JPEG 200/596684 bytes. Removed stray media-generation metadata JSON from stories/images/. Working tree clean, nothing else pending. Next run: #198 watches (next_category rotation) on 2026-09-23.",
+  "run_note": "2026-09-22 20:30 PDT run: skipped new article (1/day max, #197 shipped 2026-09-22). Hero verified live at 16:30 run. Working tree clean otherwise, nothing pending. Next run: #198 watches (next_category rotation) on 2026-09-23.",
   "slug": "duramax-mongoose-8-3l-v8-diesel-engineering",
   "title": "The Mongoose Hunts Scorpions: GM's 8.3L Duramax and the Thermal Argument for Cubic Inches"
 }
