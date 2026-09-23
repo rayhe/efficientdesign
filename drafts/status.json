@@ -1,18 +1,1 @@
-{
-  "article_number": 197,
-  "author": "Elena Voss",
-  "commit": "6ba699f",
-  "critique_score": 8.93,
-  "deploy_note": "DEPLOYED 2026-09-22 ~00:40 PDT: wrangler deploy of #197 succeeded (6 files uploaded); verified live at efficientdesign.net (story 200, homepage card present). Hero image NOT included: media.generate_image upstream unavailable this run (failed 3 attempts, terminal). Article ships without hero (no broken image refs: og:image, story-hero img, JSON-LD image all removed). Backfill hero on a later run when the media pipeline recovers. ALSO FIXED: sitemap was missing the #196 (corum-admiral) entry from the previous run; added it plus the #197 entry, homepage lastmod -> 2026-09-22.",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-duramax-mongoose-8-3l-v8-diesel-engineering.jpg",
-  "hero_pending": false,
-  "last_category": "cars",
-  "next_category": "watches",
-  "phase": "SHIPPED",
-  "published_date": "2026-09-22",
-  "push_pending": false,
-  "run_note": "2026-09-22 22:30 PDT run: skipped new article (1/day max, #197 shipped 2026-09-22). Working tree clean, nothing pending. Next run: #198 watches (next_category rotation) on 2026-09-23.",
-  "slug": "duramax-mongoose-8-3l-v8-diesel-engineering",
-  "title": "The Mongoose Hunts Scorpions: GM's 8.3L Duramax and the Thermal Argument for Cubic Inches"
-}
+{"article_number":198,"author":"Marcus Thorne","commit":"55f436d","critique_score":9.07,"deploy_note":"DEPLOYED 2026-09-23 ~00:45 PDT: wrangler deploy of #198 succeeded (6 files uploaded); verified live at efficientdesign.net (story page renders fully with hero image, FAQ; homepage card present). Hero included this run: media pipeline recovered (was down 2026-09-22).","deploy_pending":false,"hero_image":"stories/images/hero-casio-g-shock-gw-bx5600-mip-lcd-square-readability.jpg","hero_pending":false,"last_category":"watches","next_category":"cars","phase":"SHIPPED","published_date":"2026-09-23","push_pending":false,"run_note":"2026-09-23 00:30 PDT run: shipped #198 (watches). Full 5-phase pipeline: researched GW-BX5600 Sept 2026 US launch (Casio PR, Gear Patrol, Notebookcheck, Gizmochina, Chrono24), drafted, 7-critic avg 9.07, gates PASS (em dash 0, The-initial 1.6%, rhythm variance 202.6). Next run: #199 cars on 2026-09-24.","slug":"casio-g-shock-gw-bx5600-mip-lcd-square-readability","title":"Forty Years of Squinting: Casio's GW-BX5600 and the Display the Square Always Needed"}
