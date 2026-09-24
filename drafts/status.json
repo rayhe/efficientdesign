@@ -12,7 +12,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-09-24",
   "push_pending": false,
-  "run_note": "2026-09-24 12:30 PDT run: skipped, daily quota met (#199 shipped 00:55 PDT today). 14:30 PDT run: skipped, still same calendar day. Next run: #200 watches on 2026-09-25.",
+  "run_note": "2026-09-24 16:30 PDT run: skipped, daily quota met (#199 shipped 2026-09-24). Next run: #200 watches on 2026-09-25.",
   "slug": "porsche-pdk-ghost-clutch-h-pattern-patent",
   "title": "The Clutch Pedal With Nothing Behind It: Porsche Patents the Manual's Afterlife"
 }
