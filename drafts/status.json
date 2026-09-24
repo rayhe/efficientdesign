@@ -1,18 +1,18 @@
 {
   "article_number": 199,
   "author": "Elena Voss",
-  "commit": "PENDING",
+  "commit": "f258dcd",
   "critique_score": 8.71,
-  "deploy_note": "PENDING",
-  "deploy_pending": true,
+  "deploy_note": "DEPLOYED 2026-09-24 ~00:55 PDT: wrangler pages deploy succeeded (7 files uploaded, preview https://eafb3577.efficientdesign.pages.dev). Live QA: story 200 with canonical/OG correct, hero 200 image/jpeg valid 1920x1280, homepage card present (curl-verified; browser tool showed stale cache), internal Ferrari/Koenigsegg links 200, sitemap entry added.",
+  "deploy_pending": false,
   "hero_image": "stories/images/hero-porsche-pdk-ghost-clutch-h-pattern-patent.jpg",
   "hero_pending": false,
   "last_category": "cars",
   "next_category": "watches",
   "phase": "SHIPPED",
   "published_date": "2026-09-24",
-  "push_pending": true,
-  "run_note": "2026-09-24 00:30 PDT run: article #199 shipped (Porsche PDK ghost-clutch patent). 7-critic avg 8.71, all hard gates pass (emdash 0, The-initial 6.2%, rhythm variance 224.8).",
+  "push_pending": false,
+  "run_note": "2026-09-24 00:30 PDT run: article #199 shipped (Porsche PDK ghost-clutch patent). 7-critic avg 8.71, all hard gates pass (emdash 0, The-initial 6.2%, rhythm variance 224.8). Next run: #200 watches on 2026-09-25.",
   "slug": "porsche-pdk-ghost-clutch-h-pattern-patent",
   "title": "The Clutch Pedal With Nothing Behind It: Porsche Patents the Manual's Afterlife"
 }
