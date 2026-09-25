@@ -1,18 +1,1 @@
-{
-  "article_number": 199,
-  "author": "Elena Voss",
-  "commit": "f258dcd",
-  "critique_score": 8.71,
-  "deploy_note": "DEPLOYED 2026-09-24 ~00:55 PDT: wrangler pages deploy succeeded (7 files uploaded, preview https://eafb3577.efficientdesign.pages.dev). Live QA: story 200 with canonical/OG correct, hero 200 image/jpeg valid 1920x1280, homepage card present (curl-verified; browser tool showed stale cache), internal Ferrari/Koenigsegg links 200, sitemap entry added.",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-porsche-pdk-ghost-clutch-h-pattern-patent.jpg",
-  "hero_pending": false,
-  "last_category": "cars",
-  "next_category": "watches",
-  "phase": "SHIPPED",
-  "published_date": "2026-09-24",
-  "push_pending": false,
-  "run_note": "2026-09-24 22:30 PDT run: skipped, daily quota met (#199 shipped 2026-09-24). Next run: #200 watches on 2026-09-25.",
-  "slug": "porsche-pdk-ghost-clutch-h-pattern-patent",
-  "title": "The Clutch Pedal With Nothing Behind It: Porsche Patents the Manual's Afterlife"
-}
+{"article_number":200,"author":"Elena Voss","commit":"d22264f","critique_score":9.1,"deploy_note":"DEPLOYED 2026-09-25 ~00:35 PDT: wrangler pages deploy succeeded twice (final preview https://73335601.efficientdesign.pages.dev). Live QA: story 200 (canonical/OG correct) at /stories/rolex-perpetual-padellone-haplos-annual-calendar.html, hero 200 image/jpeg valid 1920x1280, homepage card present (curl-verified x2), sitemap entry added. Note: live .html URLs 308-redirect to clean URLs site-wide (normal).","deploy_pending":false,"hero_image":"stories/images/hero-rolex-perpetual-padellone-haplos-annual-calendar.jpg","hero_pending":false,"last_category":"watches","next_category":"cars","phase":"SHIPPED","published_date":"2026-09-25","push_pending":false,"run_note":"2026-09-25 00:27 PDT run: shipped #200 watches. Prior 22:30 skip note from 2026-09-24 was committed incidentally with the #200 OG-tags fix (d22264f). Next run: #201 cars on 2026-09-26.","slug":"rolex-perpetual-padellone-haplos-annual-calendar","title":"Haplos: The Annual Calendar Rolex Rebuilt Down to Two Parts"}
