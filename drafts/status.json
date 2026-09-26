@@ -1,18 +1,1 @@
-{
-  "article_number": 200,
-  "author": "Elena Voss",
-  "commit": "d22264f",
-  "critique_score": 9.1,
-  "deploy_note": "DEPLOYED 2026-09-25 ~00:35 PDT: wrangler pages deploy succeeded twice (final preview https://73335601.efficientdesign.pages.dev). Live QA: story 200 (canonical/OG correct) at /stories/rolex-perpetual-padellone-haplos-annual-calendar.html, hero 200 image/jpeg valid 1920x1280, homepage card present (curl-verified x2), sitemap entry added. Note: live .html URLs 308-redirect to clean URLs site-wide (normal).",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-rolex-perpetual-padellone-haplos-annual-calendar.jpg",
-  "hero_pending": false,
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SHIPPED",
-  "published_date": "2026-09-25",
-  "push_pending": false,
-  "run_note": "2026-09-25 20:30 PDT run: skipped, daily quota met (#200 published 2026-09-25, live-verified). Next run: #201 cars on 2026-09-26.",
-  "slug": "rolex-perpetual-padellone-haplos-annual-calendar",
-  "title": "Haplos: The Annual Calendar Rolex Rebuilt Down to Two Parts"
-}
+{"article_number":201,"author":"Elena Voss","commit":"pending","critique_score":9.2,"deploy_note":"pending","deploy_pending":true,"hero_image":"stories/images/hero-gm-gen6-small-block-409.jpg","hero_pending":false,"last_category":"cars","next_category":"watches","phase":"DRAFT_SHIPPED_TO_STORIES","published_date":"2026-09-26","push_pending":true,"run_note":"2026-09-26 00:30 PDT run: drafting #201 cars (GM Gen-6 small block). Gates PASS (em dash 0, The-starts 4.5%, rhythm PASS). Critique 9.2/10.","slug":"gm-gen6-small-block-409-stroke-simulation","title":"Two Millimeters: How Simulation Gave GM's Small Block 409 Cubic Inches"}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Millimeters: How Simulation Gave GM's Small Block 409 Cubic Inches</title>
+<meta name="description" content="On September 16, 2026, GM revealed its sixth-generation small-block V8s: the 6.7L LS6 for the 2027 Corvette and the L76/L78 for trucks. The engineering story is a two-millimeter stroke increase that simulation found for free, 13.0:1 compression, and a 71-year-old bore-spacing constraint that still had one move left.">
+<meta name="author" content="Elena Voss">
+<meta name="article:section" content="cars">
+<meta name="article:tag" content="GM, Gen 6 small block, LS6, L76, L78, Corvette, Silverado, pushrod V8, 409, simulation, engine design">
+<meta name="article:published_time" content="2026-09-26">
+<link rel="canonical" href="https://efficientdesign.net/stories/gm-gen6-small-block-409-stroke-simulation.html">
+<meta property="og:title" content="Two Millimeters: How Simulation Gave GM's Small Block 409 Cubic Inches">
+<meta property="og:description" content="GM's sixth-gen small block was supposed to be 6.6 liters. Simulation found two more millimeters of stroke for free, and 409 cubic inches came with them.">
+<meta property="og:image" content="https://efficientdesign.net/stories/images/hero-gm-gen6-small-block-409.jpg">
+<meta property="og:url" content="https://efficientdesign.net/stories/gm-gen6-small-block-409-stroke-simulation.html">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1a1a1a; --accent: #5a7a5a;
+    --meta: #777; --border: #e0ddd8; --code-bg: #f5f3ef;
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body {
+    font-family: var(--serif); background: var(--bg); color: var(--fg);
+    line-height: 1.75; max-width: 720px; margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem; font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; }
+  .subtitle { font-size: 1.15rem; color: var(--meta); line-height: 1.5; margin-bottom: 1.5rem; font-family: var(--sans); }
+  .meta { font-family: var(--sans); font-size: 0.85rem; color: var(--meta); margin-bottom: 2.5rem; }
+  .hero-image { width: 100%; margin: 0 0 2.5rem 0; }
+  .hero-image img { width: 100%; height: auto; display: block; }
+  .hero-image figcaption { font-size: 0.78rem; color: var(--meta); margin-top: 0.4rem; font-family: var(--sans); }
+  h2 { font-size: 1.35rem; font-family: var(--sans); font-weight: 700; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+  p { margin-bottom: 1.25rem; }
+  blockquote {
+    border-left: 3px solid var(--accent); padding-left: 1.25rem;
+    margin: 1.75rem 0; font-style: italic; color: #444;
+  }
+  .spec-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--sans); font-size: 0.88rem; }
+  .spec-table th { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--fg); font-weight: 700; }
+  .spec-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+  .spec-table tr:last-child td { border-bottom: none; }
+  .ref-section { margin-top: 2.5rem; }
+  .ref-section ol { margin-left: 1.5rem; font-family: var(--sans); font-size: 0.85rem; color: var(--meta); }
+  .ref-section li { margin-bottom: 0.5rem; }
+  @media (max-width: 600px) {
+    html { font-size: 16px; }
+    body { padding: 1.25rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<article>
+<h1>Two Millimeters: How Simulation Gave GM's Small Block 409 Cubic Inches</h1>
+<p class="subtitle">On September 16, 2026, GM unveiled its sixth-generation small-block V8s in Flint, and the headline number was not the horsepower. It was a two-millimeter stroke increase that simulation tools discovered for free, turning a planned 6.6-liter engine into 409 cubic inches of the most torque-dense naturally aspirated V8 the company has ever built.</p>
+<p class="meta">By Elena Voss &middot; September 26, 2026 &middot; Cars</p>
+
+<figure class="hero-image">
+<img src="images/hero-gm-gen6-small-block-409.jpg" alt="Editorial macro photograph of an American pushrod V8 engine on an assembly stand in warm amber workshop light, one cylinder head removed to reveal forged pistons, connecting rods, and crankshaft, with intake runners and valve covers behind" loading="lazy">
+<figcaption>Forged pistons and rods on an assembly stand. The sixth-gen small block's headline discovery was a two-millimeter stroke increase that simulation found for free.</figcaption>
+</figure>
+
+<h2>What Was Actually Announced</h2>
+
+<p>Mark Reuss stood in Flint Engine Operations on September 16, 2026, on the 118th anniversary of GM's founding in that city, and introduced three new pushrod V8s. The 2027 Corvette Stingray, Grand Sport, and Grand Sport X get the 6.7-liter LS6. Trucks get the other two: the 5.7-liter L76 and the 6.6-liter L78, both bound for the 2027 Chevrolet Silverado and GMC Sierra. Production is already underway, and all three share the same architectural bet: in an industry downsizing toward turbocharged sixes and fours, there is still no replacement for displacement.</p>
+
+<p>Start with the numbers. LS6 output: 535 horsepower at 6,100 rpm and 520 lb-ft at 4,600, from 409 cubic inches, on 13.0:1 compression, which GM says makes it the most torque-rich naturally aspirated production V8 in its history and the most powerful base engine ever fitted to a Corvette. At 400 cubic inches, the L78 produces 481 horsepower and 501 lb-ft, which GM calls the most powerful naturally aspirated V8 available in the truck class. And the L76 lands exactly on 350 cubic inches with 402 horsepower and 428 lb-ft, replacing the 5.3-liter's 355 and the 6.2's 420. Chevrolet even stamps the displacements on the hardware: the L78 wears a prominent "400" on the front of the block.</p>
+
+<p>None of those figures required a turbocharger. All of them came from geometry, compression, and airflow. That is the whole point.</p>
+
+<h2>The Two Millimeters</h2>
+
+<p>But the most interesting detail of the Flint reveal was not on any spec sheet. According to Assistant Chief Engineer Mike Kociba, who led the five-year development program with LS6 Design System Manager Casey Morrison, the Corvette engine was originally a 6.6-liter design. During development, the team's digital simulation tools kept pointing at a configuration the engineers would not have explored through physical prototypes alone: add about two millimeters of stroke. Displacement grew from the planned 6.6 to 6.7 liters, 409 cubic inches, with, in Kociba's telling, no penalty to emissions compliance or fuel economy targets.</p>
+
+<p>Stroke went from 92 mm to 100 mm against a bore of 103.25 mm, a stroke-to-bore ratio of 0.97 to 1, square almost to the millimeter. Against the LT2 it replaces, that is 33 cubic inches of new displacement. And the final two millimeters of it, the step from the planned 6.6-liter design to the shipped 6.7, arrived, in Kociba's telling, with no penalty to emissions compliance or fuel economy. Read that again, because it inverts the usual cost structure of engine development. Displacement has always been purchased with something: emissions budget, fuel economy, redline. Here the last increment of displacement arrived free, discovered in the gap between the configurations the tools could afford to test and the ones the engineers could afford to build.</p>
+
+<blockquote>"We were going to make it 'only' 6.6 liters, and then we started playing around and realized that by adding a bit more stroke, we get more performance without compromising anything else. In the past, we might not have explored that." (Mike Kociba, GM Assistant Chief Engineer, speaking to LSX Magazine)</blockquote>
+
+<h2>Why Stroke Was the Only Lever Left</h2>
+
+<p>Bore spacing is 4.4 inches. It has been 4.4 inches since the original 265-cubic-inch small-block debuted in 1955, and every small-block since, well over 100 million engines, has honored that dimension. You cannot simply bore the cylinders wider when the centers are fixed: at 103.25 mm the bores sit close enough that the deck between them has nothing left to give. So displacement had to come from stroke, and stroke is the expensive direction. Longer stroke means taller deck height, higher piston speeds, and harder limits on how fast the engine can spin.</p>
+
+<p>Which is what makes the simulation result worth examining closely. GM holds the redline at 6,600 rpm, only 400 below the LT2 it replaces, and Kociba's team reports power and torque improvements across the entire rev range, not just at the peak. Forged pistons and connecting rods absorb the loads, and a tunnel-ram-style intake with high-velocity ports keeps the long-stroke engine breathing at the top end, where undersquare engines normally suffocate. A seventy-one-year-old dimensional constraint turned out to still have one move left. Simulation found it before the prototype budget would have let anyone ask.</p>
+
+<h2>13.0:1, or How to Compress Without Knocking</h2>
+
+<p>Thirteen-to-one compression on premium pump fuel would have been a warranty disaster in 1995. On the LS6 it is the enabler. Gen-6 engines pair direct injection with port injection, and the division of labor is what matters. Direct injection delivers charge cooling, the evaporating fuel dropping mixture temperature inside the cylinder, which is the primary defense against knock at high compression. Port injection handles part-load efficiency and emissions edge cases, and as a side effect it keeps washing the backs of the intake valves, which quietly answers the carbon buildup that plagued early direct-injection engines.</p>
+
+<p>Truck engines get the same dual-fuel system, tuned intake runners, and larger throttle bodies, the LS6's measuring 95 mm. And the engineering target in both cases was not the peak number. GM has been explicit that a flat torque curve across the operating range matters more than a headline figure that falls off on both sides of the dyno graph. For context, the outgoing 5.3 made 355 horsepower; the L76 replaces it with 402, and more importantly with a torque band that starts where the old engine was already giving up.</p>
+
+<h2>The Oil System Remembers</h2>
+
+<p>Here is the detail that tells you GM was designing against its own history. A continuously variable-displacement oil pump anchors the Gen-6 lubrication system, tailoring output to demand instead of dumping excess pressure over a relief valve, joined by an engine-mounted oil cooler and revised oil-feed locations meant to hold pressure more consistently. None of that makes a brochure. All of it reads as a response to the previous generation's oiling-related recalls, which cost GM more than any horsepower shortfall ever could.</p>
+
+<p>This is the unglamorous half of engineering appreciation, and it is the half that matters most. A variable pump cuts parasitic losses at cruise, which is where trucks spend their lives, and consistent feed pressure at high temperature and high load is what lets the rest of the engine, the compression, the stroke, the redline, survive its own ambition. GM says the oiling was rethought, not carried over. Given the alternative, that was not optional.</p>
+
+<h2>409</h2>
+
+<p>The number is not an accident. Chevrolet has a habit of stamping displacement where everyone can see it, and the Corvette's 409 echoes a figure the brand has celebrated since 1962. Kociba framed the LS6's torque-first tuning as a deliberate tribute: "We wanted a wide, high torque band, and high power. It feels like we're bringing a piece of Americana back." Strip the marketing gloss and the claim holds up as engineering. Peak power is a number on a chart. A wide, high torque band is what the driver actually feels.</p>
+
+<p>One more number, then. This is a design that has now been in continuous production for over seventy years, through fuel crises, emissions regimes, and the entire electrification era, and its sixth generation is still cam-in-block, still two valves per cylinder, still pushrods. That layout did not survive on nostalgia. It survived because every alternative was wider, taller, or heavier, because a pushrod V8 still fits under a low Corvette hood and keeps the center of gravity where it belongs, and because simulation has finally become good enough to keep finding displacement inside constraints everyone assumed were exhausted. The obituaries were premature. They usually are.</p>
+
+<table class="spec-table">
+<tr><th>Spec</th><th>L76 (truck)</th><th>L78 (truck)</th><th>LS6 (Corvette)</th></tr>
+<tr><td>Displacement</td><td>5.7L / 350 ci</td><td>6.6L / 400 ci</td><td>6.7L / 409 ci</td></tr>
+<tr><td>Bore x stroke</td><td>not disclosed</td><td>not disclosed</td><td>103.25 x 100 mm</td></tr>
+<tr><td>Compression ratio</td><td>not disclosed</td><td>not disclosed</td><td>13.0:1</td></tr>
+<tr><td>Power</td><td>402 hp</td><td>481 hp</td><td>535 hp @ 6,100 rpm</td></tr>
+<tr><td>Torque</td><td>428 lb-ft</td><td>501 lb-ft</td><td>520 lb-ft @ 4,600 rpm</td></tr>
+<tr><td>Redline</td><td>not disclosed</td><td>not disclosed</td><td>6,600 rpm</td></tr>
+<tr><td>Valvetrain</td><td colspan="3">OHV, 2 valves/cylinder, 4.4 in bore spacing</td></tr>
+<tr><td>Fuel delivery</td><td colspan="3">Direct + port injection (Active Fuel Management confirmed on LS6)</td></tr>
+<tr><td>Block</td><td colspan="3">Aluminum, cast-in iron liners (LS6 confirmed)</td></tr>
+<tr><td>Heads</td><td colspan="2">not disclosed</td><td>A356-T6 aluminum</td></tr>
+<tr><td>Internals</td><td colspan="2">not disclosed</td><td>Forged pistons and rods</td></tr>
+<tr><td>Throttle body</td><td colspan="2">enlarged, not disclosed</td><td>95 mm</td></tr>
+<tr><td>Applications</td><td>2027 Silverado / Sierra</td><td>2027 Silverado / Sierra</td><td>2027 Corvette Stingray, Grand Sport, Grand Sport X (721 hp combined with front e-drive)</td></tr>
+</table>
+
+<div class="ref-section">
+<h2>References</h2>
+<ol>
+<li>GM Authority, "Corvette LS6 Engine Was Supposed To Displace 6.6L" (March 2026), <a href="https://gmauthority.com/blog/2026/03/corvette-ls6-engine-was-supposed-to-displace-6-6l/">gmauthority.com</a></li>
+<li>GM Authority, "GM LS6 Engine Info, Power, Specs", <a href="https://gmauthority.com/blog/gm/gm-engines/ls6/">gmauthority.com</a></li>
+<li>EngineLabs, "Chevrolet's Sixth-Generation Small-Blocks Brings The Big Inches" (September 2026), <a href="https://www.enginelabs.com/news/chevrolets-sixth-generation-small-block-brings-back-the-big-inches/">enginelabs.com</a></li>
+<li>LSX Magazine, "LS6 Revolution: GM's Most Advanced Small Block Yet", <a href="https://www.lsxmag.com/tech-stories/ls6-revolution-gms-most-advanced-small-block-yet/">lsxmag.com</a></li>
+<li>USA Today, "General Motors reveals next-gen V-8 engines slated for 2027 pickups" (September 17, 2026), <a href="https://www.usatoday.com/story/cars/news/automotive-trends/2026/09/17/what-gm-says-its-next-gen-v-8-engines-for-2027-pickups-can-do/91815341007/">usatoday.com</a></li>
+<li>CarBuzz, "GM's New LS6 Small-Block Engine Proves Size Does Matter", <a href="https://carbuzz.com/ls6-gm-small-block-v8-size-matters/">carbuzz.com</a></li>
+</ol>
+<p><em>Caveat: I have not handled this hardware or driven these vehicles. All figures are GM's as reported by the outlets above, and production engines may differ from reveal specs.</em></p>
+</div>
+</article>
+</body>
+</html>
