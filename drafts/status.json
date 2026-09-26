@@ -12,7 +12,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-09-26",
   "push_pending": false,
-  "run_note": "2026-09-26 00:30 PDT run: shipped #201 cars (GM Gen-6 small block), live-verified. 2026-09-26 02:30 PDT run: skipped per 1/day max. 2026-09-26 04:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27. 2026-09-26 06:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27.",
+  "run_note": "2026-09-26 00:30 PDT run: shipped #201 cars (GM Gen-6 small block), live-verified. 2026-09-26 02:30 PDT run: skipped per 1/day max. 2026-09-26 04:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27. 2026-09-26 06:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27. 2026-09-26 08:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27. 2026-09-26 10:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27. 2026-09-26 12:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27. 2026-09-26 14:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27.",
   "slug": "gm-gen6-small-block-409-stroke-simulation",
   "title": "Two Millimeters: How Simulation Gave GM's Small Block 409 Cubic Inches"
 }
