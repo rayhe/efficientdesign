@@ -1,1 +1,18 @@
-{"article_number":201,"author":"Elena Voss","commit":"890e954","critique_score":9.2,"deploy_note":"DEPLOYED 2026-09-26 ~00:55 PDT: pinned wrangler 4.82.2 pages deploy succeeded (preview https://5b79bb13.efficientdesign.pages.dev). Live QA: story 201 (canonical/OG correct) at /stories/gm-gen6-small-block-409-stroke-simulation (clean URL, 308 from .html normal), hero 201 image/jpeg valid 1920x1280, homepage card present (curl-verified).","deploy_pending":false,"hero_image":"stories/images/hero-gm-gen6-small-block-409.jpg","hero_pending":false,"last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-09-26","push_pending":false,"run_note":"2026-09-26 00:30 PDT run: shipped #201 cars (GM Gen-6 small block), live-verified. Next run: #202 watches on 2026-09-27.","slug":"gm-gen6-small-block-409-stroke-simulation","title":"Two Millimeters: How Simulation Gave GM's Small Block 409 Cubic Inches"}
+{
+  "article_number": 201,
+  "author": "Elena Voss",
+  "commit": "890e954",
+  "critique_score": 9.2,
+  "deploy_note": "DEPLOYED 2026-09-26 ~00:55 PDT: pinned wrangler 4.82.2 pages deploy succeeded (preview https://5b79bb13.efficientdesign.pages.dev). Live QA: story 201 (canonical/OG correct) at /stories/gm-gen6-small-block-409-stroke-simulation (clean URL, 308 from .html normal), hero 201 image/jpeg valid 1920x1280, homepage card present (curl-verified).",
+  "deploy_pending": false,
+  "hero_image": "stories/images/hero-gm-gen6-small-block-409.jpg",
+  "hero_pending": false,
+  "last_category": "cars",
+  "next_category": "watches",
+  "phase": "SHIPPED",
+  "published_date": "2026-09-26",
+  "push_pending": false,
+  "run_note": "2026-09-26 00:30 PDT run: shipped #201 cars (GM Gen-6 small block), live-verified. 2026-09-26 02:30 PDT run: skipped per 1/day max. 2026-09-26 04:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27. 2026-09-26 06:30 PDT run: skipped per 1/day max (#201 already published today). Next run: #202 watches on 2026-09-27.",
+  "slug": "gm-gen6-small-block-409-stroke-simulation",
+  "title": "Two Millimeters: How Simulation Gave GM's Small Block 409 Cubic Inches"
+}
