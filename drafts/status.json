@@ -12,7 +12,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-09-30",
   "push_pending": false,
-  "run_note": "2026-09-30 00:30 PDT run: shipped #205 cars (Porsche closed-loop battery recycling with cylib), panel 8.93/10 after 2 rounds, gates all PASS (em-dash 0, The-starters 14.4%, rhythm variance 210.6), hero validated, live-verified. 06:30 PDT run: SKIP per 1/day max (#205 live-verified at stories/porsche-cylib-closed-loop-battery-cathode, QA clean). 08:30 PDT run: SKIP per 1/day max (#205 published 2026-09-30, story file present, pipeline SHIPPED). Next run: #206 watches.",
+  "run_note": "2026-09-30 00:30 PDT run: shipped #205 cars (Porsche closed-loop battery recycling with cylib), panel 8.93/10 after 2 rounds, gates all PASS (em-dash 0, The-starters 14.4%, rhythm variance 210.6), hero validated, live-verified. 06:30 PDT run: SKIP per 1/day max (#205 live-verified at stories/porsche-cylib-closed-loop-battery-cathode, QA clean). 08:30 PDT run: SKIP per 1/day max (#205 published 2026-09-30, story file present, pipeline SHIPPED). 10:30 PDT run: SKIP per 1/day max (#205 published 2026-09-30, story file + hero image present on disk, pipeline SHIPPED). Next run: #206 watches. 12:30 PDT run: SKIP per 1/day max (#205 published 2026-09-30, story file + hero image present on disk, pipeline SHIPPED). Next run: #206 watches.",
   "slug": "porsche-cylib-closed-loop-battery-cathode",
   "title": "Twice-Mined: Porsche's 100%-Recycled Cathode"
 }
