@@ -1,18 +1,1 @@
-{
-  "article_number": 204,
-  "author": "Marcus Thorne",
-  "commit": "b5e75ef",
-  "critique_score": 9.1,
-  "deploy_note": "DEPLOYED 2026-09-29 ~00:32 PDT: pinned wrangler 4.82.2 pages deploy succeeded (preview https://c01269ae.efficientdesign.pages.dev). Live QA: story 204 (clean URL 200, 308 from .html normal), hero 204 image/jpeg valid 1920x1280, homepage card present (2 refs).",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-de-bethune-db25-digitale-jumping-hour-spherical-moonphase.jpg",
-  "hero_pending": false,
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SHIPPED",
-  "published_date": "2026-09-29",
-  "push_pending": false,
-  "run_note": "2026-09-28 00:30 PDT run: shipped #203 cars (Rivian R2 material circularity), live-verified. Subsequent 2026-09-28 runs skipped per 1/day max. 2026-09-29 00:30 PDT run: shipped #204 watches (De Bethune DB25 Digitale), panel 9.1/10, gates all PASS, hero validated, live-verified. 2026-09-29 02:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). 2026-09-29 04:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). Next run: #205 cars on 2026-09-30. 2026-09-29 06:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). 2026-09-29 08:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). Next run: #205 cars on 2026-09-30. 2026-09-29 10:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). Next run: #205 cars on 2026-09-30. 2026-09-29 12:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). Next run: #205 cars on 2026-09-30. 2026-09-29 14:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). Next run: #205 cars on 2026-09-30. 2026-09-29 16:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). Next run: #205 cars on 2026-09-30. 2026-09-29 18:30 PDT run: SKIPPED per 1/day max (#204 already shipped today). Next run: #205 cars on 2026-09-30.",
-  "slug": "de-bethune-db25-digitale-jumping-hour-spherical-moonphase",
-  "title": "A Day of Drift Per Millennium: De Bethune's DB25 Digitale and the Gear Train Behind It"
-}
+{"article_number":205,"author":"Marcus Thorne","commit":"331f1e8","critique_score":8.93,"deploy_note":"DEPLOYED 2026-09-30 ~00:45 PDT: npx wrangler pages deploy (preview https://5a4fd65e.efficientdesign.pages.dev). Live QA: story 205 (clean URL 200 after redirect, 308 from .html normal), hero image/jpeg valid 1920x1280, homepage card present.","deploy_pending":false,"hero_image":"stories/images/hero-porsche-cylib-closed-loop-battery-cathode.jpg","hero_pending":false,"last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-09-30","push_pending":false,"run_note":"2026-09-30 00:30 PDT run: shipped #205 cars (Porsche closed-loop battery recycling with cylib), panel 8.93/10 after 2 rounds, gates all PASS (em-dash 0, The-starters 14.4%, rhythm variance 210.6), hero validated, live-verified. Later 2026-09-30 runs: SKIP per 1/day max. Next run: #206 watches.","slug":"porsche-cylib-closed-loop-battery-cathode","title":"Twice-Mined: Porsche's 100%-Recycled Cathode"}
