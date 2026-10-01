@@ -12,7 +12,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-10-01",
   "push_pending": false,
-  "run_note": "2026-10-01 00:30 PDT run: shipped #206 watches (Lange Triple Split platinum edition, calibre L132.1 triple rattrapante), panel 8.93/10 round 1 (Skeptic 8.5 prompted the scarcity-playbook sentence addition), gates all PASS (em-dash 0, The-starters 1.4%, rhythm variance 250.1, short 10.8%, long 45.8%), hero validated, push via temp GIT_CONFIG_GLOBAL Basic header (repo remote is SSH, github.com line in ~/.git-credentials is proxy-corrupted garbage; real PAT under 140.82.114.4), live-verified. Next run: #207 cars. NOTE: longer muse.edit old_text strings intermittently failed to match this run; short unique fragments worked reliably.",
+  "run_note": "2026-10-01 02:30 PDT run: SKIPPED (1/day max rule; #206 published today and live-verified at clean URL, hero 200, page 145 lines). No pipeline run, no research, no deploy. Untracked generator temp files remain in stories/images/ (3 files, harmless). Next run: #207 cars.",
   "slug": "lange-triple-split-platinum-triple-rattrapante",
   "title": "One Train, Three Handbrakes: Lange's Triple Split Goes Platinum"
 }
