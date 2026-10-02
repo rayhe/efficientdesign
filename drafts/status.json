@@ -1,18 +1,1 @@
-{
-  "article_number": 206,
-  "author": "Marcus Thorne",
-  "commit": "90db2bd",
-  "critique_score": 8.93,
-  "deploy_note": "DEPLOYED 2026-10-01 ~00:45 PDT: npx wrangler pages deploy (preview https://6a924f45.efficientdesign.pages.dev). Live QA: story 206 (308 -> 200 clean URL, normal), hero image/jpeg 200 1920x1280, homepage card present (2 refs).",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-lange-triple-split-platinum-triple-rattrapante.jpg",
-  "hero_pending": false,
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SHIPPED",
-  "published_date": "2026-10-01",
-  "push_pending": false,
-  "run_note": "2026-10-01 22:30 PDT run: SKIPPED (1/day max rule; #206 published today, phase SHIPPED, no pending pushes/deploys). Live QA: clean URL 200, hero image 200. Next run: #207 cars.",
-  "slug": "lange-triple-split-platinum-triple-rattrapante",
-  "title": "One Train, Three Handbrakes: Lange's Triple Split Goes Platinum"
-}
+{"article_number":207,"author":"Elena Voss","commit":"8d6c788","critique_score":9.0,"deploy_note":"DEPLOYED 2026-10-02 ~00:45 PDT: npx wrangler pages deploy (preview https://b8e637aa.efficientdesign.pages.dev). Live QA: story 207 (308 -> 200 clean URL, normal), hero image/jpeg 200 1920x1280, homepage card present (2 refs). NOTE: deploy initially failed 7003 routing error; Cloudflare account ID typo resolved live via /v4/accounts (8e3c98e0066c695c28e22a7c09615b70); TOOLS.md on disk already correct.","deploy_pending":false,"hero_image":"stories/images/hero-ford-fathom-assembly-tree-unicasting.jpg","hero_pending":false,"last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-10-02","push_pending":false,"run_note":"2026-10-02 00:30 PDT run: PUBLISHED #207 (cars, Elena Voss). Topic: Ford Fathom / Universal EV Platform manufacturing engineering (assembly tree, unicastings, harness, structural LFP). Gates: em-dash 0, rhythm PASS (var 419, short 11.4%, long 43%), The-starters 0%, no banned phrases. Critique 9.0/7 round 1. Next run: #208 watches.","slug":"ford-fathom-assembly-tree-unicasting","title":"Killing the Line: Ford's Assembly Tree and the Two-Casting Truck"}
