@@ -12,7 +12,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-10-01",
   "push_pending": false,
-  "run_note": "2026-10-01 16:30 PDT run: SKIPPED (1/day max rule; #206 published today, phase SHIPPED, no pending pushes/deploys). Live QA re-verified: story 308->clean URL (normal), hero image 200, homepage 200. No pipeline run, no research, no deploy. Next run: #207 cars.",
+  "run_note": "2026-10-01 20:30 PDT run: SKIPPED (1/day max rule; #206 published today, phase SHIPPED, no pending pushes/deploys). Live QA: clean URL returns 200, hero image live. Next run: #207 cars.",
   "slug": "lange-triple-split-platinum-triple-rattrapante",
   "title": "One Train, Three Handbrakes: Lange's Triple Split Goes Platinum"
 }
