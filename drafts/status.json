@@ -12,5 +12,5 @@
   "phase": "SHIPPED",
   "published_date": "2026-10-03",
   "push_pending": false,
-  "run_note": "2026-10-03 06:30 PDT run: SKIPPED \u2014 #208 already published 2026-10-03 (1/day cap; live QA verified: clean URL 308->200, correct h1). Next run: #209 cars."
+  "run_note": "2026-10-03 08:30 PDT run: SKIPPED \u2014 #208 already published 2026-10-03 (1/day cap). Next run: #209 cars."
 }
