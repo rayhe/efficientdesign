@@ -1,1 +1,16 @@
-{"article_number":208,"author":"Marcus Thorne","commit":"af992b0","critique_score":9.0,"deploy_note":"DEPLOYED 2026-10-03 ~00:55 PDT: npx wrangler pages deploy (preview https://5809c8de.efficientdesign.pages.dev). Live QA: story 208 (308 -> 200 clean URL, correct title), hero image/jpeg 200 1920x1280 660KB, homepage card present first on grid (2 refs, live + preview).","deploy_pending":false,"hero_image":"stories/images/hero-mrg-d5000-blue-sapphire-kigumi-no-screw-case.jpg","hero_pending":false,"last_category":"watches","next_category":"cars","phase":"SHIPPED","published_date":"2026-10-03","push_pending":false,"run_note":"2026-10-03 00:30 PDT run: PUBLISHED #208 (watches) 'The Screwless Puzzle: Casio's $80,000 Blue Sapphire G-Shock' (MRG-D5000-BDR, announced Oct 1 2026). 7-critic panel 9.0 round 1. Gates: em-dash 0, The-starters 7.7%, rhythm pass (var 491, short 12.7%, long 43.1%). Hero regenerated once to remove screw heads from titanium core. Next run: #209 cars."}
+{
+  "article_number": 208,
+  "author": "Marcus Thorne",
+  "commit": "af992b0",
+  "critique_score": 9.0,
+  "deploy_note": "DEPLOYED 2026-10-03 ~00:55 PDT: npx wrangler pages deploy (preview https://5809c8de.efficientdesign.pages.dev). Live QA: story 208 (308 -> 200 clean URL, correct title), hero image/jpeg 200 1920x1280 660KB, homepage card present first on grid (2 refs, live + preview).",
+  "deploy_pending": false,
+  "hero_image": "stories/images/hero-mrg-d5000-blue-sapphire-kigumi-no-screw-case.jpg",
+  "hero_pending": false,
+  "last_category": "watches",
+  "next_category": "cars",
+  "phase": "SHIPPED",
+  "published_date": "2026-10-03",
+  "push_pending": false,
+  "run_note": "2026-10-03 06:30 PDT run: SKIPPED \u2014 #208 already published 2026-10-03 (1/day cap; live QA verified: clean URL 308->200, correct h1). Next run: #209 cars."
+}
