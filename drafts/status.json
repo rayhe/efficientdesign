@@ -1,16 +1,1 @@
-{
-  "article_number": 208,
-  "author": "Marcus Thorne",
-  "commit": "af992b0",
-  "critique_score": 9.0,
-  "deploy_note": "DEPLOYED 2026-10-03 ~00:55 PDT: npx wrangler pages deploy (preview https://5809c8de.efficientdesign.pages.dev). Live QA: story 208 (308 -> 200 clean URL, correct title), hero image/jpeg 200 1920x1280 660KB, homepage card present first on grid (2 refs, live + preview).",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-mrg-d5000-blue-sapphire-kigumi-no-screw-case.jpg",
-  "hero_pending": false,
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SHIPPED",
-  "published_date": "2026-10-03",
-  "push_pending": false,
-  "run_note": "2026-10-03 18:30 PDT run: SKIPPED — #208 already published 2026-10-03 (1/day cap; story page live-verified this run, title/byline/date Oct 3, hero JPEG 200). Next run: #209 cars."
-}
+{"article_number":209,"author":"Elena Voss","critique_score":9.0,"deploy_pending":true,"hero_image":"stories/images/hero-magnuson-heartbeat-tvs2650-c6-corvette.jpg","hero_pending":false,"last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-10-04","push_pending":true,"run_note":"2026-10-04 00:30 PDT run: #209 SHIPPED. Topic: Magnuson Heartbeat TVS2650 LS3 (revealed Sep 2026; C6 Corvette stock-hood packaging vs GM LT4 shrink-and-spin tradeoff). Gates: em-dash 0, The-starters 1.5%, rhythm PASS (var 330/short 10.9%/long 53.1%), no banned phrases. Critique 9.0 round 1. Hero JPEG 1920x1280 523KB validated. Awaiting push+deploy."}
