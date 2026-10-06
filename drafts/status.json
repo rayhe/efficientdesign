@@ -1,16 +1,1 @@
-{
-  "article_number": 210,
-  "author": "Marcus Thorne",
-  "commit": "8c84b25",
-  "critique_score": 8.93,
-  "deploy_note": "DEPLOYED 2026-10-05 ~00:50 PDT: npx wrangler pages deploy (preview https://fb79c47a.efficientdesign.pages.dev). Live QA: story 210 clean URL 200 (html URL 308 to clean, expected), byline Marcus Thorne / Oct 5 2026, hero image/jpeg 200 1920x1280 576KB, homepage card first on grid (2 refs, verified on production).",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-richard-mille-rm-65-01-sand-quartz-tpt-split-seconds.jpg",
-  "hero_pending": false,
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SHIPPED",
-  "published_date": "2026-10-05",
-  "push_pending": false,
-  "run_note": "2026-10-05 00:30 PDT run: SHIPPED #210 'Six Columns, Two Hands, One Tenth of a Second' (RM 65-01 Sand Quartz TPT split-seconds, watches). RESEARCH: Sand Quartz TPT unveiled ahead of Oct 9-11 2026 Singapore GP; six-column-wheel claim corroborated 3x (Revolution Watch, Tatler Asia, K2 dealer listing). CRITIQUE 8.93/10 PASS. Gates: em dash 0, 'The'-initial 12.4%, no banned phrases. Committed 8c84b25, pushed origin main, deployed CF Pages. Next run: #211 cars (next_category=cars). 2026-10-05 02:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 04:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 06:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 08:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 10:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 12:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 14:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 16:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 18:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 20:30 PDT run: SKIP (1/day max, #210 published today). 2026-10-05 22:30 PDT run: SKIP (1/day max, #210 published today)."
-}
+{"article_number":211,"author":"Elena Voss","commit":"d011144","critique_score":9.0,"deploy_note":"DEPLOYED 2026-10-06 ~00:45 PDT: npx wrangler pages deploy (preview https://f33c4013.efficientdesign.pages.dev). Live QA: story 211 clean URL 200 (html URL 308 to clean, expected), byline Elena Voss / Oct 6 2026, hero image/jpeg 200 1920x1280 339KB, homepage card first on grid (2 refs, verified on production).","deploy_pending":false,"hero_image":"stories/images/hero-porsche-992-targa-roof-magnesium-kinematics.jpg","hero_pending":false,"last_category":"cars","next_category":"watches","phase":"SHIPPED","published_date":"2026-10-06","push_pending":false,"run_note":"2026-10-06 00:30 PDT run: SHIPPED #211 'Nineteen Seconds, Two Cylinders, One Magnesium Ballet' (992 Targa roof magnesium kinematics, cars). RESEARCH: Porsche Newsroom primary (panel-bow architecture, one hydraulic cylinder per side, Z-fold 23x55cm), Autoblog (19s, 187 lbs, weight deltas, sensor interlock), SlashGear, Automotive World, Aug 2026 mechanism video. CRITIQUE 9.0/10 PASS. Gates: em dash 0, 'The'-initial 0%, no banned phrases, rhythm variance 721.2 / short 1.1% / long 48.3%. Committed d011144, pushed origin main, deployed CF Pages. Next run: #212 watches (next_category=watches)."}
