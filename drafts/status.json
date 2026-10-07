@@ -11,7 +11,7 @@
   "phase": "SHIPPED",
   "published_date": "2026-10-07",
   "push_pending": false,
-  "run_note": "2026-10-07 06:30 PDT run: SKIPPED — article #212 already published today (~00:50 PDT); 1 article/day max. No research/draft/deploy this run. Next run: #213 cars.",
+  "run_note": "2026-10-07 08:30 PDT run: SKIPPED \u2014 article #212 already published today (~00:50 PDT); 1 article/day max. Verified #212 files in stories/ (html + hero). No research/draft/deploy this run. Next run: #213 cars.",
   "commit": "2abbdc4",
   "last_completed": "2026-10-07 ~00:50 PDT"
 }
