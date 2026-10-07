@@ -2,14 +2,16 @@
   "article_number": 212,
   "author": "Elena Voss",
   "critique_score": 8.97,
-  "deploy_note": "DEPLOYED 2026-10-06 ~00:45 PDT: npx wrangler pages deploy (preview https://f33c4013.efficientdesign.pages.dev). Live QA: story 211 clean URL 200 (html URL 308 to clean, expected), byline Elena Voss / Oct 6 2026, hero image/jpeg 200 1920x1280 339KB, homepage card first on grid (2 refs, verified on production).",
-  "deploy_pending": true,
+  "deploy_note": "DEPLOYED 2026-10-07 ~00:50 PDT: pages-deploy.mjs direct upload, branch main (deployment 38591bef, preview https://38591bef.efficientdesign.pages.dev). Live QA: story 212 clean URL 200 (html URL 308 to clean, expected), byline Elena Voss / Oct 7 2026, hero image/jpeg 200 1920x1280 519KB, homepage card first on grid (2 refs, verified on production).",
+  "deploy_pending": false,
   "hero_image": "stories/images/hero-patek-5978p-instantaneous-perpetual-calendar-chronograph.jpg",
   "hero_pending": false,
   "last_category": "watches",
   "next_category": "cars",
   "phase": "SHIPPED",
   "published_date": "2026-10-07",
-  "push_pending": true,
-  "run_note": "2026-10-06 04:30 PDT run: SKIPPED — #211 already published 2026-10-06 (1 article/day max). Pipeline idle, nothing pending. Next run: #212 watches. 2026-10-06 06:30 PDT run: SKIPPED — same (1 article/day max). Nothing pending. 2026-10-06 08:30 PDT run: SKIPPED — same (1 article/day max). Nothing pending. 2026-10-06 10:30 PDT run: SKIPPED — same (1 article/day max). Nothing pending. 2026-10-06 12:30 PDT run: SKIPPED — same (1 article/day max). Nothing pending. 2026-10-06 14:30 PDT run: SKIPPED — #211 already published 2026-10-06 (1 article/day max). Nothing pending. Next run: #212 watches. 2026-10-06 16:30 PDT run: SKIPPED — #211 already published 2026-10-06 (1 article/day max). Nothing pending. Next run: #212 watches. 2026-10-06 18:30 PDT run: SKIPPED — same (1 article/day max). Nothing pending. Next run: #212 watches. 2026-10-06 20:30 PDT run: SKIPPED — #211 already published 2026-10-06 (1 article/day max). Nothing pending. Next run: #212 watches. 2026-10-06 22:30 PDT run: SKIPPED — same (1 article/day max). Nothing pending. Next run: #212 watches."
+  "push_pending": false,
+  "run_note": "2026-10-07 00:30 PDT run: SHIPPED #212 'Flat Torque at Midnight: Patek's Instantaneous Calendar Chronograph' (watches, Elena Voss). Critique 8.97/10 (threshold 8.5). Gates: 0 em dashes, The-starters 12.9%, rhythm PASS (var 729.4 / short 13.1% / long 40.2%), no slop phrases. Hero JPEG 1920x1280 519KB. Deployed via pages-deploy.mjs (DEPLOY SUCCESS, 38591bef.efficientdesign.pages.dev; production alias efficientdesign.pages.dev live). Live QA: clean URL 200 (.html 308, expected), byline Elena Voss / Oct 7 2026, hero 200 image/jpeg, homepage card present (2 refs). Next run: #213 cars.",
+  "commit": "2abbdc4",
+  "last_completed": "2026-10-07 ~00:50 PDT"
 }
