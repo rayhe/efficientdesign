@@ -1,17 +1,1 @@
-{
-  "article_number": 212,
-  "author": "Elena Voss",
-  "critique_score": 8.97,
-  "deploy_note": "DEPLOYED 2026-10-07 ~00:50 PDT: pages-deploy.mjs direct upload, branch main (deployment 38591bef, preview https://38591bef.efficientdesign.pages.dev). Live QA: story 212 clean URL 200 (html URL 308 to clean, expected), byline Elena Voss / Oct 7 2026, hero image/jpeg 200 1920x1280 519KB, homepage card first on grid (2 refs, verified on production).",
-  "deploy_pending": false,
-  "hero_image": "stories/images/hero-patek-5978p-instantaneous-perpetual-calendar-chronograph.jpg",
-  "hero_pending": false,
-  "last_category": "watches",
-  "next_category": "cars",
-  "phase": "SHIPPED",
-  "published_date": "2026-10-07",
-  "push_pending": false,
-  "run_note": "2026-10-07 20:30 PDT run: SKIPPED - article #212 (patek-5978p, watches) already published today (~00:50 PDT); 1 article/day max. Verified #212 html present in stories/. No research/draft/deploy this run. Next run: #213 cars.",
-  "commit": "2abbdc4",
-  "last_completed": "2026-10-07 ~00:50 PDT"
-}
+{"article_number":213,"author":"Marcus Thorne","commit":"","critique_score":8.81,"deploy_note":"","deploy_pending":true,"hero_image":"stories/images/hero-porsche-718-ev-e-core-mid-battery.jpg","hero_pending":false,"last_category":"cars","last_completed":"2026-10-08","next_category":"watches","phase":"SHIPPED","published_date":"2026-10-08","push_pending":false,"run_note":"2026-10-08 ~00:30 PDT run: article #213 (porsche-718-ev-e-core-mid-battery-architecture, cars) shipped. Critique avg 8.81 (7 critics). Hard gates: 0 em dashes, 10.0% The-starters, no banned phrases, rhythm variance 307.4 PASS. Hero 1920x1280 JPEG validated. Next run: #214 watches."}

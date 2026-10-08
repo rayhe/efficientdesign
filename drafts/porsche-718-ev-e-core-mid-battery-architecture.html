@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Core: Why Porsche's Electric 718 Puts the Battery Behind the Seats</title>
+<meta name="description" content="Porsche confirmed the electric 718 Boxster and Cayman go all-electric in 2028 with a mid-mounted battery pack, new cylindrical cells that charge 50% faster with no weight penalty, and 800V hardware from the Rivian joint venture. The engineering case for putting the mass where the engine used to be.">
+<meta name="author" content="Marcus Thorne">
+<meta name="hero" content="images/hero-porsche-718-ev-e-core-mid-battery.jpg">
+<meta name="article:section" content="cars">
+<meta name="article:tag" content="Porsche 718, Boxster, Cayman, E-Core, battery architecture, cylindrical cells, polar moment of inertia, 800V, Rivian, Mission S">
+<meta name="article:published_time" content="2026-10-08">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1a1a1a; --accent: #5a7a5a;
+    --meta: #777; --border: #e0ddd8; --code-bg: #f5f3ef;
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--bg); color: var(--fg);
+    line-height: 1.75; max-width: 720px;
+    margin: 0 auto; padding: 2rem 1.5rem 4rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem; font-weight: 700; letter-spacing: -0.02em; }
+  .subtitle { font-size: 1.1rem; color: var(--meta); margin-bottom: 1rem; font-style: italic; line-height: 1.5; }
+  .meta { font-size: 0.85rem; color: var(--meta); margin-bottom: 2.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+  .story-hero { width: 100%; margin: 0 0 2.5rem; border-radius: 4px; }
+  article p { margin-bottom: 1.25rem; font-size: 1.05rem; }
+  article h2 { font-size: 1.4rem; margin: 2.5rem 0 1rem; font-weight: 700; }
+  article h3 { font-size: 1.15rem; margin: 2rem 0 0.75rem; font-weight: 600; }
+  blockquote { border-left: 3px solid var(--accent); padding: 0.5rem 1rem; margin: 1.5rem 0; font-style: italic; color: var(--meta); }
+  .specs-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+  .specs-table th, .specs-table td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+  .specs-table th { font-weight: 600; color: var(--accent); width: 40%; }
+</style>
+</head>
+<body>
+<article>
+<h1>E-Core: Why Porsche's Electric 718 Puts the Battery Behind the Seats</h1>
+
+<p class="subtitle">The skateboard layout won every EV design argument for a decade. Porsche just walked away from it, and the physics says they were right.</p>
+
+<div class="meta">By Marcus Thorne &middot; October 8, 2026 &middot; Cars</div>
+
+<img class="story-hero" src="images/hero-porsche-718-ev-e-core-mid-battery.jpg" alt="Editorial macro photograph in warm amber light of cylindrical battery cells glowing copper against a dark chassis, mid-mounted battery stack behind a racing seat">
+
+<p>The throttle blips on downshifts. That is the detail that stuck after reading the Weissach ride-along reports this week: a prototype electric Boxster, still camouflaged, ripping around Porsche's test track with a driver at work, and the car firing off little rev-matched blips like a GT3 on a downshift. That sound is synthesized; the blips are theater. But the chassis underneath is pure physics, and that part is real.</p>
+
+<p>Yesterday's Capital Markets Day finally ended the saga. Porsche's Sportwagenschmiede '35 roadmap lists the next 718 as battery-electric only, first full production year 2028, with no resurrection of the flat-six and no stopgap. And the engineering choice that makes the car interesting is not the drivetrain at all, but where the battery lives.</p>
+
+<h2>Heresy against the skateboard</h2>
+
+<p>Nearly every electric car on sale puts its battery in the floor, and there are good reasons: a flat pack between the axles drops the center of gravity, spreads mass across the wheelbase, and turns the body into a stiff structural member. The skateboard won the argument so completely that nobody bothers to defend it anymore.</p>
+
+<p>Porsche is the first major maker to publicly break with it for a ground-up sports car. Porsche's 718 EV pack sits behind the seats, in the mid-engine position, where the flat-six used to live, an arrangement the company calls E-Core. The goal is not a lower center of gravity. It is the opposite: accepting a higher center of mass in exchange for keeping the driver low and the mass centralized around the car's yaw axis, and that trade is the whole story.</p>
+
+<p>Floor packs force the seats up, ride height climbs, and the driver sits on top of the car instead of in it, which erases the low hip point that makes a Boxster feel like a Boxster. Porsche decided the sensation of sitting low mattered more than the marginal grip advantage of a floor-level battery.</p>
+
+<p>And then there is rotation, the mid-engine car's defining trick: mass concentrated near the center of the wheelbase gives a low polar moment of inertia about the vertical axis, so the car changes direction with less resistance. Moment of inertia grows with the square of distance from the axis. Spreading the heaviest component in the car across the full floor pushes mass to the extremities and dulls that response. Pulling it back into the middle restores it.</p>
+
+<h2>Numbers that back the layout</h2>
+
+<p>The gas Boxster carried 59.8 percent of its weight over the rear axle. On the EV prototype, the figure is 55.2 percent rear. Close enough that the handling balance will feel familiar to anyone who knows the current car, but shifted slightly toward neutral. Porsche's R&D chief Michael Steiner has been making this case for years: with battery cells still the heaviest part of any EV, the midship position is, packaging-wise, more or less a copy of a mid-engine design.</p>
+
+<p>Cylindrical cells carry the second half of the engineering story. Porsche says the new cell technology delivers roughly 20 percent more range while charging 50 percent faster than the company's current EVs, all without adding weight and at 15 percent lower materials cost. That combination of claims deserves scrutiny, since the industry has a habit of trading weight for range, but the direction is right: faster charging and lighter cells attack the two real weaknesses of electric sports cars, recharge time and mass.</p>
+
+<table class="specs-table">
+<tr><th>Architecture</th><td>E-Core: mid-mounted battery pack behind seats</td></tr>
+<tr><th>Voltage</th><td>800V system from Porsche/Rivian joint-venture electrical platform</td></tr>
+<tr><th>Cell technology</th><td>New cylindrical cells; ~20% more range, 50% faster charging (per Porsche)</td></tr>
+<tr><th>Materials cost</th><td>~15% lower than current cells, no weight increase (per Steiner)</td></tr>
+<tr><th>Weight distribution</th><td>55.2% rear (EV prototype) vs 59.8% rear (gas 718)</td></tr>
+<tr><th>Shift emulation</th><td>E-Shift: brief overboost on upshifts rather than torque interruption</td></tr>
+<tr><th>Production</th><td>First full year 2028; Audi to use E-Core platform as well</td></tr>
+<tr><th>Companion reveal</th><td>Mission S mid-engine concept, October 15, 2026</td></tr>
+</table>
+
+<h2>The Rivian current underneath</h2>
+
+<p>Buried in the Capital Markets Day coverage is a line worth pausing on: the 718 will use the new electrical platform developed by the joint venture with Rivian, an 800-volt system. Rivian's R1 vehicles charge on a 400-volt-class architecture today. An 800V platform coming out of that partnership suggests the co-developed hardware is aimed at exactly this kind of problem: high-performance charging without the thermal and cable-weight penalties of low-voltage, high-current designs.</p>
+
+<p>For an 800V pack, doubling voltage halves current for the same power, which cuts resistive heating in cables and connectors by a factor of four. That is what lets the car sustain high charge rates without melting its own charge port. Porsche already runs 800V in the Taycan, but bringing the Rivian JV's hardware into the 718 is the first sign of what that partnership actually produces for enthusiasts, rather than fleet software.</p>
+
+<p>I have not driven the prototype, and nobody outside Porsche has; the Weissach runs were passenger rides. So treat the "feels like a Boxster" reports accordingly. What can be verified from the spec sheets is the architecture decision, and it is a serious one: Porsche bet that rotational dynamics and seating position matter more than the skateboard's center-of-gravity advantage, and spent a full platform development cycle proving it.</p>
+
+<h2>The delay was a battery problem</h2>
+
+<p>Worth remembering why this car arrives in 2028 instead of 2025. The program was reportedly designed around high-performance cells from Northvolt, the Swedish battery maker that collapsed into bankruptcy. When the supplier disappeared, Porsche had to redesign around new cells and a new supplier, slipping the launch twice. Battery-swap surgery on a finished car design is enormously expensive, which explains the three-year drift and the reported internal debates about whether to finish the program at all.</p>
+
+<p>Porsche had to re-source the most critical component of the car late in development, and the new cells reportedly came out lighter, faster-charging, and cheaper to build, which means sometimes the disaster forces the better decision.</p>
+
+<h2>October 15 will tell us the rest</h2>
+
+<p>Porsche's roadmap includes a Mission S concept reveal next week, previewing a mid-engine super sports car platform set above the 911, with no powertrain details released yet. If the E-Core approach scales, the most interesting version of the electric sports car may not be the 718 at all. It may be whatever sits on top of it.</p>
+
+<p>Chief executive Michael Leiters says the 911 will never go electric. That promise has an expiration date, but the strategy behind it is sound: keep the icon on combustion and hybrids, let the 718 carry the full-electric experiment, and watch which one the market rewards. The 718 has always been the better-driving car anyway. Giving it the braver engineering is the least surprising part of this whole story.</p>
+
+<p>Sources: <a href="https://www.motortrend.com/reviews/electric-porsche-boxster-first-ride-2027">MotorTrend, Weissach ride-along</a>; <a href="https://www.motortrend.com/news/porsche-turnaround-plan-product-strategy">MotorTrend, Sportwagenschmiede '35 plan</a>; <a href="https://electrek.co/2026/10/07/porsche-says-boxster-goes-all-electric-in-2028-but-911-never-will-yes-it-will/">Electrek, Capital Markets Day</a>.</p>
+
+</article>
+</body>
+</html>
