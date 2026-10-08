@@ -4,7 +4,7 @@
   "commit": "04429f9",
   "critique_score": 8.81,
   "deploy_note": "DEPLOYED 2026-10-08 ~01:00 PDT: pages-deploy.mjs direct upload, branch main (deployment 93730f25, preview https://93730f25.efficientdesign.pages.dev). Live QA: story 213 html 200, byline Marcus Thorne / Oct 8 2026, hero image/jpeg 200 1920x1280, card markup verified in production HTML source.",
-  "deploy_pending": true,
+  "deploy_pending": false,
   "hero_image": "stories/images/hero-porsche-718-ev-e-core-mid-battery.jpg",
   "hero_pending": false,
   "last_category": "cars",
@@ -13,5 +13,6 @@
   "phase": "SHIPPED",
   "published_date": "2026-10-08",
   "push_pending": false,
-  "run_note": "2026-10-08 08:30 PDT run: SKIPPED \u2014 article #213 (porsche-718-ev-e-core-mid-battery-architecture, cars) already published today 2026-10-08 (1 article/day max). No new topic researched. Next run: #214 watches."
+  "run_note": "2026-10-08 14:30 PDT run: SKIPPED — article #213 (porsche-718-ev-e-core-mid-battery-architecture, cars) already published today 2026-10-08 (1 article/day max). No new topic researched. Story URL returns 200 live; cleared stale deploy_pending. Next run: #214 watches.",
+  "run_note_2": "2026-10-08 12:30 PDT run: SKIPPED — article #213 still the day's publish (1 article/day max). No new topic researched. Next run: #214 watches."
 }
