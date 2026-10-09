@@ -15,5 +15,6 @@
   "push_pending": false,
   "run_note": "2026-10-08 14:30 PDT run: SKIPPED — article #213 (porsche-718-ev-e-core-mid-battery-architecture, cars) already published today 2026-10-08 (1 article/day max). No new topic researched. Story URL returns 200 live; cleared stale deploy_pending. Next run: #214 watches.",
   "run_note_2": "2026-10-08 12:30 PDT run: SKIPPED — article #213 still the day's publish (1 article/day max). No new topic researched. Next run: #214 watches.",
-  "run_note_3": "2026-10-08 16:30 PDT run: SKIPPED — article #213 (porsche-718-ev-e-core-mid-battery-architecture, cars) already published today 2026-10-08 (1 article/day max). No new topic researched. Next run: #214 watches."
+  "run_note_3": "2026-10-08 16:30 PDT run: SKIPPED — article #213 (porsche-718-ev-e-core-mid-battery-architecture, cars) already published today 2026-10-08 (1 article/day max). No new topic researched. Next run: #214 watches.",
+  "run_note_4": "2026-10-08 18:30 PDT run: SKIPPED - article #213 (porsche-718-ev-e-core-mid-battery-architecture, cars) already published today 2026-10-08 (1 article/day max). Live QA re-verified: story URL 200 after redirect. No new topic researched. Next run: #214 watches."
 }
