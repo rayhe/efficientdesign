@@ -1,9 +1,9 @@
 {
   "article_number": 217,
   "author": "Elena Voss",
-  "commit": "8abbe64",
+  "commit": "bd47b1c",
   "critique_score": 8.94,
-  "deploy_note": "DEPLOYED 2026-10-11 ~00:55 PDT: pages-deploy.py (new proxy-aware Python direct-upload; node pages-deploy.mjs fails on VM with ERR_SSL_WRONG_VERSION_NUMBER since node fetch bypasses egress proxy), branch main (deployment 98c56bd2, preview https://98c56bd2.efficientdesign.pages.dev). Live QA: story html 200 with correct title/byline, hero image/jpeg 200 1920x1280, card present in production index.html, production domain story URL 200. NOTE: TOOLS.md-injected CF token was stale/corrupted (WXnY variant 401s); on-disk TOOLS.md token (WCnY) verified active, expires 2026-11-27.",
+  "deploy_note": "DEPLOYED 2026-10-12 ~00:40 PDT: pages-deploy.py (proxy-aware Python direct-upload), branch main (deployment eb4b2807, preview https://eb4b2807.efficientdesign.pages.dev). Live QA: production domain story URL 200 with correct title (16,942 bytes, clean-URL 308 from .html), hero image/jpeg 200 (451,535 bytes), card present in production index.html. CF token from on-disk TOOLS.md (WCnY variant) still active.",
   "deploy_pending": false,
   "hero_image": "stories/images/hero-bentley-torcal-first-ev-restraint-engineering.jpg",
   "hero_pending": false,
