@@ -3,7 +3,7 @@
   "author": "Elena Voss",
   "commit": "9350198",
   "critique_score": 8.84,
-  "deploy_note": "DEPLOYED 2026-10-20 ~00:50 PDT: wrangler pages deploy (deployment 0a334b34, preview https://0a334b34.efficientdesign.pages.dev, CF token from ~/.env + ACCOUNT_ID 8e3c98e0066c695c28e22a7c09615b70). Live QA: story page 200 with correct title (17,295 bytes, matches local), hero image/jpeg 200 (621,128 bytes, matches local), card present in production index.html (2 mentions), sitemap 200 with new URL. Production domain live (308 on .html path is the normal clean-URL redirect; extensionless resolves 200).",
+  "deploy_note": "DEPLOYED 2026-10-21 ~00:40 PDT: wrangler@4.151.2 pages deploy (preview https://6b358292.efficientdesign.pages.dev, CF token from ~/.env + ACCOUNT_ID 8e3c98e0066c695c28e22a7c09615b70). Live QA: story page 200 with correct h1 (18,007 bytes, matches local), hero image/jpeg 200 (459,015 bytes, matches local), card present in production index.html (2 mentions), sitemap 200 with new URL (lastmod 2026-10-21). 308 on .html path is the normal clean-URL redirect; extensionless resolves 200.",
   "deploy_pending": false,
   "hero_image": "stories/images/hero-union-glashutte-belisar-speedster-2026.jpg",
   "hero_pending": false,
