@@ -1,7 +1,7 @@
 {
   "article_number": 229,
   "author": "Marcus Thorne",
-  "commit": "962a52a",
+  "commit": "9571bae",
   "critique_score": 8.8,
   "deploy_note": "DEPLOYED 2026-10-24 ~00:45 PDT: wrangler@4.151.2 pages deploy (preview https://d8a7793c.efficientdesign.pages.dev, CF token from ~/.env + ACCOUNT_ID 8e3c98e0066c695c28e22a7c09615b70; set -a export pattern). Live QA: extensionless story page 200 with correct h1 (24,223 bytes), hero image/jpeg 200 (543,547 bytes, matches local), card present in production index.html (2 mentions), sitemap 200 with new URL.",
   "deploy_pending": false,
