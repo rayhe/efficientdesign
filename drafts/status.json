@@ -3,7 +3,7 @@
   "author": "Marcus Thorne",
   "commit": "def940f",
   "critique_score": 8.8,
-  "deploy_note": "DEPLOYED 2026-10-28 ~00:30 PDT: wrangler pages deploy (see run log for preview URL). Live QA pending at status write time; see deploy note update after QA.",
+  "deploy_note": "DEPLOYED 2026-10-28 ~00:30 PDT: wrangler@4.154.0 pages deploy (preview https://0f41cd12.efficientdesign.pages.dev, CF token from ~/.env + ACCOUNT_ID 8e3c98e0066c695c28e22a7c09615b70). Live QA: story page live with correct h1 and hero image, hero image/jpeg live 1920x1280, sitemap live with new URL first (2026-10-28). Homepage card verified in local index.html (first card) and included in deploy; homepage text crawl sampled only 4 cards and did not surface it, so card presence on the rendered homepage is not independently re-verified in this run.",
   "deploy_pending": false,
   "hero_image": "stories/images/hero-aston-martin-valhalla-spider-open-top.jpg",
   "hero_pending": false,
