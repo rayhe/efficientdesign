@@ -10,7 +10,7 @@
   "last_category": "watches",
   "last_completed": "2026-10-29",
   "next_category": "cars",
-  "phase": "SHIPPED",
+  "phase": "IDLE",
   "published_date": "2026-10-29",
   "push_pending": false,
   "run_note_0": "2026-10-09 20:30 PDT run: SKIPPED \u2014 article #214 (accutron-resonator-era-262khz, watches) already published today 2026-10-09 (1 article/day max). No new topic researched. Next run: #215 cars.",
@@ -253,5 +253,7 @@
   "run_note_2026-10-29-0230": "2026-10-29 02:30 PDT run: SKIPPED \u2014 article #234 (sinn-140-a-s-anniversary, watches, Elena Voss) already published today 2026-10-29 (1 article/day max). State verified: phase SHIPPED, push_pending false, deploy_pending false, hero_pending false; fetch confirms HEAD ed0d404 == origin/main tip. Only untracked media-generation receipt JSONs/JPGs in tree. No new topic researched. Next run: #235 cars.",
   "run_note_2026-10-29-0430": "2026-10-29 04:30 PDT run: SKIPPED \u2014 article #234 (sinn-140-a-s-anniversary, watches) already published today 2026-10-29 (1 article/day max). No new topic researched. Next run: #235 cars.",
   "run_note_2026-10-29-0630": "2026-10-29 06:30 PDT run: SKIPPED \u2014 article #234 (sinn-140-a-s-anniversary, watches, Elena Voss) already published today 2026-10-29 (1 article/day max). State verified: phase SHIPPED, push_pending false, deploy_pending false, hero_pending false; fetch confirms HEAD 88425e4 == origin/main tip == remote tip. Only untracked media-generation receipt JSONs/JPGs in tree. No new topic researched. Next run: #235 cars.",
-  "run_note_2026-10-29-0830": "2026-10-29 08:30 PDT run: SKIPPED \u2014 article #234 (sinn-140-a-s-anniversary-spaceflight-chronograph, watches, Elena Voss) already published today 2026-10-29 (1 article/day max). State verified: phase SHIPPED, push_pending false, deploy_pending false, hero_pending false; fetch confirms HEAD ceaf9d3 == origin/main tip. Only untracked media-generation receipt JSONs/JPGs in tree. No new topic researched. Next run: #235 cars."
+  "run_note_2026-10-29-0830": "2026-10-29 08:30 PDT run: SKIPPED \u2014 article #234 (sinn-140-a-s-anniversary-spaceflight-chronograph, watches, Elena Voss) already published today 2026-10-29 (1 article/day max). State verified: phase SHIPPED, push_pending false, deploy_pending false, hero_pending false; fetch confirms HEAD ceaf9d3 == origin/main tip. Only untracked media-generation receipt JSONs/JPGs in tree. No new topic researched. Next run: #235 cars.",
+  "run_note_2026-10-29-1030": "2026-10-29 10:30 PDT run: SKIPPED \u2014 article #234 (sinn-140-a-s-anniversary, watches, Elena Voss) already published today 2026-10-29 (1 article/day max). No new topic researched. Next run: #235 cars.",
+  "run_note_2026-10-29-1230": "2026-10-29 12:30 PDT run: SKIPPED \u2014 article #234 (sinn-140-a-s-anniversary, watches, Elena Voss) already published today 2026-10-29 (1 article/day max). State verified: phase IDLE, push_pending false, deploy_pending false, hero_pending false; HEAD b7aca70 == origin/main tip. Only untracked media-generation receipt JSONs/JPGs in tree. No new topic researched. Next run: #235 cars."
 }
