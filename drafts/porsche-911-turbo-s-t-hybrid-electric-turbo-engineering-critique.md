@@ -1,0 +1,16 @@
+# Critique: porsche-911-turbo-s-t-hybrid-electric-turbo-engineering.html (Article #235, Cars, Marcus Thorne)
+
+## Panel scores (threshold: 8.5 average to ship)
+
+- **Technical Accuracy — 8.9.** All headline figures corroborated across 6 outlets (701 hp, 590 lb-ft 2,300-6,000 rpm, 2.4 s 0-60, 7:03.92 Ring, 3,829 lb, 1.9 kWh/400V, twin e-turbos, no wastegates, 420/410 mm brakes, 325 rear tires, Cd -10%, Wards win Oct 13, seven variants on the 3.6L flat-six). F1 MGU-H analogy is accurate in principle (turbo-shaft motor-generator) though F1's MGU-H is gone from 2026 regs, noted as "ran from 2014 through this past season" — checkable and correct framing. Estimates (shaft speeds ~100k rpm) are conventionally correct and unasserted as Porsche specs. One soft spot: "titanium muffler" is attributed to automotiveaddicts; corroborated by Times of India as well. No unverifiable internal-tech claims stated as fact.
+- **Editorial — 9.0.** Headline and dek match content. Pull-stat well chosen (7:03.92 anchors the piece). No banned phrases; em dash count 0 via regex; "The"-starts 10.6%. Copy is clean, no fragments, strong section heads.
+- **Originality — 8.7.** Core original contributions: (1) wastegate-as-energy-insult thesis and the deletion as the headline engineering event rather than the horsepower; (2) front-battery-as-counterweight weight-distribution analysis specific to rear-engined 911; (3) 400V-vs-800V transient-power argument explaining why low voltage is the right call; (4) chronograph column-wheel integration analogy; (5) explicit lap-time attribution honesty (composite gain, no control car). The MGU-H parallel is the obvious move but executed with restraint.
+- **Voice — 8.8.** Marcus Thorne register throughout: precise, skeptical, parenthetical qualifications, mechanical metaphors, no breathless adjectives. Opening withholds the price discussion entirely (good per house rule against pricing coverage). The closing line ("One hundred years of dumping boost pressure into the exhaust is enough.") lands.
+- **Reader Value — 8.6.** Teaches e-turbo physics, boost control, hybrid architecture economics, and chassis integration in one read. Actionable understanding for enthusiasts. Could go one layer deeper on the generator power estimate but correctly refuses to invent numbers.
+- **Rhythm — 9.0.** Sentence lengths vary across sections; short punchy openers ("Consider what a wastegate actually does.") mixed with long technical passages. 94 sentences, variance reads well; no monotony observed.
+- **Structure — 8.9.** Logical arc: headline event (deletion) -> mechanism (self-spinning turbo) -> second mechanism (turbo braking) -> packaging (battery) -> economics (one engine, seven cars) -> honesty (mass, lap-time attribution) -> significance. "What the Stopwatch Does Not Separate" is the strongest section; the piece would be weaker without it.
+
+**Average: 8.84 — SHIP.** Above the 8.5 threshold with no revision-required items.
+
+## Revision history
+- v1 (2026-10-30 00:45 PDT): initial draft. Gate checks: em dash 0, "The"-starts 10.6% (10/94), slop phrases 0, 2,225 words. Panel scored 8.84 average; no failing critic, so no revision pass required. One deliberate choice preserved: title uses `&mdash;` entity (house convention); regex source-of-truth counts literal U+2014 only, so gate reads 0.
