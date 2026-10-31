@@ -3,7 +3,7 @@
   "author": "Elena Voss",
   "commit": "5db8fb0",
   "critique_score": 8.83,
-  "deploy_note": "DEPLOYED 2026-10-31: article #236 commit 5db8fb0; wrangler pages deploy pending at status write time.",
+  "deploy_note": "DEPLOYED 2026-10-31 ~00:45 PDT: wrangler@4.156.0 pages deploy (preview https://5617d29b.efficientdesign.pages.dev). Article #236 urwerk-ur-300-time-quantum-jumping-t-frame live; homepage newest card + sitemap updated.",
   "deploy_pending": false,
   "hero_image": "stories/images/hero-urwerk-ur-300-time-quantum-jumping-t-frame.jpg",
   "hero_pending": false,
