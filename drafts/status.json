@@ -1,9 +1,9 @@
 {
   "article_number": 241,
   "author": "Marcus Thorne",
-  "commit": "90f4260",
+  "commit": "3ced34a",
   "critique_score": 8.84,
-  "deploy_note": "DEPLOYED 2026-11-04 ~01:35 PST: wrangler@4.157.0 pages deploy (preview https://9ad5ecc0.efficientdesign.pages.dev). Article #240 ressence-type-10-dn-dark-night-rw04-oil-filled-engineering live on efficientdesign.net; homepage newest card + sitemap updated; live verified 200.",
+  "deploy_note": "DEPLOYED 2026-11-05 ~01:35 PST: wrangler@4.157.0 pages deploy (preview https://3c127662.efficientdesign.pages.dev). Article #241 peitz-c8-corvette-manual-tr9060-conversion live on efficientdesign.net; homepage newest card + sitemap updated; live verified 200 (via clean-URL 308 redirect, normal site behavior).",
   "deploy_pending": false,
   "hero_image": "stories/images/hero-peitz-c8-corvette-manual-tr9060-conversion.jpg",
   "hero_pending": false,
