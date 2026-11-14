@@ -1,9 +1,9 @@
 {
     "article_number": 250,
     "author": "Elena Voss",
-    "commit": "ed393d2",
+    "commit": "f61e4a1",
     "critique_score": 8.7,
-    "deploy_note": "DEPLOYED 2026-11-13 ~01:40 PST: wrangler@4.161.0 pages deploy (preview https://113cb248.efficientdesign.pages.dev). Article #249 gwm-gf-supercar-carbon-monocoque-hot-v-v8-hybrid live on efficientdesign.net; homepage newest card + sitemap updated; live verified 200, hero image 200, GWM content present on live page.",
+    "deploy_note": "DEPLOYED 2026-11-14 ~01:41 PST: wrangler@4.162.0 pages deploy (preview https://9c8012bc.efficientdesign.pages.dev). Article #250 kurono-tokyo-structure-chronograph-s1 live on efficientdesign.net; homepage newest card + sitemap updated; live verified 200 (via 308 clean-URL redirect), hero image 200, Kurono content present on live page.",
     "deploy_pending": false,
     "hero_image": "stories/images/hero-kurono-tokyo-structure-chronograph-s1.jpg",
     "hero_pending": false,
