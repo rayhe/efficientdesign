@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lap After Lap After Lap &mdash; Efficient Design</title>
+<meta name="description" content="Cadillac's quickest car ever is electric, and its own engineers will tell you it is not a track car. The reason is heat, and no amount of horsepower fixes heat.">
+<meta name="author" content="Marcus Thorne">
+<meta name="article:section" content="cars">
+<meta name="article:tag" content="Cadillac, Lyriq-V, Optiq-V, CT5-V Blackwing, V-Series, EV thermal management, track performance, Ultium, Performance Traction Management">
+<meta name="article:published_time" content="2026-11-15">
+<meta property="og:title" content="Lap After Lap After Lap: The Heat Keeping Cadillac's V-Series EVs Off the Track">
+<meta property="og:description" content="The Lyriq-V is the quickest Cadillac ever built. Cadillac's own engineers say it is not a track car, because a racetrack asks a battery to do the one thing batteries hate: discharge at maximum rate, lap after lap, with no rest.">
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="https://efficientdesign.net/stories/images/hero-cadillac-v-series-ev-track-thermal-wall.jpg">
+<meta property="og:url" content="https://efficientdesign.net/stories/cadillac-v-series-ev-track-thermal-wall.html">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1a1a1a; --accent: #5a7a5a;
+    --meta: #777; --border: #e0ddd8; --code-bg: #f5f3ef;
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  body {
+    font-family: var(--serif); background: var(--bg); color: var(--fg);
+    line-height: 1.75; max-width: 720px; margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem; font-family: var(--sans); font-weight: 800; letter-spacing: -0.02em; }
+  .subtitle { font-size: 1.15rem; color: var(--meta); line-height: 1.5; margin-bottom: 1.5rem; font-family: var(--sans); }
+  .meta { font-family: var(--sans); font-size: 0.85rem; color: var(--meta); margin-bottom: 2.5rem; }
+  .hero-image { width: 100%; margin: 0 0 2.5rem 0; }
+  .hero-image img { width: 100%; height: auto; display: block; }
+  .hero-image figcaption { font-size: 0.78rem; color: var(--meta); margin-top: 0.4rem; font-family: var(--sans); }
+  h2 { font-size: 1.35rem; font-family: var(--sans); font-weight: 700; margin: 2.5rem 0 1rem; letter-spacing: -0.01em; }
+  p { margin-bottom: 1.25rem; }
+  blockquote {
+    border-left: 3px solid var(--accent); padding-left: 1.25rem;
+    margin: 1.75rem 0; font-style: italic; color: #444;
+  }
+  .spec-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-family: var(--sans); font-size: 0.88rem; }
+  .spec-table th { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--fg); font-weight: 700; }
+  .spec-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+  .spec-table tr:last-child td { border-bottom: none; }
+  @media (max-width: 600px) {
+    html { font-size: 16px; }
+    body { padding: 1.25rem 1rem 3rem; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<article>
+<h1>Lap After Lap After Lap: The Heat Keeping Cadillac's V-Series EVs Off the Track</h1>
+<p class="subtitle">Cadillac's quickest car ever runs on electricity, and its own engineers will tell you it is not a track car. The reason is heat, and no amount of horsepower fixes heat.</p>
+<p class="meta">By Marcus Thorne &middot; November 15, 2026 &middot; Cars</p>
+
+<figure class="hero-image">
+<img src="images/hero-cadillac-v-series-ev-track-thermal-wall.jpg" alt="Editorial macro rendering in warm amber light of a liquid-cooled electric vehicle battery pack with copper busbars, coolant hoses and aluminum cooling plates, dark background">
+<figcaption>Illustrative rendering. A liquid-cooled EV battery pack and its cooling hardware, the system that decides how many laps a fast electric car can actually do.</figcaption>
+</figure>
+
+<p>Cadillac said it out loud, at its own event, to a journalist holding a recorder. Speaking to CarExpert at a recent General Motors event in New York, Cadillac vehicle performance engineer Tom Schinderle described the brand's electric V-Series models as tuned for "canyon carving, spirited driving," and not for full track performance. His explanation was one sentence long, and it named the whole problem: "There's a lot of engineering work on the thermal side to make sure we have a car that can do it lap after lap after lap."</p>
+
+<p>Context matters here, because the car in question is not slow. Lyriq-V, the first electric V-Series Cadillac, makes 615 horsepower and 650 lb-ft of torque in Velocity Max, the steering-wheel-button mode that unlocks the car's full output in short bursts, reaches 60 mph in 3.3 seconds, and carries the title of quickest production Cadillac ever built. Optiq-V, its smaller sibling, makes 519 horsepower from an 85-kilowatt-hour pack and hits 60 in 3.5. Both wear the V badge, and neither one, by Cadillac's own account, is a track car.</p>
+
+<h2>One lap is easy</h2>
+
+<p>Any 600-horsepower EV can put down a hero lap. Full throttle for two minutes is a sprint, and electric motors are superb sprinters, delivering peak torque from zero rpm with no gears to shift and no turbo to spool. Trouble starts on lap two, and it gets worse from there, because a racetrack asks a battery to do the one thing batteries hate: discharge at a high average rate, lap after lap, with no rest. Current squared times resistance (I²R) is the heat generated inside every cell, and at full throttle on a straight, a Lyriq-V draws roughly 460 kilowatts, so even a five-percent loss across the pack, the inverters, and the motors turns into more than twenty kilowatts of heat the cooling system has to reject.</p>
+
+<p>Cells live in a narrow temperature window, and pushing past it makes the car protect itself by pulling power, a behavior engineers call derating. GM's own owner documentation warns that a battery outside its ideal temperature range may deliver less than expected power, and the car will flash a Reduced Acceleration message when it happens.</p>
+
+<p>Hot weather makes the arithmetic crueler. GM advises owners to cut cabin cooling in the heat so the system can divert more cooling capacity to the battery, once the pack is at 20 percent charge or higher. Read that again: on a hot day, the air conditioning in an $80,000 Cadillac competes with the battery for the same chilled cooling capacity, and the battery wins. That trade-off is not a defect in the Lyriq-V. It is the physics of a sealed box full of chemistry, and it applies across GM's whole electric range, from the Optiq and Celestiq to the Escalade IQ, the Hummer EV, and the Silverado, Sierra, and Blazer EVs.</p>
+
+<h2>Where the heat goes</h2>
+
+<p>A combustion engine has an escape route that an EV does not: the exhaust. Roughly two-thirds of the energy in gasoline leaves as waste heat, split between the exhaust and the cooling system, and both paths dump it outside the car. An electric drivetrain is far more efficient, which sounds like an advantage until you realize what it means for cooling: every watt of loss has to be carried out by a liquid cooling loop feeding radiators, and there is no chimney to help. Worse, the loop runs barely warmer than the air it rejects heat into, because cells must stay near 20 to 40 degrees Celsius for full power while a gasoline engine's coolant runs near 100 to 110, so the same kilowatts of heat need far more radiator area and airflow to escape. There is no chimney. The 2026 Lyriq lineup already carries upgraded battery cooling hardware, rolled out because the V was coming, and the V adds revised programming that runs the system more aggressively in the sportier modes, yet it is still not enough for repeated hot laps. Efficiency did not remove the heat; it concentrated it.</p>
+
+<p>Mass piles on, because Lyriq-V's published curb weight is 5,980 pounds, nearly 1,900 pounds more than a CT5-V Blackwing, and every one of those pounds has to be accelerated out of every corner and braked back down before the next one. More mass means more energy per lap, more current from the pack, and more heat into the same cooling system. Braking adds its own insult: a 6,000-pound SUV arriving at a corner at 130 mph carries about 45 percent more kinetic energy than a 4,100-pound sedan at the same speed, and while regenerative braking recovers some of it, the rest becomes heat in the brakes, the tires, and the pack. Regenerative braking adds heat on the way back in, too: hard braking dumps high-rate charging current into the cells, heating them from the charge side, and when the pack gets too hot or too full, the car curtails regen and hands the whole braking load to the friction brakes. Weight is the tax, and the track collects it every lap.</p>
+
+<table class="spec-table">
+<tr><th>Specification</th><th>Lyriq-V</th><th>Optiq-V</th><th>CT5-V Blackwing</th></tr>
+<tr><td>Powertrain</td><td>Dual-motor AWD EV</td><td>Dual-motor AWD EV</td><td>Supercharged 6.2L LT4 V8</td></tr>
+<tr><td>Peak output</td><td>615 hp / 650 lb-ft (Velocity Max)</td><td>519 hp / 650 lb-ft (Velocity Max)</td><td>668 hp / 659 lb-ft</td></tr>
+<tr><td>Battery</td><td>102 kWh usable, liquid-cooled</td><td>85 kWh usable, liquid-cooled</td><td>n/a</td></tr>
+<tr><td>Curb weight</td><td>5,980 lb</td><td>5,445 lb</td><td>~4,100 lb</td></tr>
+<tr><td>0-60 mph</td><td>3.3 s</td><td>3.5 s</td><td>3.4 s (automatic; 3.6 s manual)</td></tr>
+<tr><td>Range</td><td>285 miles (EPA est.)</td><td>278 miles (EPA est.)</td><td>Gasoline; no EV range figure</td></tr>
+<tr><td>Starting price</td><td>$79,990 (incl. destination)</td><td>$68,795</td><td>$97,600</td></tr>
+<tr><td>Track mode</td><td>Competitive Mode (rear bias, relaxed stability control)</td><td>Competitive Mode</td><td>Performance Traction Management, Precision Package</td></tr>
+<tr><td>Track status</td><td>Tuned for canyon carving, not full track use</td><td>Tuned for canyon carving, not full track use</td><td>Sustained hot laps, per GM</td></tr>
+</table>
+
+<p>Cooling capacity and sustained-power figures are unpublished for the V-Series EVs, which is the point of this article. Prices are starting MSRP; the Lyriq-V figure includes destination, the others exclude it.</p>
+
+<h2>The benchmark that will not move</h2>
+
+<p>Schinderle's benchmark is not another EV. It is the gasoline car his own team builds. "These V-Series ICE sedans, I mean, they can [do] lap after lap after lap, and so we are certainly investigating that on the EVs," he told CarExpert. "We're just not quite ready to commit to that yet." CT5-V Blackwing, the sedan he works on, makes 668 horsepower from a hand-built supercharged 6.2-liter LT4, and its Precision Package adds the cooling and chassis hardware for exactly this duty: stiffer springs, revised knuckles and toe links, carbon-ceramic brakes, and recalibrated MagneRide adaptive dampers and electronic limited-slip differential. Its staying power is not just chassis hardware; the LT4 runs with engine-oil, transmission, and differential coolers sized for sustained high-load running, and Cadillac's own hot-lap figure for the car at VIR's Grand Course is 2:50.6, per the company's current specification sheet. GM's internal durability standards, Schinderle said, are stricter than its competitors', and the company holds itself to that higher level.</p>
+
+<p>Most brands would never admit the next part: Cadillac has already built track-capable electric concepts. They exist, they run, and they failed. "We've certainly come up with concepts that are track capable, but haven't passed all of our internal benchmarks that are critically important," Schinderle said. Lyriq-V lead development engineer Alex Doss said the same thing last year, naming battery weight and cooling as the main hurdles to a Blackwing-badged EV. Two engineers, a year apart, pointing at the same wall.</p>
+
+<h2>The controls are ready, the cooling is not</h2>
+
+<p>What makes this story frustrating instead of merely disappointing is how much of the track car already exists. V-Series EVs get a Competitive Mode that backs traction control out slightly on corner exit, shifts the front-to-rear power ratio toward the rear, and lets the stability control allow the car to step out. Competitive Mode even disables one-pedal driving, because regenerative braking pours heat into the motors and cooling system, and limiting regen to the brake pedal keeps the system from heat-soaking. Schinderle suggested a progressive traction management system like the Blackwing's Performance Traction Management, which lets a driver dial intervention back in stages, could eventually reach the EVs, but only once an EV is signed off as capable of repeated hot laps, and he noted that electric motors can control torque far more precisely than any combustion engine. Put plainly, the traction-control half of a track car is a solved problem in principle, and the hardware half is a radiator problem. No amount of code cools a battery.</p>
+
+<p>What would have to change is mostly unglamorous: more radiator area and airflow for a coolant loop that runs barely warmer than the air it rejects heat into, cells or chemistry with a wider temperature window, preconditioning that starts a session with the pack already at its ideal temperature, and thermal budgeting that treats a track session as an energy-management problem rather than a power problem. None of that is exotic. All of it costs weight, space, or money, which is why it has not shipped yet.</p>
+
+<p>Until the cooling catches up, the honest answer for a Cadillac buyer who wants track days is the gasoline car. CT5-V Blackwing remains the most track-capable vehicle Cadillac sells, and a next-generation Blackwing is reportedly in planning, though Cadillac has not confirmed it. None of this matters to a buyer who never goes to the track, which is most of them: the V-Series EVs are tuned for canyon carving and spirited driving, and that is where they will spend their lives. That is a strange sentence to write in 2026, when the electric car is quicker to 60 mph and the gasoline car is the one that survives the afternoon. Straight-line speed was never the hard part. Surviving lap twenty at the same pace as lap two is the hard part, and it is measured in kilowatts of heat rejection, not horsepower.</p>
+
+<h2>What I do not know</h2>
+
+<p>I have not driven either car, and this analysis rests on CarExpert's interview, GM Authority's coverage, and Cadillac's published specifications. No instrumented multi-lap test of a Lyriq-V has been published, so the exact lap where derating begins is unknown, and Cadillac has given no timeline for a track-capable EV. Internal concept specifications are unpublished, which means the gap between the concepts and the benchmarks is a matter of GM's word, not public data. Battery chemistry and cooling capacity figures for the V-Series packs beyond the headline 102 and 85 kWh numbers are not published either. GM's warranty position on track use was not established in the coverage I read, so a buyer should ask before booking a track day. This article judges Cadillac against its own stated bar, not against other brands' track EVs, which make their own thermal compromises. And the Schinderle narrative traces to a single CarExpert interview, with GM Authority and The Truth About Cars reporting the same quotes, so the three sources are one primary account plus two derivatives, not three independent confirmations.</p>
+
+<h2>A badge, split in two</h2>
+
+<p>Step back and the shape of this story is a brand dividing its own badge. V now means quick on the road, in a Lyriq-V or an Optiq-V, and Blackwing means durable on a track, in a supercharged sedan that burns gasoline. Cadillac could have shipped the hero lap and let owners discover lap three for themselves. Plenty of brands have. Instead its engineers stood at the company's own event and said the cars are not ready, named the reason, and kept the badge off the track until the cooling earns it. That restraint is worth more than the horsepower figure on the window sticker, and it sets the bar the eventual track EV will have to clear.</p>
+
+<div class="ref-section">
+<h2>Sources</h2>
+<ol>
+<li>CarExpert, "Cadillac has built track-ready EVs, but they failed its own durability tests," November 8, 2026; Tom Schinderle interview at a GM event in New York, thermal management as the holdup, internal durability benchmarks, track-capable EV concepts, Competitive Mode and progressive traction management.</li>
+<li>GM Authority, "Here's Why Cadillac EVs Aren't Ready For Hard Track Use Yet," November 7, 2026; Schinderle quotes, canyon carving versus full track performance, CT5-V Blackwing as the current track benchmark.</li>
+<li>The Truth About Cars, "Why Cadillac's V-Series EVs Can't Hot-Lap Yet," November 8, 2026; GM owner documentation on reduced acceleration and battery temperature window, Alex Doss on battery weight and cooling, scope across GM's EV range.</li>
+<li>Cadillac pressroom, "Introducing the quickest Cadillac ever: the 2026 LYRIQ-V," January 23, 2025; 615 hp, 650 lb-ft (880 Nm), 102 kWh usable battery, 285 miles range, 5,980 lb curb weight, Velocity Max and Competitive Mode descriptions.</li>
+<li>Cadillac pressroom, 2026 CT5-V Blackwing specifications; LT4 6.2L supercharged V8, 668 hp, 659 lb-ft, 0-60 mph 3.4 seconds automatic (3.6 seconds manual), VIR Grand Course 2:50.6 per Cadillac.</li>
+<li>Autoblog, "Cadillac Optiq-V Vs. Lyriq-V: Quickest-Ever Cadillac SUVs Compared," June 9, 2025; Optiq-V 519 hp, 85 kWh, 5,445 lb, 0-60 mph 3.5 seconds. Optiq-V range figure of 278 miles per Cadillac.com specifications.</li>
+<li>CarBuzz, "2026 Cadillac Lyriq V First Drive Review: An Electric Caddy With True V-Power," July 30, 2025; upgraded cooling system shared across all 2026 Lyriqs with revised V programming, regenerative braking heat and the Competitive Mode one-pedal detail, stronger brakes.</li>
+<li>J.D. Power, "What Is Cadillac Velocity Max?," January 5, 2026; Velocity Max delivers short bursts of full output rather than continuous power, and repeated activation drains range faster.</li>
+<li>Edmunds, 2026 Cadillac CT5 V Blackwing pricing; $97,600 starting MSRP. TopSpeed, 2026 Cadillac Optiq-V technical specifications; $68,795 starting MSRP. GM Authority, February 26, 2025; Lyriq-V pricing starts at $79,990 including destination freight charge.</li>
+</ol>
+</div>
+</article>
+</body>
+</html>
