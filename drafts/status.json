@@ -3,7 +3,7 @@
     "author": "Elena Voss",
     "commit": "432da2e",
     "critique_score": 8.9,
-    "deploy_note": "DEPLOYED 2026-11-22 ~01:30 PST: article #258 rado-diastar-original-skeleton-ceramos-gold-2026 (watches, Elena Voss). Full pipeline: research (Rado DiaStar Original Skeleton gold Ceramos editions, Monochrome Oct 26 / WatchTime Nov 5 / Fratello hands-on Nov 2026), draft, 7-critic critique 8.90, hero generated+validated (JPEG 1920x1280, 526,058 bytes). Gates: em dash 0, The-starts 2.5%, rhythm PASS (variance 463.0, short 14.1%, long 47.4%), slop phrases 0.",
+    "deploy_note": "DEPLOYED 2026-11-22 ~01:37 PST: wrangler@4.166.0 pages deploy (preview https://fd85bcdf.efficientdesign.pages.dev). Article #258 rado-diastar-original-skeleton-ceramos-gold-2026 live on efficientdesign.net; article URL 308 to extensionless URL then 200, byte-identical to local (14,924 bytes), hero 200 (526,058 bytes, byte-identical, JPEG 1920x1280), homepage card live. Note: the .html URL 308 is site-wide Pages behavior (Valkyrie .html URL 308s identically), not an article defect.",
     "deploy_pending": false,
     "hero_image": "stories/images/hero-rado-diastar-original-skeleton-ceramos-gold-2026.jpg",
     "hero_pending": false,
