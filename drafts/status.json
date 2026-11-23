@@ -1,17 +1,17 @@
 {
-  "article_number": 258,
+  "article_number": 259,
   "author": "Elena Voss",
   "commit": "432da2e",
-  "critique_score": 8.9,
+  "critique_score": 8.69,
   "deploy_note": "DEPLOYED 2026-11-22 ~01:37 PST: wrangler@4.166.0 pages deploy (preview https://fd85bcdf.efficientdesign.pages.dev). Article #258 rado-diastar-original-skeleton-ceramos-gold-2026 live on efficientdesign.net; article URL 308 to extensionless URL then 200, byte-identical to local (14,924 bytes), hero 200 (526,058 bytes, byte-identical, JPEG 1920x1280), homepage card live. Note: the .html URL 308 is site-wide Pages behavior (Valkyrie .html URL 308s identically), not an article defect.",
   "deploy_pending": false,
-  "hero_image": "stories/images/hero-rado-diastar-original-skeleton-ceramos-gold-2026.jpg",
+  "hero_image": "stories/images/hero-singer-dls-turbo-sorcerer-710hp-flat-six.jpg",
   "hero_pending": false,
-  "last_category": "watches",
-  "last_completed": "2026-11-22",
-  "next_category": "cars",
+  "last_category": "cars",
+  "last_completed": "2026-11-23",
+  "next_category": "watches",
   "phase": "SHIPPED",
-  "published_date": "2026-11-22",
+  "published_date": "2026-11-23",
   "push_pending": false,
   "run_note_0": "2026-10-09 20:30 PDT run: SKIPPED \u2014 article #214 (accutron-resonator-era-262khz, watches) already published today 2026-10-09 (1 article/day max). No new topic researched. Next run: #215 cars.",
   "run_note_1": "2026-10-09 16:30 PDT run: SKIPPED \u2014 article #214 (accutron-resonator-era-262khz, watches) already published today 2026-10-09 (1 article/day max). No new topic researched. Next run: #215 cars.",
@@ -547,5 +547,6 @@
   "run_note_2026-11-22_1730": "2026-11-22 17:30 PST run: SKIPPED - article #258 (rado-diastar-original-skeleton-ceramos-gold-2026, watches) already published today 2026-11-22 (1 article/day max). No new topic researched. Next run: #259 cars.",
   "run_note_2026-11-22_1930": "2026-11-22 19:30 PST run: SKIPPED - article #258 (rado-diastar-original-skeleton-ceramos-gold-2026, watches) already published today 2026-11-22 (1 article/day max). No new topic researched. Next run: #259 cars.",
   "run_note_2026-11-22_2130": "2026-11-22 21:30 PST run: SKIPPED - article #258 (rado-diastar-original-skeleton-ceramos-gold-2026, watches) already published today 2026-11-22 (1 article/day max). No new topic researched. Next run: #259 cars.",
-  "run_note_2026-11-22_2330": "2026-11-22 23:30 PST run: SKIPPED - article #258 (rado-diastar-original-skeleton-ceramos-gold-2026, watches) already published today 2026-11-22 (1 article/day max). No new topic researched. Next run: #259 cars."
+  "run_note_2026-11-22_2330": "2026-11-22 23:30 PST run: SKIPPED - article #258 (rado-diastar-original-skeleton-ceramos-gold-2026, watches) already published today 2026-11-22 (1 article/day max). No new topic researched. Next run: #259 cars.",
+  "run_note_2026-11-23_0130": "2026-11-23 01:30 PST run: SHIPPED article #259 singer-dls-turbo-sorcerer-710hp-flat-six (cars) - Half Air, Half Water: Singer's DLS Turbo and the 9,000-rpm Flat-Six. Round-6 critique 8.69/10 (Factual 9.5, Engineering 8.4, Voice 8.3, Structure 8.6, Originality 8.8, Rhythm 8.5, Reader Value 8.7); round-7 polish fixed the material peak-power-rpm error (6,750 vs 9,000 rpm, 2,250 rpm gap) and all critic-flagged items. Gates: em dash 0, The-starts 8.0%, rhythm script exit 0 (variance 528, short 12.4%, long 48.9%), banned slop 0. Hero: twin VGT turbos macro, JPEG 1920x1280. Next run: #260 watches."
 }
