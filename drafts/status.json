@@ -1,9 +1,9 @@
 {
   "article_number": 259,
   "author": "Elena Voss",
-  "commit": "432da2e",
+  "commit": "a2adb24",
   "critique_score": 8.69,
-  "deploy_note": "DEPLOYED 2026-11-22 ~01:37 PST: wrangler@4.166.0 pages deploy (preview https://fd85bcdf.efficientdesign.pages.dev). Article #258 rado-diastar-original-skeleton-ceramos-gold-2026 live on efficientdesign.net; article URL 308 to extensionless URL then 200, byte-identical to local (14,924 bytes), hero 200 (526,058 bytes, byte-identical, JPEG 1920x1280), homepage card live. Note: the .html URL 308 is site-wide Pages behavior (Valkyrie .html URL 308s identically), not an article defect.",
+  "deploy_note": "DEPLOYED 2026-11-23 ~02:40 PST: wrangler@4.166.0 pages deploy (preview https://0740fa16.efficientdesign.pages.dev). Article #259 singer-dls-turbo-sorcerer-710hp-flat-six live on efficientdesign.net; article URL 200, byte-identical to local (28,875 bytes, sha256 61f22cae79f6e10afb7d72e510af2236aaa6465497e0af684c8d60b60c8a20d1), hero 200 (506,481 bytes, byte-identical, JPEG 1920x1280), homepage card live.",
   "deploy_pending": false,
   "hero_image": "stories/images/hero-singer-dls-turbo-sorcerer-710hp-flat-six.jpg",
   "hero_pending": false,
